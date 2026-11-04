@@ -1,0 +1,2427 @@
+{
+  "manifest_sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd",
+  "registry_sha256": "51bd1d1443e6149bf3192d2be9aaa6658d2d48e6318b3e671f03265e9ef36c43",
+  "analysis_code_sha256": "e25b1bca8d30b491f8cce6d01646ed66f65d01c4a62bd20c3c603abe665026e5",
+  "sources": {
+    "kyrgyznews": {
+      "total_words": 220839,
+      "retained_words": 212034,
+      "own_source_overlap_words": 8805,
+      "mask_path": "reports/r3/overlap/mask_kyrgyznews.csv.gz",
+      "mask_sha256": "5f5f17a6d20fd4b5e4b1a50a389f37f1c8f40b271107cc092a9aa9c233b072c2"
+    },
+    "wikipedia_ky": {
+      "total_words": 443185,
+      "retained_words": 432943,
+      "own_source_overlap_words": 10237,
+      "mask_path": "reports/r3/overlap/mask_wikipedia_ky.csv.gz",
+      "mask_sha256": "4436e23707d7ad42f16f28f9dae2d1455f82e2e84caf155a1a2ff9377c7b2248"
+    }
+  },
+  "rankings": {
+    "kyrgyznews": {
+      "all": [
+        "xlmr_news",
+        "xlmr_mixed_matched",
+        "xlmr_mixed",
+        "kyrgyzbert2_news",
+        "sgd_log_balanced_news",
+        "kyrgyzbert_news",
+        "logreg_balanced_news",
+        "cnn_deep_news",
+        "cnn_small_news",
+        "external_last"
+      ],
+      "filtered": [
+        "xlmr_news",
+        "xlmr_mixed_matched",
+        "xlmr_mixed",
+        "kyrgyzbert2_news",
+        "sgd_log_balanced_news",
+        "kyrgyzbert_news",
+        "logreg_balanced_news",
+        "cnn_deep_news",
+        "cnn_small_news",
+        "external_last"
+      ],
+      "unchanged": true
+    },
+    "wikipedia_ky": {
+      "all": [
+        "xlmr_wiki",
+        "xlmr_mixed_matched",
+        "xlmr_mixed",
+        "kyrgyzbert2_wiki",
+        "kyrgyzbert_wiki",
+        "sgd_log_balanced_wiki",
+        "cnn_deep_wiki",
+        "cnn_small_wiki",
+        "logreg_balanced_wiki",
+        "external_last"
+      ],
+      "filtered": [
+        "xlmr_wiki",
+        "xlmr_mixed_matched",
+        "xlmr_mixed",
+        "kyrgyzbert2_wiki",
+        "kyrgyzbert_wiki",
+        "sgd_log_balanced_wiki",
+        "cnn_deep_wiki",
+        "cnn_small_wiki",
+        "logreg_balanced_wiki",
+        "external_last"
+      ],
+      "unchanged": true
+    }
+  },
+  "rule": "Completed >=5-word sentences; token equality ignoring punctuation; union of both main 3200-document training subsets; one fixed mask per target for every model.",
+  "limitations": "Post-hoc sensitivity analysis, not retraining or proof of no contamination. Short phrases, paraphrases and unfinished sentences are not excluded. The external checkpoint's training corpus is unknown. Rankings are point estimates.",
+  "results": [
+    {
+      "job": "logreg_balanced_news",
+      "model": "Balanced LR",
+      "train": "kyrgyznews",
+      "test": "kyrgyznews",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/logreg_balanced_news/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "d2cb29de8c8853469079f9a9bb63154af8e510b21dfb864e3c51285d6ac27524",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.9004206684507718,
+        "macro_precision": 0.6907780732629324,
+        "macro_recall": 0.8293140219773966,
+        "macro_f1": 0.7424440976142744,
+        "per_class": {
+          "S": {
+            "precision": 0.9804981333927676,
+            "recall": 0.9143293601720895,
+            "f1": 0.9462584156073218,
+            "support": 192458,
+            "predicted": 179470
+          },
+          "C": {
+            "precision": 0.39542317840470875,
+            "recall": 0.6946871100017828,
+            "f1": 0.5039772359826683,
+            "support": 11218,
+            "predicted": 19708
+          },
+          "P": {
+            "precision": 0.6964129079913208,
+            "recall": 0.8789255957583173,
+            "f1": 0.7770966412528333,
+            "support": 17163,
+            "predicted": 21661
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.8983229104766217,
+        "macro_precision": 0.6870506769000579,
+        "macro_recall": 0.8247317327915962,
+        "macro_f1": 0.7383916416110217,
+        "per_class": {
+          "S": {
+            "precision": 0.9797342443627152,
+            "recall": 0.9128730666580048,
+            "f1": 0.9451226347412788,
+            "support": 184719,
+            "predicted": 172113
+          },
+          "C": {
+            "precision": 0.391099229438591,
+            "recall": 0.6861320581202869,
+            "f1": 0.4982137491235685,
+            "support": 10874,
+            "predicted": 19077
+          },
+          "P": {
+            "precision": 0.6903185568988678,
+            "recall": 0.8751900735964966,
+            "f1": 0.7718385409682178,
+            "support": 16441,
+            "predicted": 20844
+          }
+        }
+      }
+    },
+    {
+      "job": "logreg_balanced_news",
+      "model": "Balanced LR",
+      "train": "kyrgyznews",
+      "test": "wikipedia_ky",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/logreg_balanced_news/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "6203c73f0db2898d21a6273febc4eeabc28ea5dd3bf02cfdef4ce893bfe9a379",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8003610230490653,
+        "macro_precision": 0.6004098257237651,
+        "macro_recall": 0.5994827054500674,
+        "macro_f1": 0.5983314485868886,
+        "per_class": {
+          "S": {
+            "precision": 0.8908407132633451,
+            "recall": 0.8798502986423811,
+            "f1": 0.8853113980219117,
+            "support": 355107,
+            "predicted": 350726
+          },
+          "C": {
+            "precision": 0.2684766214177979,
+            "recall": 0.33338762214983714,
+            "f1": 0.2974317991935777,
+            "support": 36840,
+            "predicted": 45747
+          },
+          "P": {
+            "precision": 0.6419121424901524,
+            "recall": 0.5852101955579843,
+            "f1": 0.6122511485451761,
+            "support": 51238,
+            "predicted": 46712
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.8027038201333663,
+        "macro_precision": 0.6038844016822603,
+        "macro_recall": 0.6042879904655992,
+        "macro_f1": 0.6027792597334198,
+        "per_class": {
+          "S": {
+            "precision": 0.8919564779720065,
+            "recall": 0.8811555268589086,
+            "f1": 0.8865231052987977,
+            "support": 346924,
+            "predicted": 342723
+          },
+          "C": {
+            "precision": 0.27537970528984357,
+            "recall": 0.33547497587205294,
+            "f1": 0.30247128437173687,
+            "support": 36265,
+            "predicted": 44179
+          },
+          "P": {
+            "precision": 0.6443170217849308,
+            "recall": 0.5962334686658359,
+            "f1": 0.6193433895297249,
+            "support": 49754,
+            "predicted": 46041
+          }
+        }
+      }
+    },
+    {
+      "job": "logreg_balanced_wiki",
+      "model": "Balanced LR",
+      "train": "wikipedia_ky",
+      "test": "kyrgyznews",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/logreg_balanced_wiki/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "9396a0122fcbcf4a1b4999355cad41470a656bea804b5c2090be7dda30a41cb5",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.7658384615036293,
+        "macro_precision": 0.5521053687449743,
+        "macro_recall": 0.7330263551292249,
+        "macro_f1": 0.5818970381836143,
+        "per_class": {
+          "S": {
+            "precision": 0.9761086995068069,
+            "recall": 0.772298371592763,
+            "f1": 0.8623245371028425,
+            "support": 192458,
+            "predicted": 152273
+          },
+          "C": {
+            "precision": 0.1758067524715538,
+            "recall": 0.6721340702442503,
+            "f1": 0.2787121576165305,
+            "support": 11218,
+            "predicted": 42888
+          },
+          "P": {
+            "precision": 0.504400654256562,
+            "recall": 0.7546466235506613,
+            "f1": 0.6046544198314698,
+            "support": 17163,
+            "predicted": 25678
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.764009545638907,
+        "macro_precision": 0.5508070384180296,
+        "macro_recall": 0.7317207722617861,
+        "macro_f1": 0.5805054485364928,
+        "per_class": {
+          "S": {
+            "precision": 0.975775320035929,
+            "recall": 0.770413438790812,
+            "f1": 0.8610185078744683,
+            "support": 184719,
+            "predicted": 145843
+          },
+          "C": {
+            "precision": 0.17618105486657337,
+            "recall": 0.6715100239102446,
+            "f1": 0.2791284403669725,
+            "support": 10874,
+            "predicted": 41446
+          },
+          "P": {
+            "precision": 0.5004647403515862,
+            "recall": 0.7532388540843015,
+            "f1": 0.6013693973680376,
+            "support": 16441,
+            "predicted": 24745
+          }
+        }
+      }
+    },
+    {
+      "job": "logreg_balanced_wiki",
+      "model": "Balanced LR",
+      "train": "wikipedia_ky",
+      "test": "wikipedia_ky",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/logreg_balanced_wiki/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "fb83cd82dd5c217acae1f3c94586090a7dcac581bb2d37838690e7475b0adf1e",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.7754639710279003,
+        "macro_precision": 0.627850678992037,
+        "macro_recall": 0.7745026842659142,
+        "macro_f1": 0.6629240825548876,
+        "per_class": {
+          "S": {
+            "precision": 0.9646778177116819,
+            "recall": 0.7732401783124523,
+            "f1": 0.8584152410964386,
+            "support": 355107,
+            "predicted": 284637
+          },
+          "C": {
+            "precision": 0.29237704827464284,
+            "recall": 0.7182681867535288,
+            "f1": 0.4155862513055292,
+            "support": 36840,
+            "predicted": 90503
+          },
+          "P": {
+            "precision": 0.6264971709897862,
+            "recall": 0.8319996877317616,
+            "f1": 0.7147707552626946,
+            "support": 51238,
+            "predicted": 68045
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.7729747333944653,
+        "macro_precision": 0.6260861432263306,
+        "macro_recall": 0.7719018784327724,
+        "macro_f1": 0.6606203830623679,
+        "per_class": {
+          "S": {
+            "precision": 0.9639503912402551,
+            "recall": 0.7709152436844957,
+            "f1": 0.8566934934934934,
+            "support": 346924,
+            "predicted": 277451
+          },
+          "C": {
+            "precision": 0.29041028452510154,
+            "recall": 0.7157314214807666,
+            "f1": 0.41317393865108804,
+            "support": 36265,
+            "predicted": 89377
+          },
+          "P": {
+            "precision": 0.6238977539136353,
+            "recall": 0.8290589701330546,
+            "f1": 0.7119937170425221,
+            "support": 49754,
+            "predicted": 66115
+          }
+        }
+      }
+    },
+    {
+      "job": "sgd_log_balanced_news",
+      "model": "Balanced SGD-LR",
+      "train": "kyrgyznews",
+      "test": "kyrgyznews",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/sgd_log_balanced_news/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "5fc092c8158aaf47a3e4944c44b74ab1e74fda5478f1dce9ad6909ffee3c922c",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.9249136248579282,
+        "macro_precision": 0.745437436471582,
+        "macro_recall": 0.8018244499847288,
+        "macro_f1": 0.7712008954820382,
+        "per_class": {
+          "S": {
+            "precision": 0.9719433979308256,
+            "recall": 0.9503943717590332,
+            "f1": 0.961048104684368,
+            "support": 192458,
+            "predicted": 188191
+          },
+          "C": {
+            "precision": 0.506661732050333,
+            "recall": 0.6101800677482617,
+            "f1": 0.5536234228405047,
+            "support": 11218,
+            "predicted": 13510
+          },
+          "P": {
+            "precision": 0.7577071794335877,
+            "recall": 0.8448989104468916,
+            "f1": 0.7989311589212419,
+            "support": 17163,
+            "predicted": 19138
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.9235782940471811,
+        "macro_precision": 0.7426339469296703,
+        "macro_recall": 0.798737023706173,
+        "macro_f1": 0.768277908228495,
+        "per_class": {
+          "S": {
+            "precision": 0.9713002646821046,
+            "recall": 0.9496099480833049,
+            "f1": 0.9603326462512969,
+            "support": 184719,
+            "predicted": 180594
+          },
+          "C": {
+            "precision": 0.5030233448143896,
+            "recall": 0.6043774140150818,
+            "f1": 0.5490621997577175,
+            "support": 10874,
+            "predicted": 13065
+          },
+          "P": {
+            "precision": 0.753578231292517,
+            "recall": 0.8422237090201325,
+            "f1": 0.7954388786764706,
+            "support": 16441,
+            "predicted": 18375
+          }
+        }
+      }
+    },
+    {
+      "job": "sgd_log_balanced_news",
+      "model": "Balanced SGD-LR",
+      "train": "kyrgyznews",
+      "test": "wikipedia_ky",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/sgd_log_balanced_news/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "87f8ab9d2b8a0f5a69708df592aa4c957a0da34816109873129be01b54849b90",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8269977548879136,
+        "macro_precision": 0.6402725792719144,
+        "macro_recall": 0.5636966026989046,
+        "macro_f1": 0.5938948229072866,
+        "per_class": {
+          "S": {
+            "precision": 0.8724402561785557,
+            "recall": 0.9325639877558032,
+            "f1": 0.9015007772027778,
+            "support": 355107,
+            "predicted": 379579
+          },
+          "C": {
+            "precision": 0.34189302290192497,
+            "recall": 0.24394679695982627,
+            "f1": 0.28473212305547635,
+            "support": 36840,
+            "predicted": 26286
+          },
+          "P": {
+            "precision": 0.7064844587352626,
+            "recall": 0.5145790233810843,
+            "f1": 0.5954515684636058,
+            "support": 51238,
+            "predicted": 37320
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.8291322414267005,
+        "macro_precision": 0.6453077185430391,
+        "macro_recall": 0.5680362061706374,
+        "macro_f1": 0.5985271147921288,
+        "per_class": {
+          "S": {
+            "precision": 0.8734830121628654,
+            "recall": 0.9338068280084398,
+            "f1": 0.9026381743281968,
+            "support": 346924,
+            "predicted": 370883
+          },
+          "C": {
+            "precision": 0.3521610420367081,
+            "recall": 0.24602233558527506,
+            "f1": 0.2896753246753247,
+            "support": 36265,
+            "predicted": 25335
+          },
+          "P": {
+            "precision": 0.7102791014295439,
+            "recall": 0.5242794549181975,
+            "f1": 0.603267845372865,
+            "support": 49754,
+            "predicted": 36725
+          }
+        }
+      }
+    },
+    {
+      "job": "sgd_log_balanced_wiki",
+      "model": "Balanced SGD-LR",
+      "train": "wikipedia_ky",
+      "test": "kyrgyznews",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/sgd_log_balanced_wiki/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "ce8a303decf41c8931fa6ef6ad3ab1efa147fec793090c3f9a80e51ddd02d322",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.8393943098818596,
+        "macro_precision": 0.5944037081965067,
+        "macro_recall": 0.7065352181850039,
+        "macro_f1": 0.6256409832942539,
+        "per_class": {
+          "S": {
+            "precision": 0.962380623633644,
+            "recall": 0.869181847468019,
+            "f1": 0.9134100328166038,
+            "support": 192458,
+            "predicted": 173820
+          },
+          "C": {
+            "precision": 0.23587214476416493,
+            "recall": 0.567035122125156,
+            "f1": 0.3331587492798408,
+            "support": 11218,
+            "predicted": 26968
+          },
+          "P": {
+            "precision": 0.5849583561917111,
+            "recall": 0.6833886849618365,
+            "f1": 0.630354167786317,
+            "support": 17163,
+            "predicted": 20051
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.837988247167907,
+        "macro_precision": 0.5928245106163045,
+        "macro_recall": 0.7052502801902657,
+        "macro_f1": 0.6242558979671785,
+        "per_class": {
+          "S": {
+            "precision": 0.9620210627381559,
+            "recall": 0.8678912293808433,
+            "f1": 0.9125351487346456,
+            "support": 184719,
+            "predicted": 166645
+          },
+          "C": {
+            "precision": 0.2360093590579571,
+            "recall": 0.5658451351848446,
+            "f1": 0.3330897279740154,
+            "support": 10874,
+            "predicted": 26071
+          },
+          "P": {
+            "precision": 0.5804431100528005,
+            "recall": 0.6820144760051092,
+            "f1": 0.6271428171928746,
+            "support": 16441,
+            "predicted": 19318
+          }
+        }
+      }
+    },
+    {
+      "job": "sgd_log_balanced_wiki",
+      "model": "Balanced SGD-LR",
+      "train": "wikipedia_ky",
+      "test": "wikipedia_ky",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/sgd_log_balanced_wiki/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "7d402c0f6c9176882356a01781e05f873c06b7c714f2fcf7955f62046a5221e4",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8393582815302865,
+        "macro_precision": 0.6775129673405412,
+        "macro_recall": 0.7540082622334516,
+        "macro_f1": 0.7058839527522308,
+        "per_class": {
+          "S": {
+            "precision": 0.9451161767670905,
+            "recall": 0.8712303615529967,
+            "f1": 0.9066704959902001,
+            "support": 355107,
+            "predicted": 327346
+          },
+          "C": {
+            "precision": 0.37501270712615636,
+            "recall": 0.600814332247557,
+            "f1": 0.4617888214308068,
+            "support": 36840,
+            "predicted": 59022
+          },
+          "P": {
+            "precision": 0.7124100181283771,
+            "recall": 0.789980092899801,
+            "f1": 0.7491925408356855,
+            "support": 51238,
+            "predicted": 56817
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.837355032879617,
+        "macro_precision": 0.6752641367116604,
+        "macro_recall": 0.7512673124538253,
+        "macro_f1": 0.7033929665566099,
+        "per_class": {
+          "S": {
+            "precision": 0.9440936455686697,
+            "recall": 0.8697034508999089,
+            "f1": 0.9053730465467988,
+            "support": 346924,
+            "predicted": 319588
+          },
+          "C": {
+            "precision": 0.37245564571585754,
+            "recall": 0.5974079691162277,
+            "f1": 0.4588438363707602,
+            "support": 36265,
+            "predicted": 58168
+          },
+          "P": {
+            "precision": 0.7092431188504539,
+            "recall": 0.786690517345339,
+            "f1": 0.7459620167522704,
+            "support": 49754,
+            "predicted": 55187
+          }
+        }
+      }
+    },
+    {
+      "job": "cnn_small_news",
+      "model": "CNN 2$\\times$128",
+      "train": "kyrgyznews",
+      "test": "kyrgyznews",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/cnn_small_news/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "db05c57fc085ce349b2ac6140e693c14d1d25dc709328553307750b92b2a1563",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.8871666689307595,
+        "macro_precision": 0.6665620758220826,
+        "macro_recall": 0.7978369490276371,
+        "macro_f1": 0.7136318504826663,
+        "per_class": {
+          "S": {
+            "precision": 0.975258493353028,
+            "recall": 0.9056833179187147,
+            "f1": 0.9391841287117509,
+            "support": 192458,
+            "predicted": 178728
+          },
+          "C": {
+            "precision": 0.35375125520011474,
+            "recall": 0.6594758423961491,
+            "f1": 0.46048986959634,
+            "support": 11218,
+            "predicted": 20913
+          },
+          "P": {
+            "precision": 0.670676478913105,
+            "recall": 0.8283516867680475,
+            "f1": 0.7412215531399077,
+            "support": 17163,
+            "predicted": 21198
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.884339304073875,
+        "macro_precision": 0.6618623515688974,
+        "macro_recall": 0.7928216604957883,
+        "macro_f1": 0.7086608522230892,
+        "per_class": {
+          "S": {
+            "precision": 0.9744540464790378,
+            "recall": 0.9034533534720305,
+            "f1": 0.9376114883181311,
+            "support": 184719,
+            "predicted": 171260
+          },
+          "C": {
+            "precision": 0.3479756289308176,
+            "recall": 0.6512782784623874,
+            "f1": 0.4535963620060206,
+            "support": 10874,
+            "predicted": 20352
+          },
+          "P": {
+            "precision": 0.6631573792968367,
+            "recall": 0.8237333495529469,
+            "f1": 0.7347747063451157,
+            "support": 16441,
+            "predicted": 20422
+          }
+        }
+      }
+    },
+    {
+      "job": "cnn_small_news",
+      "model": "CNN 2$\\times$128",
+      "train": "kyrgyznews",
+      "test": "wikipedia_ky",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/cnn_small_news/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "c618893b7cb8932bfa4863392e4a22b7d219d40ba2e6eb4b1fab60ca1e91be44",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.7166713674876181,
+        "macro_precision": 0.5424752764977118,
+        "macro_recall": 0.5733598611688505,
+        "macro_f1": 0.5390323877232487,
+        "per_class": {
+          "S": {
+            "precision": 0.8903719304592763,
+            "recall": 0.7762054817280425,
+            "f1": 0.8293783032763085,
+            "support": 355107,
+            "predicted": 309574
+          },
+          "C": {
+            "precision": 0.18787690466326015,
+            "recall": 0.44313246471226925,
+            "f1": 0.2638767659134258,
+            "support": 36840,
+            "predicted": 86892
+          },
+          "P": {
+            "precision": 0.5491769943705986,
+            "recall": 0.5007416370662399,
+            "f1": 0.5238420939800117,
+            "support": 51238,
+            "predicted": 46719
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.7189676239135406,
+        "macro_precision": 0.5449733010891096,
+        "macro_recall": 0.5775048032932021,
+        "macro_f1": 0.5427083627375541,
+        "per_class": {
+          "S": {
+            "precision": 0.8916597258028266,
+            "recall": 0.7776256471157948,
+            "f1": 0.8307476750631274,
+            "support": 346924,
+            "predicted": 302556
+          },
+          "C": {
+            "precision": 0.19136094674556214,
+            "recall": 0.44588446160209566,
+            "f1": 0.2677928207676065,
+            "support": 36265,
+            "predicted": 84500
+          },
+          "P": {
+            "precision": 0.55189923071894,
+            "recall": 0.5090043011617157,
+            "f1": 0.5295845923819282,
+            "support": 49754,
+            "predicted": 45887
+          }
+        }
+      }
+    },
+    {
+      "job": "cnn_small_wiki",
+      "model": "CNN 2$\\times$128",
+      "train": "wikipedia_ky",
+      "test": "kyrgyznews",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/cnn_small_wiki/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "7b9cdd945fe32aa56efa2b29f4fc532d277076fc75fd1d4afb51753a51d8b5f8",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.7699817514116619,
+        "macro_precision": 0.5404546966795208,
+        "macro_recall": 0.6968280940089503,
+        "macro_f1": 0.5674702783651839,
+        "per_class": {
+          "S": {
+            "precision": 0.968051567685785,
+            "recall": 0.7865664196863731,
+            "f1": 0.8679232301804578,
+            "support": 192458,
+            "predicted": 156377
+          },
+          "C": {
+            "precision": 0.17486229843232062,
+            "recall": 0.625423426635764,
+            "f1": 0.27330983035001266,
+            "support": 11218,
+            "predicted": 40123
+          },
+          "P": {
+            "precision": 0.4784502239204569,
+            "recall": 0.6784944357047137,
+            "f1": 0.5611777745650812,
+            "support": 17163,
+            "predicted": 24339
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.7682211343463784,
+        "macro_precision": 0.5392280779938938,
+        "macro_recall": 0.6954127018175611,
+        "macro_f1": 0.5661564965374337,
+        "per_class": {
+          "S": {
+            "precision": 0.9678390684880289,
+            "recall": 0.7847649673287534,
+            "f1": 0.8667402099271443,
+            "support": 184719,
+            "predicted": 149778
+          },
+          "C": {
+            "precision": 0.17472799463724023,
+            "recall": 0.6232297222733125,
+            "f1": 0.2729359645590012,
+            "support": 10874,
+            "predicted": 38786
+          },
+          "P": {
+            "precision": 0.4751171708564124,
+            "recall": 0.6782434158506173,
+            "f1": 0.5587933151261557,
+            "support": 16441,
+            "predicted": 23470
+          }
+        }
+      }
+    },
+    {
+      "job": "cnn_small_wiki",
+      "model": "CNN 2$\\times$128",
+      "train": "wikipedia_ky",
+      "test": "wikipedia_ky",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/cnn_small_wiki/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "65ef597ca2128b72f307654315549cde79c5f276c1b72849a5647ba460b76bef",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.7937430192808872,
+        "macro_precision": 0.6400615725968081,
+        "macro_recall": 0.7756572337673496,
+        "macro_f1": 0.676034188791343,
+        "per_class": {
+          "S": {
+            "precision": 0.963930048213321,
+            "recall": 0.7989169461598898,
+            "f1": 0.8737003868043066,
+            "support": 355107,
+            "predicted": 294317
+          },
+          "C": {
+            "precision": 0.3121277586145161,
+            "recall": 0.7098534201954397,
+            "f1": 0.4335988990491034,
+            "support": 36840,
+            "predicted": 83783
+          },
+          "P": {
+            "precision": 0.6441269109625873,
+            "recall": 0.8182013349467192,
+            "f1": 0.7208032805206193,
+            "support": 51238,
+            "predicted": 65085
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.7901247970287082,
+        "macro_precision": 0.6368355784531907,
+        "macro_recall": 0.7719838069323696,
+        "macro_f1": 0.6722384373135649,
+        "per_class": {
+          "S": {
+            "precision": 0.9630699862498342,
+            "recall": 0.7954479943734074,
+            "f1": 0.8712701234162528,
+            "support": 346924,
+            "predicted": 286542
+          },
+          "C": {
+            "precision": 0.308751596347076,
+            "recall": 0.7066593133875637,
+            "f1": 0.42974167204675223,
+            "support": 36265,
+            "predicted": 83002
+          },
+          "P": {
+            "precision": 0.6386851527626619,
+            "recall": 0.8138441130361378,
+            "f1": 0.7157035164776895,
+            "support": 49754,
+            "predicted": 63399
+          }
+        }
+      }
+    },
+    {
+      "job": "cnn_deep_news",
+      "model": "CNN 4$\\times$256",
+      "train": "kyrgyznews",
+      "test": "kyrgyznews",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/cnn_deep_news/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "831870d409e55369b604fc1c63b9c1a90ae767f3589a76bef21fb285cf5605d7",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.8929853875447724,
+        "macro_precision": 0.6785639698101679,
+        "macro_recall": 0.8003301485087403,
+        "macro_f1": 0.7230073914490442,
+        "per_class": {
+          "S": {
+            "precision": 0.9747852975301583,
+            "recall": 0.9123600993463509,
+            "f1": 0.9425402116529922,
+            "support": 192458,
+            "predicted": 180133
+          },
+          "C": {
+            "precision": 0.3659847177717525,
+            "recall": 0.6617935460866464,
+            "f1": 0.47132019172777195,
+            "support": 11218,
+            "predicted": 20285
+          },
+          "P": {
+            "precision": 0.6949218941285931,
+            "recall": 0.8268368000932238,
+            "f1": 0.7551617709663687,
+            "support": 17163,
+            "predicted": 20421
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.8903241932897554,
+        "macro_precision": 0.6739813391111057,
+        "macro_recall": 0.7953595142833588,
+        "macro_f1": 0.7181586499595167,
+        "per_class": {
+          "S": {
+            "precision": 0.973965120791414,
+            "recall": 0.9103449022569416,
+            "f1": 0.9410810024288416,
+            "support": 184719,
+            "predicted": 172653
+          },
+          "C": {
+            "precision": 0.3604439039221648,
+            "recall": 0.6541291153209491,
+            "f1": 0.4647804495556717,
+            "support": 10874,
+            "predicted": 19734
+          },
+          "P": {
+            "precision": 0.6875349926197384,
+            "recall": 0.8216045252721854,
+            "f1": 0.7486144978940368,
+            "support": 16441,
+            "predicted": 19647
+          }
+        }
+      }
+    },
+    {
+      "job": "cnn_deep_news",
+      "model": "CNN 4$\\times$256",
+      "train": "kyrgyznews",
+      "test": "wikipedia_ky",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/cnn_deep_news/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "eaf3f13a0f5050ae6b54018162f62aceb9305afcdfd4b02bae1108ed6236a5db",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.6928979997066688,
+        "macro_precision": 0.5273951188765723,
+        "macro_recall": 0.569857613006023,
+        "macro_f1": 0.5243474351136269,
+        "per_class": {
+          "S": {
+            "precision": 0.8939724406120552,
+            "recall": 0.7444798328391161,
+            "f1": 0.8124062738156698,
+            "support": 355107,
+            "predicted": 295725
+          },
+          "C": {
+            "precision": 0.17648082553592268,
+            "recall": 0.46794245385450595,
+            "f1": 0.2563000847445028,
+            "support": 36840,
+            "predicted": 97682
+          },
+          "P": {
+            "precision": 0.511732090481739,
+            "recall": 0.4971505523244467,
+            "f1": 0.504335946780708,
+            "support": 51238,
+            "predicted": 49778
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.6951492459746433,
+        "macro_precision": 0.5295299850083064,
+        "macro_recall": 0.5738698510322331,
+        "macro_f1": 0.5276743712771577,
+        "per_class": {
+          "S": {
+            "precision": 0.8952754597915888,
+            "recall": 0.7459097669806644,
+            "f1": 0.8137956626748516,
+            "support": 346924,
+            "predicted": 289044
+          },
+          "C": {
+            "precision": 0.17990108386825213,
+            "recall": 0.47141872328691575,
+            "f1": 0.26042118892570165,
+            "support": 36265,
+            "predicted": 95030
+          },
+          "P": {
+            "precision": 0.5134134113650781,
+            "recall": 0.5042810628291192,
+            "f1": 0.5088062622309197,
+            "support": 49754,
+            "predicted": 48869
+          }
+        }
+      }
+    },
+    {
+      "job": "cnn_deep_wiki",
+      "model": "CNN 4$\\times$256",
+      "train": "wikipedia_ky",
+      "test": "kyrgyznews",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/cnn_deep_wiki/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "1df3adf8ad434e2db6dc997a822795c7daeaab242111f4ee4bfceceff0dd1308",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.7798758371483298,
+        "macro_precision": 0.5446264443166985,
+        "macro_recall": 0.6933065854299448,
+        "macro_f1": 0.5726759767534948,
+        "per_class": {
+          "S": {
+            "precision": 0.9655282757235988,
+            "recall": 0.7995666586995605,
+            "f1": 0.8747452641152813,
+            "support": 192458,
+            "predicted": 159377
+          },
+          "C": {
+            "precision": 0.18082242398648649,
+            "recall": 0.6107149224460688,
+            "f1": 0.2790290392212764,
+            "support": 11218,
+            "predicted": 37888
+          },
+          "P": {
+            "precision": 0.48752863324001017,
+            "recall": 0.6696381751442055,
+            "f1": 0.5642536269239267,
+            "support": 17163,
+            "predicted": 23574
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.777799786826641,
+        "macro_precision": 0.5429267261285946,
+        "macro_recall": 0.6916197027167413,
+        "macro_f1": 0.570934202072496,
+        "per_class": {
+          "S": {
+            "precision": 0.9651311349743495,
+            "recall": 0.7974653392450154,
+            "f1": 0.8733236894838564,
+            "support": 184719,
+            "predicted": 152629
+          },
+          "C": {
+            "precision": 0.18062984390350398,
+            "recall": 0.6086996505425786,
+            "f1": 0.2785891662106991,
+            "support": 10874,
+            "predicted": 36644
+          },
+          "P": {
+            "precision": 0.4830191995079302,
+            "recall": 0.66869411836263,
+            "f1": 0.5608897505229326,
+            "support": 16441,
+            "predicted": 22761
+          }
+        }
+      }
+    },
+    {
+      "job": "cnn_deep_wiki",
+      "model": "CNN 4$\\times$256",
+      "train": "wikipedia_ky",
+      "test": "wikipedia_ky",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/cnn_deep_wiki/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "28f152763b38324f24d8d7e17a2a2d49e9e4e6aaf173633d6506bebfb7c84c84",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8045962746934124,
+        "macro_precision": 0.6505351555938316,
+        "macro_recall": 0.7817449000305512,
+        "macro_f1": 0.6871460645640813,
+        "per_class": {
+          "S": {
+            "precision": 0.963928143872767,
+            "recall": 0.8117412498204767,
+            "f1": 0.8813129730382527,
+            "support": 355107,
+            "predicted": 299042
+          },
+          "C": {
+            "precision": 0.32540786173673364,
+            "recall": 0.7114277958740499,
+            "f1": 0.4465590976469987,
+            "support": 36840,
+            "predicted": 80542
+          },
+          "P": {
+            "precision": 0.6622694611719941,
+            "recall": 0.8220656543971271,
+            "f1": 0.7335661230069924,
+            "support": 51238,
+            "predicted": 63601
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.8009414634259013,
+        "macro_precision": 0.6470268355125511,
+        "macro_recall": 0.7778248764724328,
+        "macro_f1": 0.683107145677066,
+        "per_class": {
+          "S": {
+            "precision": 0.9630573423403312,
+            "recall": 0.8083153659014655,
+            "f1": 0.8789274492442466,
+            "support": 346924,
+            "predicted": 291181
+          },
+          "C": {
+            "precision": 0.32158253546543686,
+            "recall": 0.7075968564731835,
+            "f1": 0.4421984990651468,
+            "support": 36265,
+            "predicted": 79796
+          },
+          "P": {
+            "precision": 0.6564406287318852,
+            "recall": 0.8175624070426498,
+            "f1": 0.7281954887218045,
+            "support": 49754,
+            "predicted": 61966
+          }
+        }
+      }
+    },
+    {
+      "job": "kyrgyzbert_news",
+      "model": "KyrgyzBERT",
+      "train": "kyrgyznews",
+      "test": "kyrgyznews",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/kyrgyzbert_news/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "777f0ba543db1b5a4602f67e79ebeeb589ecc2531b41583bbc96d1f45de1b775",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.9086664945956103,
+        "macro_precision": 0.7109211016944078,
+        "macro_recall": 0.869230953470325,
+        "macro_f1": 0.7679574403917634,
+        "per_class": {
+          "S": {
+            "precision": 0.9880077109297947,
+            "recall": 0.9160855875048063,
+            "f1": 0.9506883145594841,
+            "support": 192458,
+            "predicted": 178448
+          },
+          "C": {
+            "precision": 0.42240429303818694,
+            "recall": 0.7858798359778927,
+            "f1": 0.5494717816074044,
+            "support": 11218,
+            "predicted": 20871
+          },
+          "P": {
+            "precision": 0.7223513011152416,
+            "recall": 0.905727436928276,
+            "f1": 0.8037122250084017,
+            "support": 17163,
+            "predicted": 21520
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.906901723308526,
+        "macro_precision": 0.7081022567394699,
+        "macro_recall": 0.8666258726519226,
+        "macro_f1": 0.7650630278044108,
+        "per_class": {
+          "S": {
+            "precision": 0.9876819643379129,
+            "recall": 0.9145946004471657,
+            "f1": 0.9497342376654515,
+            "support": 184719,
+            "predicted": 171050
+          },
+          "C": {
+            "precision": 0.41935642832503817,
+            "recall": 0.7826006989148427,
+            "f1": 0.5460904161452819,
+            "support": 10874,
+            "predicted": 20293
+          },
+          "P": {
+            "precision": 0.7172683775554589,
+            "recall": 0.9026823185937595,
+            "f1": 0.7993644296024992,
+            "support": 16441,
+            "predicted": 20691
+          }
+        }
+      }
+    },
+    {
+      "job": "kyrgyzbert_news",
+      "model": "KyrgyzBERT",
+      "train": "kyrgyznews",
+      "test": "wikipedia_ky",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/kyrgyzbert_news/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "f8aebd01a1df3a73c11c1962de7910123e0e4df260c6ef7b758ec97b9e55ec5f",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.7570766158601938,
+        "macro_precision": 0.5943057856506565,
+        "macro_recall": 0.6892776749929661,
+        "macro_f1": 0.6124647086399851,
+        "per_class": {
+          "S": {
+            "precision": 0.9392849573241915,
+            "recall": 0.7862249969727434,
+            "f1": 0.855966447356319,
+            "support": 355107,
+            "predicted": 297241
+          },
+          "C": {
+            "precision": 0.2661081900008912,
+            "recall": 0.6484256243213898,
+            "f1": 0.37735372172374576,
+            "support": 36840,
+            "predicted": 89768
+          },
+          "P": {
+            "precision": 0.5775242096268869,
+            "recall": 0.6331824036847652,
+            "f1": 0.6040739568398905,
+            "support": 51238,
+            "predicted": 56176
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.7604141884728475,
+        "macro_precision": 0.5980932564841757,
+        "macro_recall": 0.6939211283316604,
+        "macro_f1": 0.6172820323894667,
+        "per_class": {
+          "S": {
+            "precision": 0.9401793383035009,
+            "recall": 0.7888125353103274,
+            "f1": 0.8578701367097497,
+            "support": 346924,
+            "predicted": 291070
+          },
+          "C": {
+            "precision": 0.2709266790744698,
+            "recall": 0.6502688542671998,
+            "f1": 0.3824924781237075,
+            "support": 36265,
+            "predicted": 87042
+          },
+          "P": {
+            "precision": 0.5831737520745564,
+            "recall": 0.6426819954174539,
+            "f1": 0.6114834823349429,
+            "support": 49754,
+            "predicted": 54831
+          }
+        }
+      }
+    },
+    {
+      "job": "kyrgyzbert_wiki",
+      "model": "KyrgyzBERT",
+      "train": "wikipedia_ky",
+      "test": "kyrgyznews",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/kyrgyzbert_wiki/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "3a5661e86d92bf07528b1444edc3e00be32ad18df98407b173a6afe93256a754",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.8937370663696177,
+        "macro_precision": 0.674330179785673,
+        "macro_recall": 0.7866923162595681,
+        "macro_f1": 0.7169410153669696,
+        "per_class": {
+          "S": {
+            "precision": 0.9728157801887625,
+            "recall": 0.9168805661494975,
+            "f1": 0.9440203290089608,
+            "support": 192458,
+            "predicted": 181392
+          },
+          "C": {
+            "precision": 0.3826265174207788,
+            "recall": 0.6490461757889107,
+            "f1": 0.48143617548847817,
+            "support": 11218,
+            "predicted": 19029
+          },
+          "P": {
+            "precision": 0.6675482417474777,
+            "recall": 0.794150206840296,
+            "f1": 0.7253665416034698,
+            "support": 17163,
+            "predicted": 20418
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.8922672778893951,
+        "macro_precision": 0.6720892608591716,
+        "macro_recall": 0.7842541302058007,
+        "macro_f1": 0.71456656956892,
+        "per_class": {
+          "S": {
+            "precision": 0.9723692756922051,
+            "recall": 0.9158018395508853,
+            "f1": 0.9432382099405618,
+            "support": 184719,
+            "predicted": 173973
+          },
+          "C": {
+            "precision": 0.3807873504088374,
+            "recall": 0.6466801544969653,
+            "f1": 0.4793292662145121,
+            "support": 10874,
+            "predicted": 18467
+          },
+          "P": {
+            "precision": 0.6631111564764723,
+            "recall": 0.7902803965695517,
+            "f1": 0.7211322325516859,
+            "support": 16441,
+            "predicted": 19594
+          }
+        }
+      }
+    },
+    {
+      "job": "kyrgyzbert_wiki",
+      "model": "KyrgyzBERT",
+      "train": "wikipedia_ky",
+      "test": "wikipedia_ky",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/kyrgyzbert_wiki/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "bfbc9f8b6ce8f8364cef45a5e9d15d5ddfcfa8abcf20c851dee167781798fcf8",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8599478772972912,
+        "macro_precision": 0.7057457458518986,
+        "macro_recall": 0.8382343633538261,
+        "macro_f1": 0.7541879689333753,
+        "per_class": {
+          "S": {
+            "precision": 0.9743066109422492,
+            "recall": 0.8665697944563188,
+            "f1": 0.917285568010588,
+            "support": 355107,
+            "predicted": 315840
+          },
+          "C": {
+            "precision": 0.46563189255028475,
+            "recall": 0.7678881650380022,
+            "f1": 0.5797282619833186,
+            "support": 36840,
+            "predicted": 60754
+          },
+          "P": {
+            "precision": 0.6772987340631617,
+            "recall": 0.8802451305671571,
+            "f1": 0.7655500768062192,
+            "support": 51238,
+            "predicted": 66591
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.8582238308507124,
+        "macro_precision": 0.7037283853568649,
+        "macro_recall": 0.8361511309071225,
+        "macro_f1": 0.7519686503574065,
+        "per_class": {
+          "S": {
+            "precision": 0.9738373979518995,
+            "recall": 0.8651030196815441,
+            "f1": 0.9162555410372577,
+            "support": 346924,
+            "predicted": 308188
+          },
+          "C": {
+            "precision": 0.4621838946509731,
+            "recall": 0.7655315042051565,
+            "f1": 0.576381680023253,
+            "support": 36265,
+            "predicted": 60067
+          },
+          "P": {
+            "precision": 0.675163863467722,
+            "recall": 0.8778188688346665,
+            "f1": 0.763268730011709,
+            "support": 49754,
+            "predicted": 64688
+          }
+        }
+      }
+    },
+    {
+      "job": "kyrgyzbert2_news",
+      "model": "KyrgyzBERT2",
+      "train": "kyrgyznews",
+      "test": "kyrgyznews",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/kyrgyzbert2_news/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "5e5cb7a940717378e2d83386896e19649884833a053661814a985e8f53e084cb",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.939331368100743,
+        "macro_precision": 0.78025593446404,
+        "macro_recall": 0.8924515676982091,
+        "macro_f1": 0.8260458222653236,
+        "per_class": {
+          "S": {
+            "precision": 0.9892324607726847,
+            "recall": 0.9489914682684014,
+            "f1": 0.9686942270616595,
+            "support": 192458,
+            "predicted": 184629
+          },
+          "C": {
+            "precision": 0.5449471559197245,
+            "recall": 0.8181494027455875,
+            "f1": 0.6541696364932288,
+            "support": 11218,
+            "predicted": 16842
+          },
+          "P": {
+            "precision": 0.8065881866997109,
+            "recall": 0.9102138320806386,
+            "f1": 0.8552736032410829,
+            "support": 17163,
+            "predicted": 19368
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.9376184951470047,
+        "macro_precision": 0.7764851809493006,
+        "macro_recall": 0.8890109433965737,
+        "macro_f1": 0.8223025233096916,
+        "per_class": {
+          "S": {
+            "precision": 0.9888051060464853,
+            "recall": 0.9477260054461101,
+            "f1": 0.9678298559281742,
+            "support": 184719,
+            "predicted": 177045
+          },
+          "C": {
+            "precision": 0.5390482001220256,
+            "recall": 0.8124885046900865,
+            "f1": 0.6481073943661971,
+            "support": 10874,
+            "predicted": 16390
+          },
+          "P": {
+            "precision": 0.8016022366793913,
+            "recall": 0.9068183200535247,
+            "f1": 0.8509703196347032,
+            "support": 16441,
+            "predicted": 18599
+          }
+        }
+      }
+    },
+    {
+      "job": "kyrgyzbert2_news",
+      "model": "KyrgyzBERT2",
+      "train": "kyrgyznews",
+      "test": "wikipedia_ky",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/kyrgyzbert2_news/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "1919113ac39f3bcffcd00edcfe17bec3d325e4831efcf33a2efa73c99b67e1c3",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8074573823572548,
+        "macro_precision": 0.6318219425605895,
+        "macro_recall": 0.6548528645672985,
+        "macro_f1": 0.630482260763135,
+        "per_class": {
+          "S": {
+            "precision": 0.9119668138538058,
+            "recall": 0.8741534241791911,
+            "f1": 0.8926598513278408,
+            "support": 355107,
+            "predicted": 340383
+          },
+          "C": {
+            "precision": 0.3471107608678171,
+            "recall": 0.58585776330076,
+            "f1": 0.43593653743221,
+            "support": 36840,
+            "predicted": 62179
+          },
+          "P": {
+            "precision": 0.6363882529601458,
+            "recall": 0.5045474062219446,
+            "f1": 0.5628503935293542,
+            "support": 51238,
+            "predicted": 40623
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.8090487662348161,
+        "macro_precision": 0.6342354403134941,
+        "macro_recall": 0.6586758198617021,
+        "macro_f1": 0.6339338050968263,
+        "per_class": {
+          "S": {
+            "precision": 0.9132732602584708,
+            "recall": 0.8746757214836679,
+            "f1": 0.8935578766346773,
+            "support": 346924,
+            "predicted": 332262
+          },
+          "C": {
+            "precision": 0.3523579321231255,
+            "recall": 0.5909003171101613,
+            "f1": 0.4414664043427653,
+            "support": 36265,
+            "predicted": 60816
+          },
+          "P": {
+            "precision": 0.6370751285588863,
+            "recall": 0.510451420991277,
+            "f1": 0.5667771343130363,
+            "support": 49754,
+            "predicted": 39865
+          }
+        }
+      }
+    },
+    {
+      "job": "kyrgyzbert2_wiki",
+      "model": "KyrgyzBERT2",
+      "train": "wikipedia_ky",
+      "test": "kyrgyznews",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/kyrgyzbert2_wiki/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "9e358e2682d380882eec73c5fe0f39925a1a67f6ad5c8524eec4c42732844e58",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.9127011080470387,
+        "macro_precision": 0.7108772511292919,
+        "macro_recall": 0.8128510624696196,
+        "macro_f1": 0.7534138755900525,
+        "per_class": {
+          "S": {
+            "precision": 0.9771193165143099,
+            "recall": 0.9341674547173929,
+            "f1": 0.9551607624795461,
+            "support": 192458,
+            "predicted": 183998
+          },
+          "C": {
+            "precision": 0.4778827504223237,
+            "recall": 0.6808700303084328,
+            "f1": 0.56159700011029,
+            "support": 11218,
+            "predicted": 15983
+          },
+          "P": {
+            "precision": 0.6776296864512418,
+            "recall": 0.8235157023830333,
+            "f1": 0.7434838641803214,
+            "support": 17163,
+            "predicted": 20858
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.9112689474329588,
+        "macro_precision": 0.7081105731447663,
+        "macro_recall": 0.8103364705226594,
+        "macro_f1": 0.7507067737112575,
+        "per_class": {
+          "S": {
+            "precision": 0.9767274499359679,
+            "recall": 0.9331308636361175,
+            "f1": 0.9544315642883444,
+            "support": 184719,
+            "predicted": 176474
+          },
+          "C": {
+            "precision": 0.4758553905745642,
+            "recall": 0.6778554349825271,
+            "f1": 0.5591715976331361,
+            "support": 10874,
+            "predicted": 15490
+          },
+          "P": {
+            "precision": 0.6717488789237668,
+            "recall": 0.8200231129493339,
+            "f1": 0.7385171592122922,
+            "support": 16441,
+            "predicted": 20070
+          }
+        }
+      }
+    },
+    {
+      "job": "kyrgyzbert2_wiki",
+      "model": "KyrgyzBERT2",
+      "train": "wikipedia_ky",
+      "test": "wikipedia_ky",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/kyrgyzbert2_wiki/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "7f61a7ff91b4f421a5b514fc135e3ce710a2236a8a810bc4fa4c26e253cafd70",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8927874363978925,
+        "macro_precision": 0.7547725469270579,
+        "macro_recall": 0.8525962889404809,
+        "macro_f1": 0.7954535247748303,
+        "per_class": {
+          "S": {
+            "precision": 0.9738538963592042,
+            "recall": 0.9067604975401781,
+            "f1": 0.9391103742039726,
+            "support": 355107,
+            "predicted": 330642
+          },
+          "C": {
+            "precision": 0.5527929424796265,
+            "recall": 0.7586047774158523,
+            "f1": 0.6395487207652524,
+            "support": 36840,
+            "predicted": 50556
+          },
+          "P": {
+            "precision": 0.7376708019423428,
+            "recall": 0.8924235918654124,
+            "f1": 0.807701479355266,
+            "support": 51238,
+            "predicted": 61987
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.8907985577778137,
+        "macro_precision": 0.7516690550191544,
+        "macro_recall": 0.8500216938113171,
+        "macro_f1": 0.7924523287432356,
+        "per_class": {
+          "S": {
+            "precision": 0.9732611370603058,
+            "recall": 0.9051319597375794,
+            "f1": 0.9379610283124964,
+            "support": 346924,
+            "predicted": 322639
+          },
+          "C": {
+            "precision": 0.5484303675822856,
+            "recall": 0.7553564042465187,
+            "f1": 0.6354726085393154,
+            "support": 36265,
+            "predicted": 49948
+          },
+          "P": {
+            "precision": 0.7333156604148717,
+            "recall": 0.8895767174498532,
+            "f1": 0.8039233493778948,
+            "support": 49754,
+            "predicted": 60356
+          }
+        }
+      }
+    },
+    {
+      "job": "xlmr_news",
+      "model": "KG-Punct-XLMR",
+      "train": "kyrgyznews",
+      "test": "kyrgyznews",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/xlmr_news/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "54c09d20388f74e9675c9edf6b4f38d7a0991ec3e603659b1128f13ed4cb232b",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.9543241909264215,
+        "macro_precision": 0.8174745724639373,
+        "macro_recall": 0.9290583551313172,
+        "macro_f1": 0.8643880213320715,
+        "per_class": {
+          "S": {
+            "precision": 0.9953032909317386,
+            "recall": 0.9590560018289704,
+            "f1": 0.9768435091173225,
+            "support": 192458,
+            "predicted": 185449
+          },
+          "C": {
+            "precision": 0.6135766970871359,
+            "recall": 0.8750222856124086,
+            "f1": 0.7213403880070547,
+            "support": 11218,
+            "predicted": 15998
+          },
+          "P": {
+            "precision": 0.8435437293729373,
+            "recall": 0.9530967779525724,
+            "f1": 0.894980166871837,
+            "support": 17163,
+            "predicted": 19392
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.9534414292047502,
+        "macro_precision": 0.8154881209673386,
+        "macro_recall": 0.9275902351375191,
+        "macro_f1": 0.8625847583080062,
+        "per_class": {
+          "S": {
+            "precision": 0.9951821723511786,
+            "recall": 0.9583421304792685,
+            "f1": 0.9764147821290678,
+            "support": 184719,
+            "predicted": 177881
+          },
+          "C": {
+            "precision": 0.6111039546567049,
+            "recall": 0.8725400036784992,
+            "f1": 0.7187878787878788,
+            "support": 10874,
+            "predicted": 15526
+          },
+          "P": {
+            "precision": 0.8401782358941322,
+            "recall": 0.9518885712547899,
+            "f1": 0.892551614007072,
+            "support": 16441,
+            "predicted": 18627
+          }
+        }
+      }
+    },
+    {
+      "job": "xlmr_news",
+      "model": "KG-Punct-XLMR",
+      "train": "kyrgyznews",
+      "test": "wikipedia_ky",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/xlmr_news/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "654516cfeb6e24fd55528835a36fafe731827bff38b4647c303bca55a631204b",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8344438552748852,
+        "macro_precision": 0.6808631167958682,
+        "macro_recall": 0.7622000062613782,
+        "macro_f1": 0.7050933323566881,
+        "per_class": {
+          "S": {
+            "precision": 0.9453893121322241,
+            "recall": 0.8659446307732599,
+            "f1": 0.9039247589190047,
+            "support": 355107,
+            "predicted": 325266
+          },
+          "C": {
+            "precision": 0.40035528751418165,
+            "recall": 0.727985884907709,
+            "f1": 0.5166043841738259,
+            "support": 36840,
+            "predicted": 66988
+          },
+          "P": {
+            "precision": 0.6968447507411989,
+            "recall": 0.6926695031031657,
+            "f1": 0.6947508539772338,
+            "support": 51238,
+            "predicted": 50931
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.8362486516700813,
+        "macro_precision": 0.6835399435753855,
+        "macro_recall": 0.7661861501537852,
+        "macro_f1": 0.708689656067385,
+        "per_class": {
+          "S": {
+            "precision": 0.9465995882104786,
+            "recall": 0.8666912637926463,
+            "f1": 0.9048847210644003,
+            "support": 346924,
+            "predicted": 317638
+          },
+          "C": {
+            "precision": 0.4055359408195393,
+            "recall": 0.7316420791396664,
+            "f1": 0.5218306258112733,
+            "support": 36265,
+            "predicted": 65427
+          },
+          "P": {
+            "precision": 0.6984843016961386,
+            "recall": 0.7002251075290429,
+            "f1": 0.6993536213264815,
+            "support": 49754,
+            "predicted": 49878
+          }
+        }
+      }
+    },
+    {
+      "job": "xlmr_wiki",
+      "model": "KG-Punct-XLMR",
+      "train": "wikipedia_ky",
+      "test": "kyrgyznews",
+      "setting": "transfer",
+      "prediction_path": "experiments/v2_main/xlmr_wiki/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "ba536391afb200ac9429f04a2dfe91ccc1c42c40db17082123a5b04abdde7a5a",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.9212050407763122,
+        "macro_precision": 0.7335749433724582,
+        "macro_recall": 0.8905730756778327,
+        "macro_f1": 0.7919903420574069,
+        "per_class": {
+          "S": {
+            "precision": 0.9919723306333864,
+            "recall": 0.9284155504058028,
+            "f1": 0.9591422091603259,
+            "support": 192458,
+            "predicted": 180127
+          },
+          "C": {
+            "precision": 0.4955999796530851,
+            "recall": 0.868514886789089,
+            "f1": 0.6310846260970949,
+            "support": 11218,
+            "predicted": 19659
+          },
+          "P": {
+            "precision": 0.713152519830903,
+            "recall": 0.8747887898386063,
+            "f1": 0.7857441909148001,
+            "support": 17163,
+            "predicted": 21053
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.9200175443560938,
+        "macro_precision": 0.731490176699578,
+        "macro_recall": 0.8893226554022778,
+        "macro_f1": 0.7901891319444961,
+        "per_class": {
+          "S": {
+            "precision": 0.9918697774612164,
+            "recall": 0.9272733178503565,
+            "f1": 0.9584844211657265,
+            "support": 184719,
+            "predicted": 172689
+          },
+          "C": {
+            "precision": 0.4950661347889985,
+            "recall": 0.8673901048372264,
+            "f1": 0.6303548753592194,
+            "support": 10874,
+            "predicted": 19052
+          },
+          "P": {
+            "precision": 0.7075346178485192,
+            "recall": 0.8733045435192507,
+            "f1": 0.7817280993085425,
+            "support": 16441,
+            "predicted": 20293
+          }
+        }
+      }
+    },
+    {
+      "job": "xlmr_wiki",
+      "model": "KG-Punct-XLMR",
+      "train": "wikipedia_ky",
+      "test": "wikipedia_ky",
+      "setting": "within",
+      "prediction_path": "experiments/v2_main/xlmr_wiki/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "b612d7c2278067b35f3931b82d7fe8ab96037f85f039c7df3c97a74f3235e298",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.9083181966898699,
+        "macro_precision": 0.7836131022321613,
+        "macro_recall": 0.8972796944648249,
+        "macro_f1": 0.8280698645436999,
+        "per_class": {
+          "S": {
+            "precision": 0.9870938432784626,
+            "recall": 0.9116970377942423,
+            "f1": 0.9478985199607666,
+            "support": 355107,
+            "predicted": 327983
+          },
+          "C": {
+            "precision": 0.5612658004066119,
+            "recall": 0.8617806731813247,
+            "f1": 0.6797923023392752,
+            "support": 36840,
+            "predicted": 56565
+          },
+          "P": {
+            "precision": 0.8024796630114092,
+            "recall": 0.9183613724189078,
+            "f1": 0.856518771331058,
+            "support": 51238,
+            "predicted": 58637
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.9069184627075619,
+        "macro_precision": 0.7817403891253525,
+        "macro_recall": 0.895686981270324,
+        "macro_f1": 0.8261702379321106,
+        "per_class": {
+          "S": {
+            "precision": 0.9868032167159255,
+            "recall": 0.9104414799783238,
+            "f1": 0.9470856159351846,
+            "support": 346924,
+            "predicted": 320078
+          },
+          "C": {
+            "precision": 0.5581757349125978,
+            "recall": 0.8602509306493865,
+            "f1": 0.6770476149138418,
+            "support": 36265,
+            "predicted": 55891
+          },
+          "P": {
+            "precision": 0.800242215747534,
+            "recall": 0.9163685331832616,
+            "f1": 0.8543774829473053,
+            "support": 49754,
+            "predicted": 56974
+          }
+        }
+      }
+    },
+    {
+      "job": "external_last",
+      "model": "KyrgyzBERT-PR",
+      "train": "none",
+      "test": "kyrgyznews",
+      "setting": "zero-shot",
+      "prediction_path": "experiments/v2_main/external_last/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "dc4d24852cfba1a9531d179ea186d659c4a81a9e9ddec8bea0f9ed0044ac333c",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.8714719773228461,
+        "macro_precision": 0.4781922408505688,
+        "macro_recall": 0.500347900562605,
+        "macro_f1": 0.44944546918173406,
+        "per_class": {
+          "S": {
+            "precision": 0.9260278326860231,
+            "recall": 0.9687931912417255,
+            "f1": 0.9469279133782288,
+            "support": 192458,
+            "predicted": 201346
+          },
+          "C": {
+            "precision": 0.3106765494401514,
+            "recall": 0.5268318773399893,
+            "f1": 0.3908600906054694,
+            "support": 11218,
+            "predicted": 19023
+          },
+          "P": {
+            "precision": 0.19787234042553192,
+            "recall": 0.0054186331061003325,
+            "f1": 0.010548403561503997,
+            "support": 17163,
+            "predicted": 470
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.871303658847166,
+        "macro_precision": 0.47927501259105965,
+        "macro_recall": 0.5004657683103386,
+        "macro_f1": 0.45000076915916315,
+        "per_class": {
+          "S": {
+            "precision": 0.9260537865926877,
+            "recall": 0.9686117833032877,
+            "f1": 0.9468548158771403,
+            "support": 184719,
+            "predicted": 193208
+          },
+          "C": {
+            "precision": 0.3122004357298475,
+            "recall": 0.5271289313959905,
+            "f1": 0.39214613121707603,
+            "support": 10874,
+            "predicted": 18360
+          },
+          "P": {
+            "precision": 0.19957081545064378,
+            "recall": 0.005656590231737729,
+            "f1": 0.0110013603832732,
+            "support": 16441,
+            "predicted": 466
+          }
+        }
+      }
+    },
+    {
+      "job": "external_last",
+      "model": "KyrgyzBERT-PR",
+      "train": "none",
+      "test": "wikipedia_ky",
+      "setting": "zero-shot",
+      "prediction_path": "experiments/v2_main/external_last/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "ffe7323b4419f41c641743a61a583447023043e0e4418a185d3f412f185d3cdc",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.7778828254566378,
+        "macro_precision": 0.4186436502560924,
+        "macro_recall": 0.4434502904221956,
+        "macro_f1": 0.40795929038586914,
+        "per_class": {
+          "S": {
+            "precision": 0.8519485617911944,
+            "recall": 0.9289031193414943,
+            "f1": 0.8887631518678684,
+            "support": 355107,
+            "predicted": 387183
+          },
+          "C": {
+            "precision": 0.272383307110212,
+            "recall": 0.39473398479913135,
+            "f1": 0.32233896351465174,
+            "support": 36840,
+            "predicted": 53388
+          },
+          "P": {
+            "precision": 0.1315990818668707,
+            "recall": 0.0067137671259612005,
+            "f1": 0.012775755775087277,
+            "support": 51238,
+            "predicted": 2614
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.778885442194469,
+        "macro_precision": 0.4199039830132975,
+        "macro_recall": 0.44412566190844277,
+        "macro_f1": 0.409093441958945,
+        "per_class": {
+          "S": {
+            "precision": 0.8527138751477303,
+            "recall": 0.929644533096586,
+            "f1": 0.889518952708899,
+            "support": 346924,
+            "predicted": 378223
+          },
+          "C": {
+            "precision": 0.27534758845526897,
+            "recall": 0.39591893009789053,
+            "f1": 0.32480488632507637,
+            "support": 36265,
+            "predicted": 52145
+          },
+          "P": {
+            "precision": 0.1316504854368932,
+            "recall": 0.006813522530851791,
+            "f1": 0.0129564868428596,
+            "support": 49754,
+            "predicted": 2575
+          }
+        }
+      }
+    },
+    {
+      "job": "xlmr_mixed",
+      "model": "KG-Punct-XLMR-Mixed (3,200+3,200)",
+      "train": "mixed",
+      "test": "kyrgyznews",
+      "setting": "mixed",
+      "prediction_path": "experiments/v2_main/xlmr_mixed/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "7de9b100c8d15229ac3c36c4919ecb954b9af37fec8231e547d23526ebfa5825",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.9469975864770263,
+        "macro_precision": 0.79704407445834,
+        "macro_recall": 0.9312082015437544,
+        "macro_f1": 0.8509153435804865,
+        "per_class": {
+          "S": {
+            "precision": 0.9960325462006725,
+            "recall": 0.9496357646863212,
+            "f1": 0.9722809621466627,
+            "support": 192458,
+            "predicted": 183493
+          },
+          "C": {
+            "precision": 0.5725287356321839,
+            "recall": 0.888037083259048,
+            "f1": 0.6962051855475575,
+            "support": 11218,
+            "predicted": 17400
+          },
+          "P": {
+            "precision": 0.8225709415421638,
+            "recall": 0.955951756685894,
+            "f1": 0.8842598830472392,
+            "support": 17163,
+            "predicted": 19946
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.9461925917541526,
+        "macro_precision": 0.7955126978059454,
+        "macro_recall": 0.9301149137750833,
+        "macro_f1": 0.8495426077854517,
+        "per_class": {
+          "S": {
+            "precision": 0.9959488176002,
+            "recall": 0.948927830921562,
+            "f1": 0.9718699146422265,
+            "support": 184719,
+            "predicted": 175998
+          },
+          "C": {
+            "precision": 0.5713354276569261,
+            "recall": 0.8864263380540739,
+            "f1": 0.6948278969183637,
+            "support": 10874,
+            "predicted": 16871
+          },
+          "P": {
+            "precision": 0.8192538481607097,
+            "recall": 0.9549905723496138,
+            "f1": 0.8819300117957648,
+            "support": 16441,
+            "predicted": 19165
+          }
+        }
+      }
+    },
+    {
+      "job": "xlmr_mixed",
+      "model": "KG-Punct-XLMR-Mixed (3,200+3,200)",
+      "train": "mixed",
+      "test": "wikipedia_ky",
+      "setting": "mixed",
+      "prediction_path": "experiments/v2_main/xlmr_mixed/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "eaeca93234e758ddbb45dcb7b3fa9edf80ce1268fc83d43f039af57e503566a0",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8864086103997202,
+        "macro_precision": 0.7477849859322255,
+        "macro_recall": 0.8918691458887557,
+        "macro_f1": 0.8002628636365229,
+        "per_class": {
+          "S": {
+            "precision": 0.989147071539702,
+            "recall": 0.8826466389003877,
+            "f1": 0.9328670496145719,
+            "support": 355107,
+            "predicted": 316873
+          },
+          "C": {
+            "precision": 0.5117100341910525,
+            "recall": 0.8653094462540717,
+            "f1": 0.6431100396421114,
+            "support": 36840,
+            "predicted": 62297
+          },
+          "P": {
+            "precision": 0.742497852065922,
+            "recall": 0.9276513525118076,
+            "f1": 0.8248115016528854,
+            "support": 51238,
+            "predicted": 64015
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.8854745312893383,
+        "macro_precision": 0.7470191160231305,
+        "macro_recall": 0.8909350341141474,
+        "macro_f1": 0.79928566769297,
+        "per_class": {
+          "S": {
+            "precision": 0.9889343984069154,
+            "recall": 0.8817896715130692,
+            "f1": 0.932293706315018,
+            "support": 346924,
+            "predicted": 309337
+          },
+          "C": {
+            "precision": 0.5095627305373653,
+            "recall": 0.8647180477043982,
+            "f1": 0.6412490031286424,
+            "support": 36265,
+            "predicted": 61541
+          },
+          "P": {
+            "precision": 0.7425602191251107,
+            "recall": 0.9262973831249749,
+            "f1": 0.8243142936352498,
+            "support": 49754,
+            "predicted": 62065
+          }
+        }
+      }
+    },
+    {
+      "job": "xlmr_mixed_matched",
+      "model": "KG-Punct-XLMR-Mixed (1,600+1,600)",
+      "train": "mixed",
+      "test": "kyrgyznews",
+      "setting": "mixed",
+      "prediction_path": "experiments/v2_main/xlmr_mixed_matched/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "4fcc9fef5f81800a8a22f104ceb93fc8e79c19eee0d7f9bdfe9ffad8a2192965",
+      "all": {
+        "words": 220839,
+        "accuracy": 0.9524993320926105,
+        "macro_precision": 0.8142322764430361,
+        "macro_recall": 0.9299788924087972,
+        "macro_f1": 0.861228677504908,
+        "per_class": {
+          "S": {
+            "precision": 0.9953102121750782,
+            "recall": 0.9571698760248989,
+            "f1": 0.9758675216731428,
+            "support": 192458,
+            "predicted": 185083
+          },
+          "C": {
+            "precision": 0.5950109616638029,
+            "recall": 0.8951684792298092,
+            "f1": 0.7148602954262324,
+            "support": 11218,
+            "predicted": 16877
+          },
+          "P": {
+            "precision": 0.8523756554902272,
+            "recall": 0.9375983219716832,
+            "f1": 0.8929582154153488,
+            "support": 17163,
+            "predicted": 18879
+          }
+        }
+      },
+      "filtered": {
+        "words": 212034,
+        "accuracy": 0.9516398313478027,
+        "macro_precision": 0.8124517180534317,
+        "macro_recall": 0.9285240807744177,
+        "macro_f1": 0.8595536404995089,
+        "per_class": {
+          "S": {
+            "precision": 0.9951840482158447,
+            "recall": 0.9564798423551448,
+            "f1": 0.9754481662038238,
+            "support": 184719,
+            "predicted": 177535
+          },
+          "C": {
+            "precision": 0.5929905971425082,
+            "recall": 0.8931395990435902,
+            "f1": 0.7127550271539703,
+            "support": 10874,
+            "predicted": 16378
+          },
+          "P": {
+            "precision": 0.8491805088019425,
+            "recall": 0.9359528009245179,
+            "f1": 0.8904577281407327,
+            "support": 16441,
+            "predicted": 18121
+          }
+        }
+      }
+    },
+    {
+      "job": "xlmr_mixed_matched",
+      "model": "KG-Punct-XLMR-Mixed (1,600+1,600)",
+      "train": "mixed",
+      "test": "wikipedia_ky",
+      "setting": "mixed",
+      "prediction_path": "experiments/v2_main/xlmr_mixed_matched/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "aafed7c6b08f458a5d18a8470516bceaaafd494778372163dd8527d7541c808d",
+      "all": {
+        "words": 443185,
+        "accuracy": 0.8981328339181155,
+        "macro_precision": 0.768050762360336,
+        "macro_recall": 0.8888183721560748,
+        "macro_f1": 0.8132262904381885,
+        "per_class": {
+          "S": {
+            "precision": 0.9861742914555519,
+            "recall": 0.9010861514979992,
+            "f1": 0.941712099473936,
+            "support": 355107,
+            "predicted": 324468
+          },
+          "C": {
+            "precision": 0.5283760598337581,
+            "recall": 0.8610206297502715,
+            "f1": 0.6548780361917149,
+            "support": 36840,
+            "predicted": 60033
+          },
+          "P": {
+            "precision": 0.7896019357916979,
+            "recall": 0.904348335219954,
+            "f1": 0.8430887356489147,
+            "support": 51238,
+            "predicted": 58684
+          }
+        }
+      },
+      "filtered": {
+        "words": 432943,
+        "accuracy": 0.896963341594621,
+        "macro_precision": 0.7668057716439565,
+        "macro_recall": 0.8875863501294287,
+        "macro_f1": 0.8118387500453998,
+        "per_class": {
+          "S": {
+            "precision": 0.98594471355762,
+            "recall": 0.8999867406117766,
+            "f1": 0.9410068082977447,
+            "support": 346924,
+            "predicted": 316678
+          },
+          "C": {
+            "precision": 0.5258267424408506,
+            "recall": 0.8598097339032125,
+            "f1": 0.6525679126030723,
+            "support": 36265,
+            "predicted": 59299
+          },
+          "P": {
+            "precision": 0.7886458589333989,
+            "recall": 0.9029625758732966,
+            "f1": 0.8419415292353823,
+            "support": 49754,
+            "predicted": 56966
+          }
+        }
+      }
+    }
+  ]
+}

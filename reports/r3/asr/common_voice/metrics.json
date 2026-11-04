@@ -1,0 +1,206 @@
+{
+  "dataset": "common_voice",
+  "clips": 1615,
+  "provenance": {
+    "tsv_sha256": "0eeafde59a4bc76abf1167fad994c70456132900d91158c710a6c617aa0ed5d4",
+    "audio_archive_sha256": "471f8d6b22f32382fffda022feaef6b9b7ae2959f990cd5d92f6a17af4613177",
+    "selected_clips": 1615,
+    "speech_type": "read speech",
+    "bootstrap_unit": "speaker"
+  },
+  "asr_revision": "4d8f6b7aeb921e774dbe4b0a4eda46bc05a8dd6f",
+  "apr_checkpoint": "experiments/v2_main/xlmr_mixed/hf_model",
+  "evaluation_code_sha256": "52022835146f7989b6577b7c66a3aa95c9124fdf306d81961e4a5746cb6f2834",
+  "runner_sha256": "303a5a47231ff6726c8f31476469a1b09f22622513727f3d2c4eab44ae324667",
+  "clips_sha256": "5f65ed3a137a57b65b366becbb4a5147b2cc98a8497e2adf20f11d21ab25cc8a",
+  "metrics": {
+    "oracle": {
+      "punctuation_macro_f1": 0.750813662681147,
+      "punctuation_micro_f1": 0.8359161349134002,
+      "per_class": {
+        "C": {
+          "precision": 0.4394141145139814,
+          "recall": 0.8148148148148148,
+          "f1": 0.5709342560553633,
+          "support": 405,
+          "predicted": 751
+        },
+        "P": {
+          "precision": 0.9115151515151515,
+          "recall": 0.9506953223767383,
+          "f1": 0.9306930693069307,
+          "support": 1582,
+          "predicted": 1650
+        }
+      },
+      "reference_words": 10910,
+      "hypothesis_words": 10910,
+      "matched_words": 10910,
+      "word_errors": 0,
+      "WER": 0.0
+    },
+    "aligned": {
+      "punctuation_macro_f1": 0.6135744735375142,
+      "punctuation_micro_f1": 0.6975798250966037,
+      "per_class": {
+        "C": {
+          "precision": 0.23052714398111723,
+          "recall": 0.7234567901234568,
+          "f1": 0.3496420047732697,
+          "support": 405,
+          "predicted": 1271
+        },
+        "P": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8988621997471555,
+          "f1": 0.8775069423017587,
+          "support": 1582,
+          "predicted": 1659
+        }
+      },
+      "reference_words": 10910,
+      "hypothesis_words": 10741,
+      "matched_words": 7471,
+      "word_errors": 3629,
+      "WER": 0.3326306141154904
+    },
+    "lexically_anchored": {
+      "punctuation_macro_f1": 0.48519049263648406,
+      "punctuation_micro_f1": 0.5507423225544031,
+      "per_class": {
+        "C": {
+          "precision": 0.1841070023603462,
+          "recall": 0.5777777777777777,
+          "f1": 0.27923627684964203,
+          "support": 405,
+          "predicted": 1271
+        },
+        "P": {
+          "precision": 0.6751054852320675,
+          "recall": 0.7079646017699115,
+          "f1": 0.6911447084233261,
+          "support": 1582,
+          "predicted": 1659
+        }
+      },
+      "reference_words": 10910,
+      "hypothesis_words": 10741,
+      "matched_words": 7471,
+      "word_errors": 3629,
+      "WER": 0.3326306141154904
+    }
+  },
+  "WER_bins": {
+    "0<WER<=25%": {
+      "punctuation_macro_f1": 0.7273172437915355,
+      "punctuation_micro_f1": 0.8117469879518072,
+      "per_class": {
+        "C": {
+          "precision": 0.3937007874015748,
+          "recall": 0.8264462809917356,
+          "f1": 0.5333333333333333,
+          "support": 121,
+          "predicted": 254
+        },
+        "P": {
+          "precision": 0.8977505112474438,
+          "recall": 0.9461206896551724,
+          "f1": 0.9213011542497377,
+          "support": 464,
+          "predicted": 489
+        }
+      },
+      "reference_words": 3310,
+      "hypothesis_words": 3291,
+      "matched_words": 2745,
+      "word_errors": 574,
+      "WER": 0.17341389728096676
+    },
+    "WER>50%": {
+      "punctuation_macro_f1": 0.45524777648739967,
+      "punctuation_micro_f1": 0.4764841942945258,
+      "per_class": {
+        "C": {
+          "precision": 0.08914728682170543,
+          "recall": 0.5287356321839081,
+          "f1": 0.15257048092868988,
+          "support": 87,
+          "predicted": 516
+        },
+        "P": {
+          "precision": 0.7471590909090909,
+          "recall": 0.7690058479532164,
+          "f1": 0.7579250720461095,
+          "support": 342,
+          "predicted": 352
+        }
+      },
+      "reference_words": 2288,
+      "hypothesis_words": 2215,
+      "matched_words": 741,
+      "word_errors": 1667,
+      "WER": 0.728583916083916
+    },
+    "WER=0": {
+      "punctuation_macro_f1": 0.7327627536978176,
+      "punctuation_micro_f1": 0.8287581699346406,
+      "per_class": {
+        "C": {
+          "precision": 0.4076923076923077,
+          "recall": 0.7681159420289855,
+          "f1": 0.5326633165829145,
+          "support": 69,
+          "predicted": 130
+        },
+        "P": {
+          "precision": 0.9166666666666666,
+          "recall": 0.9496402877697842,
+          "f1": 0.9328621908127208,
+          "support": 278,
+          "predicted": 288
+        }
+      },
+      "reference_words": 1778,
+      "hypothesis_words": 1778,
+      "matched_words": 1778,
+      "word_errors": 0,
+      "WER": 0.0
+    },
+    "25%<WER<=50%": {
+      "punctuation_macro_f1": 0.631956520043979,
+      "punctuation_micro_f1": 0.7203667321545514,
+      "per_class": {
+        "C": {
+          "precision": 0.25336927223719674,
+          "recall": 0.734375,
+          "f1": 0.37675350701402804,
+          "support": 128,
+          "predicted": 371
+        },
+        "P": {
+          "precision": 0.8603773584905661,
+          "recall": 0.9156626506024096,
+          "f1": 0.8871595330739299,
+          "support": 498,
+          "predicted": 530
+        }
+      },
+      "reference_words": 3534,
+      "hypothesis_words": 3457,
+      "matched_words": 2207,
+      "word_errors": 1388,
+      "WER": 0.39275608375778154
+    }
+  },
+  "paired_bootstrap": {
+    "samples": 2000,
+    "seed": 123,
+    "groups": 148,
+    "oracle_minus_asr_punctuation_macro_f1_95CI": [
+      0.11372871976252441,
+      0.1590253595210931
+    ]
+  },
+  "runtime_seconds": 508.0424626249878,
+  "interpretation": "C/P punctuation-event F1 over a complete minimum-edit word alignment. Substituted words retain aligned boundaries in the aligned condition; deleted/inserted marks are FN/FP. The lexically_anchored condition additionally requires an exact anchor word for TP. S is excluded from punctuation F1. These are declared alignment-based and joint lexical/punctuation measures, not the original conditional three-label macro-F1, native-speaker acceptability or subtitle usability. Both evaluated sources are read speech."
+}

@@ -1,0 +1,827 @@
+{
+  "manifest_sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd",
+  "summary_sha256": "198b40391dbd746e0e851597aedc4c559cf40fc55c106d7a6f68a75cb106f349",
+  "mask_sha256": "98b718c9043fefa15e32e0b7d1fe966730a8a24dd7d77011fb025fa476e32827",
+  "source_summary": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/metadata.json",
+  "verification": "Independent sentence matching and confusion counts; exact test IDs/gold/groups; nested train IDs.",
+  "overlap_rule": "Exact token equality of completed sentences with at least 5 words; punctuation ignored in equality.",
+  "overlap_limitations": "Outside-overlap does not rule out shorter phrases, paraphrases or unclosed sentence matches. Budget-specific subsets change; only the full-pool exclusion subset stays fixed.",
+  "test_documents": 1250,
+  "test_tokens": 220839,
+  "train_pool_documents": 17491,
+  "fixed_subset_tokens": 194050,
+  "runs": [
+    {
+      "budget": 250,
+      "train_tokens": 39649,
+      "run_dir": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/v2_kyrgyznews_budget_250_20260930_124322_877d3e87",
+      "metadata_sha256": "a49dd72f7e8272099ed1675d2a45e1f69903442a96042cbee50fa4d8c00a84f5",
+      "predictions_sha256": "4661943697de47f6b9c1cb4c748bee3d80b2bcf919b8b785711a391fc40e47a6",
+      "best_epoch": 3,
+      "runtime_seconds_total": 151.521,
+      "runtime_seconds_test": 28.931,
+      "subsets": {
+        "all": {
+          "tokens": 220839,
+          "macro_f1": 0.8223032860103762,
+          "accuracy": 0.9381313988924058,
+          "weighted_f1": 0.9424636027084151,
+          "per_class": {
+            "S": {
+              "precision": 0.9892821305562336,
+              "recall": 0.9476820916771451,
+              "f1": 0.9680353906210608,
+              "support": 192458
+            },
+            "C": {
+              "precision": 0.557280947926411,
+              "recall": 0.7965769299340346,
+              "f1": 0.6557810149341357,
+              "support": 11218
+            },
+            "P": {
+              "precision": 0.7755271784333871,
+              "recall": 0.9235564877935093,
+              "f1": 0.8430934524759321,
+              "support": 17163
+            }
+          }
+        },
+        "fixed_outside_full_pool_overlap": {
+          "tokens": 194050,
+          "macro_f1": 0.8193795853380479,
+          "accuracy": 0.9362432362793095,
+          "weighted_f1": 0.940705296025492,
+          "per_class": {
+            "S": {
+              "precision": 0.9887309657228387,
+              "recall": 0.9461186998413863,
+              "f1": 0.9669555960150735,
+              "support": 168964
+            },
+            "C": {
+              "precision": 0.555633017289459,
+              "recall": 0.7927193156952457,
+              "f1": 0.6533322403475694,
+              "support": 10054
+            },
+            "P": {
+              "precision": 0.7683089214380826,
+              "recall": 0.9212346993081426,
+              "f1": 0.8378509196515005,
+              "support": 15032
+            }
+          }
+        },
+        "seen_at_budget": {
+          "tokens": 1213,
+          "macro_f1": 0.913905002662862,
+          "accuracy": 0.9727947238252267,
+          "weighted_f1": 0.9742777937825593,
+          "per_class": {
+            "S": {
+              "precision": 0.9970674486803519,
+              "recall": 0.9751434034416826,
+              "f1": 0.985983566940551,
+              "support": 1046
+            },
+            "C": {
+              "precision": 0.7027027027027027,
+              "recall": 0.9629629629629629,
+              "f1": 0.8125,
+              "support": 54
+            },
+            "P": {
+              "precision": 0.9310344827586207,
+              "recall": 0.9557522123893806,
+              "f1": 0.9432314410480349,
+              "support": 113
+            }
+          }
+        },
+        "outside_seen_at_budget": {
+          "tokens": 219626,
+          "macro_f1": 0.8218192131144995,
+          "accuracy": 0.9379399524646445,
+          "weighted_f1": 0.9422918401846864,
+          "per_class": {
+            "S": {
+              "precision": 0.9892386905346293,
+              "recall": 0.947532025160387,
+              "f1": 0.9679362995458354,
+              "support": 191412
+            },
+            "C": {
+              "precision": 0.5566067289016979,
+              "recall": 0.7957721246864923,
+              "f1": 0.6550414746543779,
+              "support": 11164
+            },
+            "P": {
+              "precision": 0.7746395709294888,
+              "recall": 0.9233431085043988,
+              "f1": 0.8424798651432852,
+              "support": 17050
+            }
+          }
+        }
+      }
+    },
+    {
+      "budget": 1000,
+      "train_tokens": 172243,
+      "run_dir": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/v2_kyrgyznews_budget_1000_20260930_124553_ffc86042",
+      "metadata_sha256": "170e80a63952fbd3a2ed584320adf92f04217e7ff766ca3c80d6e94d7bcbe8cf",
+      "predictions_sha256": "28229d3c112a176fecd86009c2dfed0017a404d062ba0586633074f3ed8420e6",
+      "best_epoch": 3,
+      "runtime_seconds_total": 397.022,
+      "runtime_seconds_test": 28.521,
+      "subsets": {
+        "all": {
+          "tokens": 220839,
+          "macro_f1": 0.843754887664272,
+          "accuracy": 0.9452134813144417,
+          "weighted_f1": 0.9494585358289432,
+          "per_class": {
+            "S": {
+              "precision": 0.9945324273302468,
+              "recall": 0.949848798179343,
+              "f1": 0.9716771777637807,
+              "support": 192458
+            },
+            "C": {
+              "precision": 0.5755782678859602,
+              "recall": 0.8584417899803887,
+              "f1": 0.6891123117106157,
+              "support": 11218
+            },
+            "P": {
+              "precision": 0.8032714194215894,
+              "recall": 0.9499504748587076,
+              "f1": 0.8704751735184196,
+              "support": 17163
+            }
+          }
+        },
+        "fixed_outside_full_pool_overlap": {
+          "tokens": 194050,
+          "macro_f1": 0.841481505540293,
+          "accuracy": 0.9437258438546766,
+          "weighted_f1": 0.9480650544970384,
+          "per_class": {
+            "S": {
+              "precision": 0.9942555118549858,
+              "recall": 0.9485570890840652,
+              "f1": 0.9708688462027731,
+              "support": 168964
+            },
+            "C": {
+              "precision": 0.5753901801862148,
+              "recall": 0.8543863139049135,
+              "f1": 0.6876676139775048,
+              "support": 10054
+            },
+            "P": {
+              "precision": 0.7960720861462924,
+              "recall": 0.9491750931346461,
+              "f1": 0.8659080564406009,
+              "support": 15032
+            }
+          }
+        },
+        "seen_at_budget": {
+          "tokens": 3487,
+          "macro_f1": 0.920477159094138,
+          "accuracy": 0.9764840837396043,
+          "weighted_f1": 0.9781259437675109,
+          "per_class": {
+            "S": {
+              "precision": 0.9993247805536799,
+              "recall": 0.9749670619235836,
+              "f1": 0.9869956652217405,
+              "support": 3036
+            },
+            "C": {
+              "precision": 0.681592039800995,
+              "recall": 0.9856115107913669,
+              "f1": 0.8058823529411765,
+              "support": 139
+            },
+            "P": {
+              "precision": 0.9506172839506173,
+              "recall": 0.9871794871794872,
+              "f1": 0.9685534591194969,
+              "support": 312
+            }
+          }
+        },
+        "outside_seen_at_budget": {
+          "tokens": 217352,
+          "macro_f1": 0.8426281910482949,
+          "accuracy": 0.9447118038941441,
+          "weighted_f1": 0.9490071714411807,
+          "per_class": {
+            "S": {
+              "precision": 0.9944539367096307,
+              "recall": 0.949446210049519,
+              "f1": 0.9714290344099322,
+              "support": 189422
+            },
+            "C": {
+              "precision": 0.5742891712038718,
+              "recall": 0.8568462857658633,
+              "f1": 0.6876743091021044,
+              "support": 11079
+            },
+            "P": {
+              "precision": 0.8008811896059681,
+              "recall": 0.9492611714438313,
+              "f1": 0.8687812296328481,
+              "support": 16851
+            }
+          }
+        }
+      }
+    },
+    {
+      "budget": 2500,
+      "train_tokens": 441785,
+      "run_dir": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/v2_kyrgyznews_budget_2500_20260930_125230_0d1c4299",
+      "metadata_sha256": "06cdcea7e9df699ab36a451109dcbd9c55e1d5ffe697eb4fcc32c73b768d4c5b",
+      "predictions_sha256": "bb9f2e244e62c384ced838decb37c6ead258102b0974af8c636f6599f946cf18",
+      "best_epoch": 1,
+      "runtime_seconds_total": 913.518,
+      "runtime_seconds_test": 28.537,
+      "subsets": {
+        "all": {
+          "tokens": 220839,
+          "macro_f1": 0.853805975782418,
+          "accuracy": 0.9497643079347398,
+          "weighted_f1": 0.9536176847083022,
+          "per_class": {
+            "S": {
+              "precision": 0.9940316581610588,
+              "recall": 0.9553876689979113,
+              "f1": 0.9743266372398883,
+              "support": 192458
+            },
+            "C": {
+              "precision": 0.5832243490666984,
+              "recall": 0.874576573364236,
+              "f1": 0.6997860199714693,
+              "support": 11218
+            },
+            "P": {
+              "precision": 0.8435481329762092,
+              "recall": 0.9358503758084251,
+              "f1": 0.8873052701358966,
+              "support": 17163
+            }
+          }
+        },
+        "fixed_outside_full_pool_overlap": {
+          "tokens": 194050,
+          "macro_f1": 0.8511226788441278,
+          "accuracy": 0.9481628446276733,
+          "weighted_f1": 0.9521563985997186,
+          "per_class": {
+            "S": {
+              "precision": 0.9938099201578348,
+              "recall": 0.9539961175161573,
+              "f1": 0.9734961151591833,
+              "support": 168964
+            },
+            "C": {
+              "precision": 0.5805275715800636,
+              "recall": 0.8711955440620649,
+              "f1": 0.696762389626919,
+              "support": 10054
+            },
+            "P": {
+              "precision": 0.8374187391900757,
+              "recall": 0.934073975518893,
+              "f1": 0.8831095317462814,
+              "support": 15032
+            }
+          }
+        },
+        "seen_at_budget": {
+          "tokens": 7667,
+          "macro_f1": 0.9055086181063841,
+          "accuracy": 0.9726098865266728,
+          "weighted_f1": 0.9744725518778726,
+          "per_class": {
+            "S": {
+              "precision": 0.9980195003046922,
+              "recall": 0.9732580597236666,
+              "f1": 0.9854832643851071,
+              "support": 6731
+            },
+            "C": {
+              "precision": 0.6613272311212814,
+              "recall": 0.9537953795379538,
+              "f1": 0.7810810810810811,
+              "support": 303
+            },
+            "P": {
+              "precision": 0.9264264264264265,
+              "recall": 0.9747235387045814,
+              "f1": 0.9499615088529638,
+              "support": 633
+            }
+          }
+        },
+        "outside_seen_at_budget": {
+          "tokens": 213172,
+          "macro_f1": 0.8521584057095221,
+          "accuracy": 0.9489426378698891,
+          "weighted_f1": 0.9528729564602685,
+          "per_class": {
+            "S": {
+              "precision": 0.993884940474856,
+              "recall": 0.954740021644672,
+              "f1": 0.9739193000475094,
+              "support": 185727
+            },
+            "C": {
+              "precision": 0.5811412877631981,
+              "recall": 0.8723774622079706,
+              "f1": 0.6975824175824176,
+              "support": 10915
+            },
+            "P": {
+              "precision": 0.8405442176870749,
+              "recall": 0.9343617664851784,
+              "f1": 0.8849734994986391,
+              "support": 16530
+            }
+          }
+        }
+      }
+    },
+    {
+      "budget": 3200,
+      "train_tokens": 554314,
+      "run_dir": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/v2_kyrgyznews_budget_3200_20260930_130744_9df1fd6e",
+      "metadata_sha256": "f085f5ea517e634f0b0277a7192bfc8a152f6bf956d19d33663587f601dcce72",
+      "predictions_sha256": "c1dac05e55547b6b22fbb4a4dc305d78f7273a058a31d9e5c36f0c6b4d187a53",
+      "best_epoch": 3,
+      "runtime_seconds_total": 1135.968,
+      "runtime_seconds_test": 29.187,
+      "subsets": {
+        "all": {
+          "tokens": 220839,
+          "macro_f1": 0.8697960263750041,
+          "accuracy": 0.956502248244196,
+          "weighted_f1": 0.959503525750887,
+          "per_class": {
+            "S": {
+              "precision": 0.9952281041532172,
+              "recall": 0.96121231645346,
+              "f1": 0.9779245013717892,
+              "support": 192458
+            },
+            "C": {
+              "precision": 0.6181635725037632,
+              "recall": 0.8785879835977892,
+              "f1": 0.7257197555408291,
+              "support": 11218
+            },
+            "P": {
+              "precision": 0.8616355508808835,
+              "recall": 0.9546116646273961,
+              "f1": 0.9057438222123942,
+              "support": 17163
+            }
+          }
+        },
+        "fixed_outside_full_pool_overlap": {
+          "tokens": 194050,
+          "macro_f1": 0.866577977719048,
+          "accuracy": 0.9548106158206647,
+          "weighted_f1": 0.9579446601461504,
+          "per_class": {
+            "S": {
+              "precision": 0.9949204012146866,
+              "recall": 0.9598316801212092,
+              "f1": 0.9770611111278463,
+              "support": 168964
+            },
+            "C": {
+              "precision": 0.6141908423628102,
+              "recall": 0.8738810423711956,
+              "f1": 0.7213760827620181,
+              "support": 10054
+            },
+            "P": {
+              "precision": 0.8553166069295102,
+              "recall": 0.9525013304949441,
+              "f1": 0.9012967392672794,
+              "support": 15032
+            }
+          }
+        },
+        "seen_at_budget": {
+          "tokens": 8805,
+          "macro_f1": 0.9259987762402903,
+          "accuracy": 0.9793299261783078,
+          "weighted_f1": 0.9806611397100921,
+          "per_class": {
+            "S": {
+              "precision": 0.9994720865778013,
+              "recall": 0.9785502002842744,
+              "f1": 0.9889004962131105,
+              "support": 7739
+            },
+            "C": {
+              "precision": 0.7041666666666667,
+              "recall": 0.9825581395348837,
+              "f1": 0.8203883495145631,
+              "support": 344
+            },
+            "P": {
+              "precision": 0.9518716577540107,
+              "recall": 0.9861495844875346,
+              "f1": 0.9687074829931973,
+              "support": 722
+            }
+          }
+        },
+        "outside_seen_at_budget": {
+          "tokens": 212034,
+          "macro_f1": 0.867765504568584,
+          "accuracy": 0.9555542978956205,
+          "weighted_f1": 0.9586314329490744,
+          "per_class": {
+            "S": {
+              "precision": 0.9950477557864983,
+              "recall": 0.9604859272733178,
+              "f1": 0.9774614210708993,
+              "support": 184719
+            },
+            "C": {
+              "precision": 0.6154940506983962,
+              "recall": 0.8752988780577524,
+              "f1": 0.7227579922545372,
+              "support": 10874
+            },
+            "P": {
+              "precision": 0.8579405485301363,
+              "recall": 0.9532266893741257,
+              "f1": 0.9030771003803157,
+              "support": 16441
+            }
+          }
+        }
+      }
+    },
+    {
+      "budget": 5000,
+      "train_tokens": 862680,
+      "run_dir": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/v2_kyrgyznews_budget_5000_20260930_132640_d1e41d0b",
+      "metadata_sha256": "b9a64b5c1ccbc96f6b4fc9cec3e15e9675163f795afe0371fe62e75923b45915",
+      "predictions_sha256": "f53dc8bc1aa079213ed07457daa9b6b41979c8feeb57b70c02068d5afd51c399",
+      "best_epoch": 3,
+      "runtime_seconds_total": 1732.164,
+      "runtime_seconds_test": 29.6,
+      "subsets": {
+        "all": {
+          "tokens": 220839,
+          "macro_f1": 0.8655048140550955,
+          "accuracy": 0.9541792889842826,
+          "weighted_f1": 0.9577982284661929,
+          "per_class": {
+            "S": {
+              "precision": 0.9962821662865974,
+              "recall": 0.9579544627918819,
+              "f1": 0.9767424611667973,
+              "support": 192458
+            },
+            "C": {
+              "precision": 0.5968592592592593,
+              "recall": 0.8978427527188447,
+              "f1": 0.7170469511978073,
+              "support": 11218
+            },
+            "P": {
+              "precision": 0.8610259122157589,
+              "recall": 0.9486686476723184,
+              "f1": 0.9027250298006819,
+              "support": 17163
+            }
+          }
+        },
+        "fixed_outside_full_pool_overlap": {
+          "tokens": 194050,
+          "macro_f1": 0.8626710016656617,
+          "accuracy": 0.9526049987116723,
+          "weighted_f1": 0.9563613686798709,
+          "per_class": {
+            "S": {
+              "precision": 0.9960438504057826,
+              "recall": 0.9566357330555622,
+              "f1": 0.9759421331167752,
+              "support": 168964
+            },
+            "C": {
+              "precision": 0.5934959349593496,
+              "recall": 0.8930773821364631,
+              "f1": 0.7131001072151848,
+              "support": 10054
+            },
+            "P": {
+              "precision": 0.8554861194567961,
+              "recall": 0.9471128259712613,
+              "f1": 0.8989707646650249,
+              "support": 15032
+            }
+          }
+        },
+        "seen_at_budget": {
+          "tokens": 11317,
+          "macro_f1": 0.9107233493690413,
+          "accuracy": 0.9741097463992224,
+          "weighted_f1": 0.9759890309842517,
+          "per_class": {
+            "S": {
+              "precision": 0.9992769342010123,
+              "recall": 0.9739252995066948,
+              "f1": 0.9864382583868665,
+              "support": 9933
+            },
+            "C": {
+              "precision": 0.6656671664167916,
+              "recall": 0.9715536105032823,
+              "f1": 0.7900355871886121,
+              "support": 457
+            },
+            "P": {
+              "precision": 0.934984520123839,
+              "recall": 0.9773462783171522,
+              "f1": 0.9556962025316456,
+              "support": 927
+            }
+          }
+        },
+        "outside_seen_at_budget": {
+          "tokens": 209522,
+          "macro_f1": 0.8633341579940095,
+          "accuracy": 0.9531027767967087,
+          "weighted_f1": 0.9568220542357811,
+          "per_class": {
+            "S": {
+              "precision": 0.9961168480895006,
+              "recall": 0.957085330776606,
+              "f1": 0.9762110992517421,
+              "support": 182525
+            },
+            "C": {
+              "precision": 0.5940276406712734,
+              "recall": 0.8947123873245981,
+              "f1": 0.7140049686677297,
+              "support": 10761
+            },
+            "P": {
+              "precision": 0.8570313806365308,
+              "recall": 0.9470312884947031,
+              "f1": 0.8997864060625567,
+              "support": 16236
+            }
+          }
+        }
+      }
+    },
+    {
+      "budget": 10000,
+      "train_tokens": 1712117,
+      "run_dir": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/v2_kyrgyznews_budget_10000_20260930_135533_ff56a87b",
+      "metadata_sha256": "590f28c8a488c207946e07208d668b89b1a98af129f0d8add49529e3ebf33b80",
+      "predictions_sha256": "15901ccdcd892068a567ed674c61348a213c79f788f3f40aa7bd2556bd3db005",
+      "best_epoch": 2,
+      "runtime_seconds_total": 3405.921,
+      "runtime_seconds_test": 29.86,
+      "subsets": {
+        "all": {
+          "tokens": 220839,
+          "macro_f1": 0.8741655266199797,
+          "accuracy": 0.9577973093520619,
+          "weighted_f1": 0.9605410912889409,
+          "per_class": {
+            "S": {
+              "precision": 0.996183925120968,
+              "recall": 0.9616851468891914,
+              "f1": 0.9786305918556726,
+              "support": 192458
+            },
+            "C": {
+              "precision": 0.6402146827678743,
+              "recall": 0.8932073453378498,
+              "f1": 0.7458409319289888,
+              "support": 11218
+            },
+            "P": {
+              "precision": 0.8463521526166538,
+              "recall": 0.9564178756627629,
+              "f1": 0.8980250560752776,
+              "support": 17163
+            }
+          }
+        },
+        "fixed_outside_full_pool_overlap": {
+          "tokens": 194050,
+          "macro_f1": 0.8705530683683474,
+          "accuracy": 0.9560164905952074,
+          "weighted_f1": 0.9589061451430356,
+          "per_class": {
+            "S": {
+              "precision": 0.9958874259583218,
+              "recall": 0.9602341327146611,
+              "f1": 0.9777358615640037,
+              "support": 168964
+            },
+            "C": {
+              "precision": 0.6353158793397837,
+              "recall": 0.8882037000198926,
+              "f1": 0.7407714641227706,
+              "support": 10054
+            },
+            "P": {
+              "precision": 0.8396276128578957,
+              "recall": 0.9539648749334753,
+              "f1": 0.8931518794182679,
+              "support": 15032
+            }
+          }
+        },
+        "seen_at_budget": {
+          "tokens": 18081,
+          "macro_f1": 0.9179940263168356,
+          "accuracy": 0.9763840495547813,
+          "weighted_f1": 0.9776490192646531,
+          "per_class": {
+            "S": {
+              "precision": 0.9986477784932389,
+              "recall": 0.9773758507688429,
+              "f1": 0.9878973183005287,
+              "support": 15868
+            },
+            "C": {
+              "precision": 0.7158746208291203,
+              "recall": 0.9580514208389715,
+              "f1": 0.8194444444444444,
+              "support": 739
+            },
+            "P": {
+              "precision": 0.9199743918053778,
+              "recall": 0.9748982360922659,
+              "f1": 0.9466403162055336,
+              "support": 1474
+            }
+          }
+        },
+        "outside_seen_at_budget": {
+          "tokens": 202758,
+          "macro_f1": 0.8707319443761524,
+          "accuracy": 0.9561398317205733,
+          "weighted_f1": 0.9590296598057254,
+          "per_class": {
+            "S": {
+              "precision": 0.9959591925433007,
+              "recall": 0.9602752137720143,
+              "f1": 0.9777917446295693,
+              "support": 176590
+            },
+            "C": {
+              "precision": 0.6351111717364616,
+              "recall": 0.8886344116805038,
+              "f1": 0.7407819895787757,
+              "support": 10479
+            },
+            "P": {
+              "precision": 0.8399035495990579,
+              "recall": 0.9546816240678182,
+              "f1": 0.8936220989201121,
+              "support": 15689
+            }
+          }
+        }
+      }
+    },
+    {
+      "budget": 13000,
+      "train_tokens": 2245533,
+      "run_dir": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/v2_kyrgyznews_budget_13000_20260930_145219_fe7998a9",
+      "metadata_sha256": "bcdaf58f9da6af784945ea17ebea2d33ad62d372e39f9bbcd520d1911ec92132",
+      "predictions_sha256": "e3ce3b76c433e39aa4df95cef475f973159022d1dc3a4b1638b5b16140fe0707",
+      "best_epoch": 2,
+      "runtime_seconds_total": 4565.301,
+      "runtime_seconds_test": 29.513,
+      "subsets": {
+        "all": {
+          "tokens": 220839,
+          "macro_f1": 0.8758452321732166,
+          "accuracy": 0.9580735286792641,
+          "weighted_f1": 0.9610675792338552,
+          "per_class": {
+            "S": {
+              "precision": 0.996818995449546,
+              "recall": 0.9606563509960615,
+              "f1": 0.9784036366138003,
+              "support": 192458
+            },
+            "C": {
+              "precision": 0.6231190150478796,
+              "recall": 0.8932964877874844,
+              "f1": 0.7341391941391942,
+              "support": 11218
+            },
+            "P": {
+              "precision": 0.8647373061563197,
+              "recall": 0.9714502126667832,
+              "f1": 0.9149928657666557,
+              "support": 17163
+            }
+          }
+        },
+        "fixed_outside_full_pool_overlap": {
+          "tokens": 194050,
+          "macro_f1": 0.8729814616318713,
+          "accuracy": 0.9565627415614533,
+          "weighted_f1": 0.9596657478482439,
+          "per_class": {
+            "S": {
+              "precision": 0.9965574264303586,
+              "recall": 0.9594292275277574,
+              "f1": 0.977640946467933,
+              "support": 168964
+            },
+            "C": {
+              "precision": 0.6201028063350931,
+              "recall": 0.8879053113188781,
+              "f1": 0.7302249488752556,
+              "support": 10054
+            },
+            "P": {
+              "precision": 0.858698851928172,
+              "recall": 0.9702634379989356,
+              "f1": 0.9110784895524253,
+              "support": 15032
+            }
+          }
+        },
+        "seen_at_budget": {
+          "tokens": 21731,
+          "macro_f1": 0.9088417964194672,
+          "accuracy": 0.9725277253692881,
+          "weighted_f1": 0.9743500133248422,
+          "per_class": {
+            "S": {
+              "precision": 0.9987594390507012,
+              "recall": 0.972838079226647,
+              "f1": 0.9856283600361953,
+              "support": 19034
+            },
+            "C": {
+              "precision": 0.675226586102719,
+              "recall": 0.9541088580576307,
+              "f1": 0.7908005307386112,
+              "support": 937
+            },
+            "P": {
+              "precision": 0.9228709159078736,
+              "recall": 0.9789772727272728,
+              "f1": 0.9500964984835952,
+              "support": 1760
+            }
+          }
+        },
+        "outside_seen_at_budget": {
+          "tokens": 199108,
+          "macro_f1": 0.8725806437651987,
+          "accuracy": 0.9564959720352774,
+          "weighted_f1": 0.9596264963657496,
+          "per_class": {
+            "S": {
+              "precision": 0.9966034887621603,
+              "recall": 0.959319356029154,
+              "f1": 0.9776060641673522,
+              "support": 173424
+            },
+            "C": {
+              "precision": 0.618444233635994,
+              "recall": 0.88775410952242,
+              "f1": 0.7290227245497025,
+              "support": 10281
+            },
+            "P": {
+              "precision": 0.858504651429884,
+              "recall": 0.9705901447769915,
+              "f1": 0.9111131425785416,
+              "support": 15403
+            }
+          }
+        }
+      }
+    }
+  ]
+}

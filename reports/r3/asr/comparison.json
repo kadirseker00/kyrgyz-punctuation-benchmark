@@ -1,0 +1,663 @@
+{
+  "reporter_sha256": "2b3b14d693112599757b7dde7e88c4cf3f9f4c516a5d15f49fa61f8a2bca0ec1",
+  "manifest_sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd",
+  "datasets": {
+    "common_voice": {
+      "clips": 1615,
+      "archive_sha256": "5f65ed3a137a57b65b366becbb4a5147b2cc98a8497e2adf20f11d21ab25cc8a",
+      "metrics_sha256": "99620963797e2108b96b969f6be3846f49748fef8eb2459143c90a4c2d23b99c",
+      "provenance": {
+        "tsv_sha256": "0eeafde59a4bc76abf1167fad994c70456132900d91158c710a6c617aa0ed5d4",
+        "audio_archive_sha256": "471f8d6b22f32382fffda022feaef6b9b7ae2959f990cd5d92f6a17af4613177",
+        "selected_clips": 1615,
+        "speech_type": "read speech",
+        "bootstrap_unit": "speaker",
+        "dataset": "Common Voice 21.0",
+        "split": "Kyrgyz test",
+        "license": "CC0-1.0"
+      },
+      "statistics": {
+        "audio_minutes": 132.99308333333335,
+        "seconds_median": 4.859,
+        "seconds_max": 9.899,
+        "words_median": 7.0,
+        "words_max": 12,
+        "clips_over_12_words": 0,
+        "exact_sentence_overlap_with_APR_main_train_words": 8,
+        "clips_with_exact_sentence_overlap": 1,
+        "speech_type": "read speech"
+      },
+      "metrics": {
+        "oracle": {
+          "punctuation_macro_f1": 0.750813662681147,
+          "punctuation_micro_f1": 0.8359161349134002,
+          "per_class": {
+            "C": {
+              "precision": 0.4394141145139814,
+              "recall": 0.8148148148148148,
+              "f1": 0.5709342560553633,
+              "support": 405,
+              "predicted": 751
+            },
+            "P": {
+              "precision": 0.9115151515151515,
+              "recall": 0.9506953223767383,
+              "f1": 0.9306930693069307,
+              "support": 1582,
+              "predicted": 1650
+            }
+          },
+          "reference_words": 10910,
+          "hypothesis_words": 10910,
+          "matched_words": 10910,
+          "word_errors": 0,
+          "WER": 0.0
+        },
+        "aligned": {
+          "punctuation_macro_f1": 0.6135744735375142,
+          "punctuation_micro_f1": 0.6975798250966037,
+          "per_class": {
+            "C": {
+              "precision": 0.23052714398111723,
+              "recall": 0.7234567901234568,
+              "f1": 0.3496420047732697,
+              "support": 405,
+              "predicted": 1271
+            },
+            "P": {
+              "precision": 0.8571428571428571,
+              "recall": 0.8988621997471555,
+              "f1": 0.8775069423017587,
+              "support": 1582,
+              "predicted": 1659
+            }
+          },
+          "reference_words": 10910,
+          "hypothesis_words": 10741,
+          "matched_words": 7471,
+          "word_errors": 3629,
+          "WER": 0.3326306141154904
+        },
+        "lexically_anchored": {
+          "punctuation_macro_f1": 0.48519049263648406,
+          "punctuation_micro_f1": 0.5507423225544031,
+          "per_class": {
+            "C": {
+              "precision": 0.1841070023603462,
+              "recall": 0.5777777777777777,
+              "f1": 0.27923627684964203,
+              "support": 405,
+              "predicted": 1271
+            },
+            "P": {
+              "precision": 0.6751054852320675,
+              "recall": 0.7079646017699115,
+              "f1": 0.6911447084233261,
+              "support": 1582,
+              "predicted": 1659
+            }
+          },
+          "reference_words": 10910,
+          "hypothesis_words": 10741,
+          "matched_words": 7471,
+          "word_errors": 3629,
+          "WER": 0.3326306141154904
+        }
+      },
+      "WER_bins": {
+        "0<WER<=25%": {
+          "clips": 467,
+          "oracle": {
+            "punctuation_macro_f1": 0.7733862538061838,
+            "punctuation_micro_f1": 0.8540372670807453,
+            "per_class": {
+              "C": {
+                "precision": 0.4525862068965517,
+                "recall": 0.8677685950413223,
+                "f1": 0.5949008498583569,
+                "support": 121,
+                "predicted": 232
+              },
+              "P": {
+                "precision": 0.9447983014861996,
+                "recall": 0.959051724137931,
+                "f1": 0.9518716577540107,
+                "support": 464,
+                "predicted": 471
+              }
+            },
+            "reference_words": 3310,
+            "hypothesis_words": 3310,
+            "matched_words": 3310,
+            "word_errors": 0,
+            "WER": 0.0
+          },
+          "aligned": {
+            "punctuation_macro_f1": 0.7273172437915355,
+            "punctuation_micro_f1": 0.8117469879518072,
+            "per_class": {
+              "C": {
+                "precision": 0.3937007874015748,
+                "recall": 0.8264462809917356,
+                "f1": 0.5333333333333333,
+                "support": 121,
+                "predicted": 254
+              },
+              "P": {
+                "precision": 0.8977505112474438,
+                "recall": 0.9461206896551724,
+                "f1": 0.9213011542497377,
+                "support": 464,
+                "predicted": 489
+              }
+            },
+            "reference_words": 3310,
+            "hypothesis_words": 3291,
+            "matched_words": 2745,
+            "word_errors": 574,
+            "WER": 0.17341389728096676
+          }
+        },
+        "WER>50%": {
+          "clips": 354,
+          "oracle": {
+            "punctuation_macro_f1": 0.7323458120118502,
+            "punctuation_micro_f1": 0.8152866242038217,
+            "per_class": {
+              "C": {
+                "precision": 0.44666666666666666,
+                "recall": 0.7701149425287356,
+                "f1": 0.5654008438818565,
+                "support": 87,
+                "predicted": 150
+              },
+              "P": {
+                "precision": 0.8732782369146006,
+                "recall": 0.9269005847953217,
+                "f1": 0.8992907801418439,
+                "support": 342,
+                "predicted": 363
+              }
+            },
+            "reference_words": 2288,
+            "hypothesis_words": 2288,
+            "matched_words": 2288,
+            "word_errors": 0,
+            "WER": 0.0
+          },
+          "aligned": {
+            "punctuation_macro_f1": 0.45524777648739967,
+            "punctuation_micro_f1": 0.4764841942945258,
+            "per_class": {
+              "C": {
+                "precision": 0.08914728682170543,
+                "recall": 0.5287356321839081,
+                "f1": 0.15257048092868988,
+                "support": 87,
+                "predicted": 516
+              },
+              "P": {
+                "precision": 0.7471590909090909,
+                "recall": 0.7690058479532164,
+                "f1": 0.7579250720461095,
+                "support": 342,
+                "predicted": 352
+              }
+            },
+            "reference_words": 2288,
+            "hypothesis_words": 2215,
+            "matched_words": 741,
+            "word_errors": 1667,
+            "WER": 0.728583916083916
+          }
+        },
+        "WER=0": {
+          "clips": 289,
+          "oracle": {
+            "punctuation_macro_f1": 0.7327627536978176,
+            "punctuation_micro_f1": 0.8287581699346406,
+            "per_class": {
+              "C": {
+                "precision": 0.4076923076923077,
+                "recall": 0.7681159420289855,
+                "f1": 0.5326633165829145,
+                "support": 69,
+                "predicted": 130
+              },
+              "P": {
+                "precision": 0.9166666666666666,
+                "recall": 0.9496402877697842,
+                "f1": 0.9328621908127208,
+                "support": 278,
+                "predicted": 288
+              }
+            },
+            "reference_words": 1778,
+            "hypothesis_words": 1778,
+            "matched_words": 1778,
+            "word_errors": 0,
+            "WER": 0.0
+          },
+          "aligned": {
+            "punctuation_macro_f1": 0.7327627536978176,
+            "punctuation_micro_f1": 0.8287581699346406,
+            "per_class": {
+              "C": {
+                "precision": 0.4076923076923077,
+                "recall": 0.7681159420289855,
+                "f1": 0.5326633165829145,
+                "support": 69,
+                "predicted": 130
+              },
+              "P": {
+                "precision": 0.9166666666666666,
+                "recall": 0.9496402877697842,
+                "f1": 0.9328621908127208,
+                "support": 278,
+                "predicted": 288
+              }
+            },
+            "reference_words": 1778,
+            "hypothesis_words": 1778,
+            "matched_words": 1778,
+            "word_errors": 0,
+            "WER": 0.0
+          }
+        },
+        "25%<WER<=50%": {
+          "clips": 505,
+          "oracle": {
+            "punctuation_macro_f1": 0.7519904818054826,
+            "punctuation_micro_f1": 0.8370423546302943,
+            "per_class": {
+              "C": {
+                "precision": 0.4393305439330544,
+                "recall": 0.8203125,
+                "f1": 0.5722070844686649,
+                "support": 128,
+                "predicted": 239
+              },
+              "P": {
+                "precision": 0.9053030303030303,
+                "recall": 0.9598393574297188,
+                "f1": 0.9317738791423001,
+                "support": 498,
+                "predicted": 528
+              }
+            },
+            "reference_words": 3534,
+            "hypothesis_words": 3534,
+            "matched_words": 3534,
+            "word_errors": 0,
+            "WER": 0.0
+          },
+          "aligned": {
+            "punctuation_macro_f1": 0.631956520043979,
+            "punctuation_micro_f1": 0.7203667321545514,
+            "per_class": {
+              "C": {
+                "precision": 0.25336927223719674,
+                "recall": 0.734375,
+                "f1": 0.37675350701402804,
+                "support": 128,
+                "predicted": 371
+              },
+              "P": {
+                "precision": 0.8603773584905661,
+                "recall": 0.9156626506024096,
+                "f1": 0.8871595330739299,
+                "support": 498,
+                "predicted": 530
+              }
+            },
+            "reference_words": 3534,
+            "hypothesis_words": 3457,
+            "matched_words": 2207,
+            "word_errors": 1388,
+            "WER": 0.39275608375778154
+          }
+        }
+      },
+      "paired_bootstrap": {
+        "samples": 2000,
+        "seed": 123,
+        "groups": 148,
+        "oracle_minus_asr_punctuation_macro_f1_95CI": [
+          0.11372871976252441,
+          0.1590253595210931
+        ]
+      }
+    },
+    "fleurs": {
+      "clips": 977,
+      "archive_sha256": "cbfd3520b68b3df0e697a49ac57861c52fabd557e72ba5a77c5a2069a12e3eb7",
+      "metrics_sha256": "c33112ae657a5753428872c97494604a148f1ed99e1d192071bec78275224e49",
+      "provenance": {
+        "tsv_sha256": "facc155c179ec75dd0f93ec98bb2d7f8feb55851d256d4a565e8b070ed046a1c",
+        "audio_archive_sha256": "e7d33ece89fbf39890fc097ee2e5ab090a10dd5f2dc22ca4ae5e4427f4b04d17",
+        "selected_clips": 977,
+        "speech_type": "read speech",
+        "bootstrap_unit": "source sentence ID (speaker IDs unavailable)",
+        "dataset": "google/fleurs",
+        "config": "ky_kg",
+        "split": "test",
+        "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+        "license": "CC-BY-4.0",
+        "source_url": "https://huggingface.co/datasets/google/fleurs",
+        "audio_source_file": "data/ky_kg/audio/test.tar.gz",
+        "text_source_file": "data/ky_kg/test.tsv"
+      },
+      "statistics": {
+        "audio_minutes": 194.775,
+        "seconds_median": 11.1,
+        "seconds_max": 36.6,
+        "words_median": 16.0,
+        "words_max": 52,
+        "clips_over_12_words": 771,
+        "exact_sentence_overlap_with_APR_main_train_words": 0,
+        "clips_with_exact_sentence_overlap": 0,
+        "speech_type": "read speech"
+      },
+      "metrics": {
+        "oracle": {
+          "punctuation_macro_f1": 0.7552342472812567,
+          "punctuation_micro_f1": 0.7592110160029772,
+          "per_class": {
+            "C": {
+              "precision": 0.5541237113402062,
+              "recall": 0.8548707753479126,
+              "f1": 0.6724003127443315,
+              "support": 1006,
+              "predicted": 1552
+            },
+            "P": {
+              "precision": 0.7515923566878981,
+              "recall": 0.9470304975922953,
+              "f1": 0.8380681818181818,
+              "support": 1246,
+              "predicted": 1570
+            }
+          },
+          "reference_words": 17303,
+          "hypothesis_words": 17303,
+          "matched_words": 17303,
+          "word_errors": 0,
+          "WER": 0.0
+        },
+        "aligned": {
+          "punctuation_macro_f1": 0.6181401879076298,
+          "punctuation_micro_f1": 0.6125126135216953,
+          "per_class": {
+            "C": {
+              "precision": 0.3653663177925785,
+              "recall": 0.7634194831013916,
+              "f1": 0.4942084942084942,
+              "support": 1006,
+              "predicted": 2102
+            },
+            "P": {
+              "precision": 0.6614321608040201,
+              "recall": 0.8451043338683788,
+              "f1": 0.7420718816067653,
+              "support": 1246,
+              "predicted": 1592
+            }
+          },
+          "reference_words": 17303,
+          "hypothesis_words": 16924,
+          "matched_words": 11244,
+          "word_errors": 6521,
+          "WER": 0.37687106282147603
+        },
+        "lexically_anchored": {
+          "punctuation_macro_f1": 0.4963104149150661,
+          "punctuation_micro_f1": 0.49142280524722504,
+          "per_class": {
+            "C": {
+              "precision": 0.2873453853472883,
+              "recall": 0.6003976143141153,
+              "f1": 0.3886743886743887,
+              "support": 1006,
+              "predicted": 2102
+            },
+            "P": {
+              "precision": 0.5383165829145728,
+              "recall": 0.687800963081862,
+              "f1": 0.6039464411557435,
+              "support": 1246,
+              "predicted": 1592
+            }
+          },
+          "reference_words": 17303,
+          "hypothesis_words": 16924,
+          "matched_words": 11244,
+          "word_errors": 6521,
+          "WER": 0.37687106282147603
+        }
+      },
+      "WER_bins": {
+        "25%<WER<=50%": {
+          "clips": 498,
+          "oracle": {
+            "punctuation_macro_f1": 0.7502708177352287,
+            "punctuation_micro_f1": 0.7523131672597865,
+            "per_class": {
+              "C": {
+                "precision": 0.5543478260869565,
+                "recall": 0.8484288354898336,
+                "f1": 0.6705624543462382,
+                "support": 541,
+                "predicted": 828
+              },
+              "P": {
+                "precision": 0.7373612823674476,
+                "recall": 0.9492063492063492,
+                "f1": 0.8299791811242193,
+                "support": 630,
+                "predicted": 811
+              }
+            },
+            "reference_words": 9116,
+            "hypothesis_words": 9116,
+            "matched_words": 9116,
+            "word_errors": 0,
+            "WER": 0.0
+          },
+          "aligned": {
+            "punctuation_macro_f1": 0.6313511499447364,
+            "punctuation_micro_f1": 0.6274638633377135,
+            "per_class": {
+              "C": {
+                "precision": 0.39864864864864863,
+                "recall": 0.7634011090573013,
+                "f1": 0.5237793278376665,
+                "support": 541,
+                "predicted": 1036
+              },
+              "P": {
+                "precision": 0.6475507765830346,
+                "recall": 0.8603174603174604,
+                "f1": 0.7389229720518065,
+                "support": 630,
+                "predicted": 837
+              }
+            },
+            "reference_words": 9116,
+            "hypothesis_words": 8808,
+            "matched_words": 5856,
+            "word_errors": 3427,
+            "WER": 0.37593242650285214
+          }
+        },
+        "0<WER<=25%": {
+          "clips": 243,
+          "oracle": {
+            "punctuation_macro_f1": 0.7720445844525554,
+            "punctuation_micro_f1": 0.772218073188947,
+            "per_class": {
+              "C": {
+                "precision": 0.5742574257425742,
+                "recall": 0.8787878787878788,
+                "f1": 0.6946107784431138,
+                "support": 264,
+                "predicted": 404
+              },
+              "P": {
+                "precision": 0.7661290322580645,
+                "recall": 0.9531772575250836,
+                "f1": 0.849478390461997,
+                "support": 299,
+                "predicted": 372
+              }
+            },
+            "reference_words": 4294,
+            "hypothesis_words": 4294,
+            "matched_words": 4294,
+            "word_errors": 0,
+            "WER": 0.0
+          },
+          "aligned": {
+            "punctuation_macro_f1": 0.7130966151989137,
+            "punctuation_micro_f1": 0.7105643994211288,
+            "per_class": {
+              "C": {
+                "precision": 0.4864864864864865,
+                "recall": 0.8181818181818182,
+                "f1": 0.6101694915254238,
+                "support": 264,
+                "predicted": 444
+              },
+              "P": {
+                "precision": 0.7333333333333333,
+                "recall": 0.919732441471572,
+                "f1": 0.8160237388724035,
+                "support": 299,
+                "predicted": 375
+              }
+            },
+            "reference_words": 4294,
+            "hypothesis_words": 4277,
+            "matched_words": 3574,
+            "word_errors": 762,
+            "WER": 0.17745691662785282
+          }
+        },
+        "WER=0": {
+          "clips": 20,
+          "oracle": {
+            "punctuation_macro_f1": 0.6883720930232557,
+            "punctuation_micro_f1": 0.7647058823529411,
+            "per_class": {
+              "C": {
+                "precision": 0.2777777777777778,
+                "recall": 0.7142857142857143,
+                "f1": 0.4,
+                "support": 7,
+                "predicted": 18
+              },
+              "P": {
+                "precision": 0.9545454545454546,
+                "recall": 1.0,
+                "f1": 0.9767441860465116,
+                "support": 21,
+                "predicted": 22
+              }
+            },
+            "reference_words": 200,
+            "hypothesis_words": 200,
+            "matched_words": 200,
+            "word_errors": 0,
+            "WER": 0.0
+          },
+          "aligned": {
+            "punctuation_macro_f1": 0.6883720930232557,
+            "punctuation_micro_f1": 0.7647058823529411,
+            "per_class": {
+              "C": {
+                "precision": 0.2777777777777778,
+                "recall": 0.7142857142857143,
+                "f1": 0.4,
+                "support": 7,
+                "predicted": 18
+              },
+              "P": {
+                "precision": 0.9545454545454546,
+                "recall": 1.0,
+                "f1": 0.9767441860465116,
+                "support": 21,
+                "predicted": 22
+              }
+            },
+            "reference_words": 200,
+            "hypothesis_words": 200,
+            "matched_words": 200,
+            "word_errors": 0,
+            "WER": 0.0
+          }
+        },
+        "WER>50%": {
+          "clips": 216,
+          "oracle": {
+            "punctuation_macro_f1": 0.7481943292177053,
+            "punctuation_micro_f1": 0.7605877268798618,
+            "per_class": {
+              "C": {
+                "precision": 0.543046357615894,
+                "recall": 0.845360824742268,
+                "f1": 0.6612903225806451,
+                "support": 194,
+                "predicted": 302
+              },
+              "P": {
+                "precision": 0.7561643835616438,
+                "recall": 0.9324324324324325,
+                "f1": 0.8350983358547656,
+                "support": 296,
+                "predicted": 365
+              }
+            },
+            "reference_words": 3693,
+            "hypothesis_words": 3693,
+            "matched_words": 3693,
+            "word_errors": 0,
+            "WER": 0.0
+          },
+          "aligned": {
+            "punctuation_macro_f1": 0.49666597686877745,
+            "punctuation_micro_f1": 0.4807162534435262,
+            "per_class": {
+              "C": {
+                "precision": 0.22185430463576158,
+                "recall": 0.6907216494845361,
+                "f1": 0.3358395989974937,
+                "support": 194,
+                "predicted": 604
+              },
+              "P": {
+                "precision": 0.6005586592178771,
+                "recall": 0.7263513513513513,
+                "f1": 0.6574923547400612,
+                "support": 296,
+                "predicted": 358
+              }
+            },
+            "reference_words": 3693,
+            "hypothesis_words": 3639,
+            "matched_words": 1614,
+            "word_errors": 2332,
+            "WER": 0.6314649336582724
+          }
+        }
+      },
+      "paired_bootstrap": {
+        "samples": 2000,
+        "seed": 123,
+        "groups": 350,
+        "oracle_minus_asr_punctuation_macro_f1_95CI": [
+          0.11555335382591668,
+          0.15831490478279403
+        ]
+      }
+    }
+  }
+}

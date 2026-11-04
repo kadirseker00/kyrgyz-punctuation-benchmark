@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kg-punctuation"
+version = "0.1.0"
+description = "Kyrgyz automatic punctuation restoration: canonical two-domain benchmark and experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "joblib>=1.3",
+  "matplotlib>=3.8",
+  "mwparserfromhell>=0.6",
+  "numpy>=1.26",
+  "scikit-learn>=1.3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+]
+deep-learning = [
+  "av>=12.0",
+  "torch>=2.3",
+  "transformers>=4.40",
+]
+
+[project.scripts]
+kg-punct = "kg_punctuation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

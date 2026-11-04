@@ -1,0 +1,350 @@
+{
+  "kyrgyznews": {
+    "run": "experiments/kyrgyznews_xlm-roberta-base_20260706_161433_33e18870",
+    "all": {
+      "tokens": 15019,
+      "macro_f1": 0.84575,
+      "S_f1": 0.968416,
+      "C_f1": 0.690451,
+      "P_f1": 0.878383,
+      "S_support": 12958,
+      "C_support": 777,
+      "P_support": 1284
+    },
+    "seen": {
+      "tokens": 1244,
+      "macro_f1": 0.866403,
+      "S_f1": 0.979386,
+      "C_f1": 0.719298,
+      "P_f1": 0.900524,
+      "S_support": 1110,
+      "C_support": 44,
+      "P_support": 90
+    },
+    "unseen": {
+      "tokens": 13775,
+      "macro_f1": 0.844248,
+      "S_f1": 0.967383,
+      "C_f1": 0.688616,
+      "P_f1": 0.876744,
+      "S_support": 11848,
+      "C_support": 733,
+      "P_support": 1194
+    }
+  },
+  "wikipedia_ky": {
+    "run": "experiments/wikipedia_ky_xlm-roberta-base_20260706_150352_79bbb655",
+    "all": {
+      "tokens": 16661,
+      "macro_f1": 0.79766,
+      "S_f1": 0.942247,
+      "C_f1": 0.655284,
+      "P_f1": 0.795449,
+      "S_support": 13540,
+      "C_support": 1414,
+      "P_support": 1707
+    },
+    "seen": {
+      "tokens": 267,
+      "macro_f1": 0.661928,
+      "S_f1": 0.928251,
+      "C_f1": 0.4,
+      "P_f1": 0.657534,
+      "S_support": 239,
+      "C_support": 3,
+      "P_support": 25
+    },
+    "unseen": {
+      "tokens": 16394,
+      "macro_f1": 0.799024,
+      "S_f1": 0.94249,
+      "C_f1": 0.656416,
+      "P_f1": 0.798165,
+      "S_support": 13301,
+      "C_support": 1411,
+      "P_support": 1682
+    }
+  },
+  "learning_curve": {
+    "250": {
+      "all": {
+        "tokens": 320934,
+        "macro_f1": 0.724312,
+        "S_f1": 0.928601,
+        "C_f1": 0.495234,
+        "P_f1": 0.7491,
+        "S_support": 279410,
+        "C_support": 15820,
+        "P_support": 25704
+      },
+      "seen": {
+        "tokens": 3047,
+        "macro_f1": 0.697304,
+        "S_f1": 0.903158,
+        "C_f1": 0.492846,
+        "P_f1": 0.695906,
+        "S_support": 2604,
+        "C_support": 188,
+        "P_support": 255
+      },
+      "unseen": {
+        "tokens": 317887,
+        "macro_f1": 0.724598,
+        "S_f1": 0.928834,
+        "C_f1": 0.495263,
+        "P_f1": 0.749697,
+        "S_support": 276806,
+        "C_support": 15632,
+        "P_support": 25449
+      }
+    },
+    "1000": {
+      "all": {
+        "tokens": 320934,
+        "macro_f1": 0.833534,
+        "S_f1": 0.965887,
+        "C_f1": 0.671848,
+        "P_f1": 0.862867,
+        "S_support": 279410,
+        "C_support": 15820,
+        "P_support": 25704
+      },
+      "seen": {
+        "tokens": 8189,
+        "macro_f1": 0.838757,
+        "S_f1": 0.961533,
+        "C_f1": 0.662942,
+        "P_f1": 0.891795,
+        "S_support": 7065,
+        "C_support": 369,
+        "P_support": 755
+      },
+      "unseen": {
+        "tokens": 312745,
+        "macro_f1": 0.833359,
+        "S_f1": 0.965999,
+        "C_f1": 0.672086,
+        "P_f1": 0.861991,
+        "S_support": 272345,
+        "C_support": 15451,
+        "P_support": 24949
+      }
+    },
+    "2500": {
+      "all": {
+        "tokens": 320934,
+        "macro_f1": 0.844172,
+        "S_f1": 0.968238,
+        "C_f1": 0.691373,
+        "P_f1": 0.872906,
+        "S_support": 279410,
+        "C_support": 15820,
+        "P_support": 25704
+      },
+      "seen": {
+        "tokens": 12964,
+        "macro_f1": 0.84745,
+        "S_f1": 0.968064,
+        "C_f1": 0.660066,
+        "P_f1": 0.914219,
+        "S_support": 11244,
+        "C_support": 527,
+        "P_support": 1193
+      },
+      "unseen": {
+        "tokens": 307970,
+        "macro_f1": 0.843922,
+        "S_f1": 0.968245,
+        "C_f1": 0.692575,
+        "P_f1": 0.870945,
+        "S_support": 268166,
+        "C_support": 15293,
+        "P_support": 24511
+      }
+    },
+    "5000": {
+      "all": {
+        "tokens": 320934,
+        "macro_f1": 0.877154,
+        "S_f1": 0.977538,
+        "C_f1": 0.74222,
+        "P_f1": 0.911705,
+        "S_support": 279410,
+        "C_support": 15820,
+        "P_support": 25704
+      },
+      "seen": {
+        "tokens": 21678,
+        "macro_f1": 0.909188,
+        "S_f1": 0.984797,
+        "C_f1": 0.788921,
+        "P_f1": 0.953846,
+        "S_support": 18981,
+        "C_support": 846,
+        "P_support": 1851
+      },
+      "unseen": {
+        "tokens": 299256,
+        "macro_f1": 0.875027,
+        "S_f1": 0.977006,
+        "C_f1": 0.739567,
+        "P_f1": 0.908508,
+        "S_support": 260429,
+        "C_support": 14974,
+        "P_support": 23853
+      }
+    },
+    "10000": {
+      "all": {
+        "tokens": 320934,
+        "macro_f1": 0.901308,
+        "S_f1": 0.983116,
+        "C_f1": 0.792642,
+        "P_f1": 0.928168,
+        "S_support": 279410,
+        "C_support": 15820,
+        "P_support": 25704
+      },
+      "seen": {
+        "tokens": 33917,
+        "macro_f1": 0.92049,
+        "S_f1": 0.987553,
+        "C_f1": 0.825118,
+        "P_f1": 0.948798,
+        "S_support": 29895,
+        "C_support": 1277,
+        "P_support": 2745
+      },
+      "unseen": {
+        "tokens": 287017,
+        "macro_f1": 0.899344,
+        "S_f1": 0.982583,
+        "C_f1": 0.789729,
+        "P_f1": 0.925719,
+        "S_support": 249515,
+        "C_support": 14543,
+        "P_support": 22959
+      }
+    },
+    "13000": {
+      "all": {
+        "tokens": 320934,
+        "macro_f1": 0.905388,
+        "S_f1": 0.984171,
+        "C_f1": 0.795173,
+        "P_f1": 0.936818,
+        "S_support": 279410,
+        "C_support": 15820,
+        "P_support": 25704
+      },
+      "seen": {
+        "tokens": 38495,
+        "macro_f1": 0.93095,
+        "S_f1": 0.98955,
+        "C_f1": 0.848029,
+        "P_f1": 0.955271,
+        "S_support": 33928,
+        "C_support": 1473,
+        "P_support": 3094
+      },
+      "unseen": {
+        "tokens": 282439,
+        "macro_f1": 0.902526,
+        "S_f1": 0.983425,
+        "C_f1": 0.789847,
+        "P_f1": 0.934305,
+        "S_support": 245482,
+        "C_support": 14347,
+        "P_support": 22610
+      }
+    }
+  },
+  "extended_news_5k": {
+    "all": {
+      "tokens": 73180,
+      "macro_f1": 0.571681,
+      "S_f1": 0.952427,
+      "C_f1": 0.626492,
+      "P_f1": 0.849423,
+      "Q_f1": 0.259332,
+      "E_f1": 0.170732,
+      "S_support": 62974,
+      "C_support": 3660,
+      "P_support": 6464,
+      "Q_support": 69,
+      "E_support": 13
+    },
+    "seen": {
+      "tokens": 19852,
+      "macro_f1": 0.594917,
+      "S_f1": 0.955033,
+      "C_f1": 0.563149,
+      "P_f1": 0.826642,
+      "Q_f1": 0.326733,
+      "E_f1": 0.30303,
+      "S_support": 17612,
+      "C_support": 760,
+      "P_support": 1440,
+      "Q_support": 33,
+      "E_support": 7
+    },
+    "unseen": {
+      "tokens": 53328,
+      "macro_f1": 0.549755,
+      "S_f1": 0.951414,
+      "C_f1": 0.644626,
+      "P_f1": 0.856121,
+      "Q_f1": 0.214984,
+      "E_f1": 0.081633,
+      "S_support": 45362,
+      "C_support": 2900,
+      "P_support": 5024,
+      "Q_support": 36,
+      "E_support": 6
+    }
+  },
+  "extended_wiki_5k": {
+    "all": {
+      "tokens": 82936,
+      "macro_f1": 0.492564,
+      "S_f1": 0.923154,
+      "C_f1": 0.592371,
+      "P_f1": 0.781534,
+      "Q_f1": 0.118519,
+      "E_f1": 0.047244,
+      "S_support": 67860,
+      "C_support": 6979,
+      "P_support": 8071,
+      "Q_support": 15,
+      "E_support": 11
+    },
+    "seen": {
+      "tokens": 2731,
+      "macro_f1": 0.472936,
+      "S_f1": 0.942922,
+      "C_f1": 0.607069,
+      "P_f1": 0.814691,
+      "Q_f1": 0.0,
+      "E_f1": 0.0,
+      "S_support": 2306,
+      "C_support": 165,
+      "P_support": 260,
+      "Q_support": 0,
+      "E_support": 0
+    },
+    "unseen": {
+      "tokens": 80205,
+      "macro_f1": 0.492482,
+      "S_f1": 0.922452,
+      "C_f1": 0.591998,
+      "P_f1": 0.780416,
+      "Q_f1": 0.120301,
+      "E_f1": 0.047244,
+      "S_support": 65554,
+      "C_support": 6814,
+      "P_support": 7811,
+      "Q_support": 15,
+      "E_support": 11
+    }
+  }
+}

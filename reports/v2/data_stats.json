@@ -1,0 +1,90 @@
+{
+  "kyrgyznews": {
+    "pool_documents": 20000,
+    "exact_duplicates_dropped": 759,
+    "groups": 17616,
+    "multi_document_groups": 1080,
+    "largest_group": 33,
+    "train_pool_documents": 17491,
+    "documents": {
+      "train_main": 3200,
+      "validation": 500,
+      "test": 1250
+    },
+    "words": {
+      "train_main": 554314,
+      "validation": 83309,
+      "test": 220839
+    },
+    "benchmark_documents": 4950,
+    "benchmark_words": 858462,
+    "core_share": {
+      "S": 0.8718860007781358,
+      "C": 0.051586441799404054,
+      "P": 0.07652755742246017
+    },
+    "extended_counts": {
+      "S": 748481,
+      "C": 44285,
+      "P": 64180,
+      "Q": 1219,
+      "E": 297
+    },
+    "extended_share": {
+      "Q": 0.0014199813154222318,
+      "E": 0.00034596755593142153
+    },
+    "test_extended_counts": {
+      "S": 192458,
+      "P": 16728,
+      "C": 11218,
+      "Q": 364,
+      "E": 71
+    },
+    "residual_overlap_test_vs_main_train_pct": 3.987
+  },
+  "wikipedia_ky": {
+    "pool_documents": 5000,
+    "exact_duplicates_dropped": 1,
+    "groups": 4961,
+    "multi_document_groups": 31,
+    "largest_group": 5,
+    "train_pool_documents": 3249,
+    "documents": {
+      "train_main": 3200,
+      "validation": 500,
+      "test": 1250
+    },
+    "words": {
+      "train_main": 1132093,
+      "validation": 152062,
+      "test": 443185
+    },
+    "benchmark_documents": 4950,
+    "benchmark_words": 1727340,
+    "core_share": {
+      "S": 0.7963180381395671,
+      "C": 0.08301145113295587,
+      "P": 0.12067051072747693
+    },
+    "extended_counts": {
+      "S": 1375512,
+      "C": 143389,
+      "P": 207054,
+      "Q": 921,
+      "E": 464
+    },
+    "extended_share": {
+      "Q": 0.0005331897599777693,
+      "E": 0.0002686211168617643
+    },
+    "test_extended_counts": {
+      "S": 355107,
+      "P": 50934,
+      "C": 36840,
+      "Q": 187,
+      "E": 117
+    },
+    "residual_overlap_test_vs_main_train_pct": 2.31
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "source": "kyrgyznews",
+      "processed_path": "data/processed/v2/kyrgyznews.jsonl",
+      "processed_sha256": "b7e305dbca5e096705772915c75d08b357386de1f3776ce9b7e955fc2f4147df",
+      "raw_path": "data/raw/kyrgyznews/KG_news_256k.csv",
+      "raw_bytes": 536480617,
+      "raw_sha256": "8cfef5b387084921a9609081714138084dfddc187e1a0a5468ad85e8c2bac828",
+      "upstream": "https://huggingface.co/datasets/the-cramer-project/Kyrgyz_News_Corpus",
+      "upstream_revision": "a7e5ac9c28b86f07c1ad4db1d9c095deb03e46c9",
+      "upstream_file": "KG_news_256k.csv",
+      "upstream_license": "CC-BY-NC-4.0",
+      "upstream_lfs_sha256": "8cfef5b387084921a9609081714138084dfddc187e1a0a5468ad85e8c2bac828"
+    },
+    {
+      "source": "wikipedia_ky",
+      "processed_path": "data/processed/v2/wikipedia_ky.jsonl",
+      "processed_sha256": "9b116bcdc90011778cc52515ff827508bbb77e0fba3cf98af1def585e6f5b181",
+      "raw_path": "data/raw/wikipedia_ky/kywiki-latest-pages-articles.xml.bz2",
+      "raw_bytes": 41364157,
+      "raw_sha256": "015f63ca7016dbf9dc1f5a28af0394d8999e7ae68e04a5a3d751f7170b872af0",
+      "upstream": "https://dumps.wikimedia.org/kywiki/",
+      "upstream_snapshot_date": "Not retained in original download provenance; do not infer from filename or modification time",
+      "reconstruction": "Use the bundled frozen processed pool for exact benchmark identity; a new latest dump is not an exact substitute",
+      "upstream_license": "CC-BY-SA-4.0, subject to page-specific notices; attribution file included",
+      "upstream_terms": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use"
+    }
+  ]
+}

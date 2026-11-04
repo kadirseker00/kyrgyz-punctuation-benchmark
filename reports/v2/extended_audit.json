@@ -1,0 +1,213 @@
+{
+  "manifest_sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd",
+  "labels": [
+    "S",
+    "C",
+    "P",
+    "Q",
+    "E"
+  ],
+  "verification": "Exact canonical test coverage plus independent confusion-count metrics",
+  "runs": [
+    {
+      "job": "extended_news",
+      "source": "kyrgyznews",
+      "target": "kyrgyznews",
+      "run_dir": "experiments/v2_audits/extended_news/v2_kyrgyznews_extended_20260930_114018_b149e80a",
+      "metadata_sha256": "b8afa89f5f019d1b68d27a55aec68ca2455a01bf24d992db80b723a522d575d7",
+      "predictions_sha256": "30416979733ec9071901a2da4607a6f214e5792f6ed05020a56481dc2757e5b8",
+      "test_tokens": 220839,
+      "macro_f1": 0.5504066682404647,
+      "per_class": {
+        "S": {
+          "precision": 0.9940846056308128,
+          "recall": 0.9002483658772303,
+          "f1": 0.9448423853916439,
+          "support": 192458,
+          "predicted": 174291
+        },
+        "C": {
+          "precision": 0.4243955250811981,
+          "recall": 0.8386521661615262,
+          "f1": 0.5635895285448991,
+          "support": 11218,
+          "predicted": 22168
+        },
+        "P": {
+          "precision": 0.6960636218233517,
+          "recall": 0.9365734098517455,
+          "f1": 0.7986033234784382,
+          "support": 16728,
+          "predicted": 22508
+        },
+        "Q": {
+          "precision": 0.24032738095238096,
+          "recall": 0.8873626373626373,
+          "f1": 0.37822014051522246,
+          "support": 364,
+          "predicted": 1344
+        },
+        "E": {
+          "precision": 0.03787878787878788,
+          "recall": 0.28169014084507044,
+          "f1": 0.0667779632721202,
+          "support": 71,
+          "predicted": 528
+        }
+      },
+      "best_epoch": 3,
+      "runtime_seconds_total": 1168.642,
+      "runtime_seconds_test": 28.543
+    },
+    {
+      "job": "extended_wiki",
+      "source": "wikipedia_ky",
+      "target": "wikipedia_ky",
+      "run_dir": "experiments/v2_audits/extended_wiki/v2_wikipedia_ky_extended_20260930_115951_138df634",
+      "metadata_sha256": "4e4e296a6bd3305f6b65993c0b63785b94e07b727d6c499a67f231151ced9c12",
+      "predictions_sha256": "771a0a76b954cf8a28e110518e147ba8b2ec0a0189c64bc4fcfb05244cd5ff4f",
+      "test_tokens": 443185,
+      "macro_f1": 0.4973204771163792,
+      "per_class": {
+        "S": {
+          "precision": 0.9833860986504194,
+          "recall": 0.8685889041894415,
+          "f1": 0.9224295711465996,
+          "support": 355107,
+          "predicted": 313653
+        },
+        "C": {
+          "precision": 0.4982874434690077,
+          "recall": 0.8134907709011944,
+          "f1": 0.6180194671285986,
+          "support": 36840,
+          "predicted": 60144
+        },
+        "P": {
+          "precision": 0.7070137137937397,
+          "recall": 0.9028743079279067,
+          "f1": 0.7930297125316871,
+          "support": 50934,
+          "predicted": 65044
+        },
+        "Q": {
+          "precision": 0.05619546247818499,
+          "recall": 0.8609625668449198,
+          "f1": 0.10550458715596331,
+          "support": 187,
+          "predicted": 2865
+        },
+        "E": {
+          "precision": 0.025693035835023664,
+          "recall": 0.3247863247863248,
+          "f1": 0.047619047619047616,
+          "support": 117,
+          "predicted": 1479
+        }
+      },
+      "best_epoch": 3,
+      "runtime_seconds_total": 2505.376,
+      "runtime_seconds_test": 62.237
+    },
+    {
+      "job": "cross_news_to_wiki",
+      "source": "kyrgyznews",
+      "target": "wikipedia_ky",
+      "run_dir": "experiments/v2_audits/cross_news_to_wiki/cross_kyrgyznews_to_wikipedia_ky_s-c-p-q-e_20260930_124140_78f00ec0",
+      "metadata_sha256": "bef0145ac95c7cd5d28ba4f846a9454fa6ba967fd40b5296819683344a61a17c",
+      "predictions_sha256": "9eb5204756dab6598fce1936d7bfd22fa7f92878b0ddfc2c9ab68d6f5983d707",
+      "test_tokens": 443185,
+      "macro_f1": 0.40335535152879587,
+      "per_class": {
+        "S": {
+          "precision": 0.9506590482476949,
+          "recall": 0.7787005043550254,
+          "f1": 0.8561304434650555,
+          "support": 355107,
+          "predicted": 290874
+        },
+        "C": {
+          "precision": 0.30597522467816374,
+          "recall": 0.6838762214983714,
+          "f1": 0.42278905856687365,
+          "support": 36840,
+          "predicted": 82340
+        },
+        "P": {
+          "precision": 0.5648754716981133,
+          "recall": 0.7347351474457141,
+          "f1": 0.6387049426542872,
+          "support": 50934,
+          "predicted": 66250
+        },
+        "Q": {
+          "precision": 0.04297037964121819,
+          "recall": 0.5508021390374331,
+          "f1": 0.07972136222910217,
+          "support": 187,
+          "predicted": 2397
+        },
+        "E": {
+          "precision": 0.010574018126888218,
+          "recall": 0.11965811965811966,
+          "f1": 0.01943095072866065,
+          "support": 117,
+          "predicted": 1324
+        }
+      },
+      "best_epoch": null,
+      "runtime_seconds_total": 64.177,
+      "runtime_seconds_test": null
+    },
+    {
+      "job": "cross_wiki_to_news",
+      "source": "wikipedia_ky",
+      "target": "kyrgyznews",
+      "run_dir": "experiments/v2_audits/cross_wiki_to_news/cross_wikipedia_ky_to_kyrgyznews_s-c-p-q-e_20260930_124247_c20dc1d3",
+      "metadata_sha256": "b175d8f59d692cf4c01d4dd4bfbf5b077b3f43063bc3fdfbdd355e318f5d75ac",
+      "predictions_sha256": "fce07bdcd5e65bf5068754faed46c703b818c794733f7486349896a662aef4f2",
+      "test_tokens": 220839,
+      "macro_f1": 0.48809344397112053,
+      "per_class": {
+        "S": {
+          "precision": 0.9861832695449637,
+          "recall": 0.9063951615417389,
+          "f1": 0.9446073454358391,
+          "support": 192458,
+          "predicted": 176887
+        },
+        "C": {
+          "precision": 0.4713953488372093,
+          "recall": 0.7227669816366554,
+          "f1": 0.5706242522344993,
+          "support": 11218,
+          "predicted": 17200
+        },
+        "P": {
+          "precision": 0.6307387029854785,
+          "recall": 0.8360832137733142,
+          "f1": 0.7190375816153411,
+          "support": 16728,
+          "predicted": 22174
+        },
+        "Q": {
+          "precision": 0.09811985898942421,
+          "recall": 0.9175824175824175,
+          "f1": 0.17728237791932058,
+          "support": 364,
+          "predicted": 3404
+        },
+        "E": {
+          "precision": 0.015332197614991482,
+          "recall": 0.2535211267605634,
+          "f1": 0.02891566265060241,
+          "support": 71,
+          "predicted": 1174
+        }
+      },
+      "best_epoch": null,
+      "runtime_seconds_total": 30.744,
+      "runtime_seconds_test": null
+    }
+  ]
+}

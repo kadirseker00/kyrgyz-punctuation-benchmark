@@ -1,0 +1,132 @@
+{
+  "min_sentence_tokens": 5,
+  "split": "shuffle(seed=42)[:N] -> train_test_split 0.35 / (25/35), random_state=42",
+  "corpus": {
+    "kyrgyznews": {
+      "documents": 5000,
+      "exact_duplicate_documents": 479
+    },
+    "wikipedia_ky": {
+      "documents": 5000,
+      "exact_duplicate_documents": 1
+    },
+    "kyrgyznews_20k": {
+      "documents": 20000,
+      "exact_duplicate_documents": 759
+    }
+  },
+  "benchmark_splits": {
+    "kyrgyznews@1000": {
+      "train_documents": 650,
+      "test_documents": 250,
+      "test_documents_identical_to_train": 8,
+      "test_documents_identical_pct": 3.2,
+      "test_sentences": 2118,
+      "test_sentences_seen_in_train": 312,
+      "test_sentences_seen_pct": 14.73,
+      "test_tokens": 32734,
+      "test_tokens_in_seen_sentences_pct": 12.45
+    },
+    "kyrgyznews@5000": {
+      "train_documents": 3250,
+      "test_documents": 1250,
+      "test_documents_identical_to_train": 145,
+      "test_documents_identical_pct": 11.6,
+      "test_sentences": 11216,
+      "test_sentences_seen_in_train": 4181,
+      "test_sentences_seen_pct": 37.28,
+      "test_tokens": 168475,
+      "test_tokens_in_seen_sentences_pct": 33.25
+    },
+    "wikipedia_ky@1000": {
+      "train_documents": 650,
+      "test_documents": 250,
+      "test_documents_identical_to_train": 0,
+      "test_documents_identical_pct": 0.0,
+      "test_sentences": 5564,
+      "test_sentences_seen_in_train": 272,
+      "test_sentences_seen_pct": 4.89,
+      "test_tokens": 82348,
+      "test_tokens_in_seen_sentences_pct": 2.29
+    },
+    "wikipedia_ky@5000": {
+      "train_documents": 3250,
+      "test_documents": 1250,
+      "test_documents_identical_to_train": 0,
+      "test_documents_identical_pct": 0.0,
+      "test_sentences": 30843,
+      "test_sentences_seen_in_train": 2086,
+      "test_sentences_seen_pct": 6.76,
+      "test_tokens": 471540,
+      "test_tokens_in_seen_sentences_pct": 3.37
+    }
+  },
+  "learning_curve": {
+    "250": {
+      "train_documents": 250,
+      "test_documents": 5000,
+      "test_documents_identical_to_train": 22,
+      "test_documents_identical_pct": 0.44,
+      "test_sentences": 57433,
+      "test_sentences_seen_in_train": 848,
+      "test_sentences_seen_pct": 1.48,
+      "test_tokens": 836457,
+      "test_tokens_in_seen_sentences_pct": 1.44
+    },
+    "1000": {
+      "train_documents": 1000,
+      "test_documents": 5000,
+      "test_documents_identical_to_train": 46,
+      "test_documents_identical_pct": 0.92,
+      "test_sentences": 57433,
+      "test_sentences_seen_in_train": 2589,
+      "test_sentences_seen_pct": 4.51,
+      "test_tokens": 836457,
+      "test_tokens_in_seen_sentences_pct": 3.95
+    },
+    "2500": {
+      "train_documents": 2500,
+      "test_documents": 5000,
+      "test_documents_identical_to_train": 71,
+      "test_documents_identical_pct": 1.42,
+      "test_sentences": 57433,
+      "test_sentences_seen_in_train": 4527,
+      "test_sentences_seen_pct": 7.88,
+      "test_tokens": 836457,
+      "test_tokens_in_seen_sentences_pct": 7.03
+    },
+    "5000": {
+      "train_documents": 5000,
+      "test_documents": 5000,
+      "test_documents_identical_to_train": 114,
+      "test_documents_identical_pct": 2.28,
+      "test_sentences": 57433,
+      "test_sentences_seen_in_train": 7248,
+      "test_sentences_seen_pct": 12.62,
+      "test_tokens": 836457,
+      "test_tokens_in_seen_sentences_pct": 11.43
+    },
+    "10000": {
+      "train_documents": 10000,
+      "test_documents": 5000,
+      "test_documents_identical_to_train": 186,
+      "test_documents_identical_pct": 3.72,
+      "test_sentences": 57433,
+      "test_sentences_seen_in_train": 10727,
+      "test_sentences_seen_pct": 18.68,
+      "test_tokens": 836457,
+      "test_tokens_in_seen_sentences_pct": 17.18
+    },
+    "13000": {
+      "train_documents": 13000,
+      "test_documents": 5000,
+      "test_documents_identical_to_train": 224,
+      "test_documents_identical_pct": 4.48,
+      "test_sentences": 57433,
+      "test_sentences_seen_in_train": 12167,
+      "test_sentences_seen_pct": 21.18,
+      "test_tokens": 836457,
+      "test_tokens_in_seen_sentences_pct": 19.44
+    }
+  }
+}

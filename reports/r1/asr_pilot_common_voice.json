@@ -1,0 +1,162 @@
+{
+  "task": "Common Voice Kyrgyz ASR-domain punctuation pilot",
+  "created_at": "2026-09-28 18:10:42 +0600",
+  "audio_source": "mteb/common_voice_21_0 audio/ky/test/ky_test_0.tar",
+  "transcript_source": "mteb/common_voice_21_0 transcript/ky/test.tsv",
+  "asr_model": "kyrgyz-ai/Wav2vec-Kyrgyz",
+  "apr_model": "experiments/mixed_xlm-roberta-base_20260707_140845_f4e9d371/models/hf_model",
+  "clip_selection": "first 128 test rows with 4--12 normalized words and at least one punctuation mark",
+  "device": "mps",
+  "clips": 128,
+  "reference_tokens": 868,
+  "asr_word_error_rate": 0.322581,
+  "matched_token_coverage": 0.699309,
+  "matched_tokens": 607,
+  "oracle_text_metrics": {
+    "accuracy": 0.913594,
+    "macro_precision": 0.717904,
+    "macro_recall": 0.684482,
+    "macro_f1": 0.698588,
+    "weighted_f1": 0.912439,
+    "per_class": {
+      "S": {
+        "precision": 0.939189,
+        "recall": 0.963939,
+        "f1": 0.951403,
+        "support": 721
+      },
+      "C": {
+        "precision": 0.333333,
+        "recall": 0.36,
+        "f1": 0.346154,
+        "support": 25
+      },
+      "P": {
+        "precision": 0.881188,
+        "recall": 0.729508,
+        "f1": 0.798206,
+        "support": 122
+      }
+    }
+  },
+  "asr_aligned_metrics": {
+    "accuracy": 0.896211,
+    "macro_precision": 0.65888,
+    "macro_recall": 0.653774,
+    "macro_f1": 0.653288,
+    "weighted_f1": 0.898035,
+    "per_class": {
+      "S": {
+        "precision": 0.938735,
+        "recall": 0.948104,
+        "f1": 0.943396,
+        "support": 501
+      },
+      "C": {
+        "precision": 0.217391,
+        "recall": 0.294118,
+        "f1": 0.25,
+        "support": 17
+      },
+      "P": {
+        "precision": 0.820513,
+        "recall": 0.719101,
+        "f1": 0.766467,
+        "support": 89
+      }
+    }
+  },
+  "label_counts_oracle": {
+    "S": 721,
+    "P": 122,
+    "C": 25
+  },
+  "label_counts_asr_aligned": {
+    "S": 501,
+    "P": 89,
+    "C": 17
+  },
+  "runtime_seconds": 18.041,
+  "samples": [
+    {
+      "path": "common_voice_ky_17589356.mp3",
+      "reference": "Эртең дагы башка бирөө бул маселе менен алектенет.",
+      "asr": "эртең дагы башка бирөө бул маселе менен айлектенет",
+      "word_errors": 1,
+      "word_count": 8,
+      "matched_words": 7
+    },
+    {
+      "path": "common_voice_ky_18391692.mp3",
+      "reference": "Бардыгы мурдагыдай эле болот.",
+      "asr": "бардыгы мурдагы да эле болот",
+      "word_errors": 2,
+      "word_count": 4,
+      "matched_words": 3
+    },
+    {
+      "path": "common_voice_ky_17936429.mp3",
+      "reference": "Нурболоттун энесин таба албай койдук.",
+      "asr": "нырболоддун энесин таба албайкпайт н",
+      "word_errors": 3,
+      "word_count": 5,
+      "matched_words": 2
+    },
+    {
+      "path": "common_voice_ky_17454364.mp3",
+      "reference": "Бул чырдын арты менен Темир Сариев отставкага кеткен.",
+      "asr": "юобул черден арты менен темир сариев аставкага кеткен",
+      "word_errors": 3,
+      "word_count": 8,
+      "matched_words": 5
+    },
+    {
+      "path": "common_voice_ky_18160877.mp3",
+      "reference": "Бирок ошол сол тарабы иштебей жатат.",
+      "asr": "биролк ошол сот тарабы иштибей жатат",
+      "word_errors": 3,
+      "word_count": 6,
+      "matched_words": 3
+    },
+    {
+      "path": "common_voice_ky_19920799.mp3",
+      "reference": "Чет өлкөлөрдө бул модага айланган.",
+      "asr": "чет өркөлөрдү булзмо дага айыланган",
+      "word_errors": 4,
+      "word_count": 5,
+      "matched_words": 1
+    },
+    {
+      "path": "common_voice_ky_17830306.mp3",
+      "reference": "Жыйынтыгында сот коргоочу тараптын өтүнүчүн четке какты.",
+      "asr": "жыйынтыгында сот коргоочу тараптын өтүнүчүн четке какты",
+      "word_errors": 0,
+      "word_count": 7,
+      "matched_words": 7
+    },
+    {
+      "path": "common_voice_ky_17830308.mp3",
+      "reference": "Эч ким жок, көрдүңөрбү?",
+      "asr": "эч ким жок көрдүңөрбү",
+      "word_errors": 0,
+      "word_count": 4,
+      "matched_words": 4
+    },
+    {
+      "path": "common_voice_ky_19571750.mp3",
+      "reference": "Ал биз менен келип таанышкан биринчи киши болду.",
+      "asr": "ал биз менен келип таанышкан биринчи киши болду",
+      "word_errors": 0,
+      "word_count": 8,
+      "matched_words": 8
+    },
+    {
+      "path": "common_voice_ky_19571751.mp3",
+      "reference": "Мен юрист катары бул жеке аныктаманы мыйзамсыз деп эсептейм.",
+      "asr": "мен юрист катары бул жеге аныктаманы мыйзамсыз деп эсептейм",
+      "word_errors": 1,
+      "word_count": 9,
+      "matched_words": 8
+    }
+  ]
+}

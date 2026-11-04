@@ -1,0 +1,1102 @@
+{
+  "git_commit": "dad9f8b01b9e9f8e966b142dd28c9234d7425fe1",
+  "includes_working_tree_snapshot": true,
+  "release_status": "LOCAL REVIEW CANDIDATE \u2014 not published, no stable public URL assigned",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8213,
+      "sha256": "75c5bdd0f5af919a270bf84f1a38dbd70f7d5ca2b19bef34d466db1e104183f3"
+    },
+    {
+      "path": "data/processed/splits/canonical_v2.json",
+      "bytes": 2038677,
+      "sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd"
+    },
+    {
+      "path": "data/processed/v2/kyrgyznews.jsonl",
+      "bytes": 77290788,
+      "sha256": "b7e305dbca5e096705772915c75d08b357386de1f3776ce9b7e955fc2f4147df"
+    },
+    {
+      "path": "data/processed/v2/wikipedia_ky.jsonl",
+      "bytes": 37693414,
+      "sha256": "9b116bcdc90011778cc52515ff827508bbb77e0fba3cf98af1def585e6f5b181"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_news/metrics.json",
+      "bytes": 12980,
+      "sha256": "455346258095416b00395158a1c24d6467a7d27f1a686781131e8205b5951177"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_news/predictions_raw.csv",
+      "bytes": 14685633,
+      "sha256": "30416979733ec9071901a2da4607a6f214e5792f6ed05020a56481dc2757e5b8"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_news/predictions_validation_offsets.csv",
+      "bytes": 14685633,
+      "sha256": "2871473f27140d38759376dc1b767cbe5e18449687c8362b7570f639156f68d6"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_news/validation_logits.npz",
+      "bytes": 1536903,
+      "sha256": "c487ff80253d4c4d2388b360efe9011b539eb88f1a44dd88806fd3894dae5412"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_news/validation_selection.json",
+      "bytes": 9454,
+      "sha256": "a8b046d699a38e718514306ed67982545c37b8f896b6b887030e3d183082a054"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_wiki/metrics.json",
+      "bytes": 13011,
+      "sha256": "b15f626d1920debec376e8b82020ca277bdd89d72ee0490317ab8fb3bde36117"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_wiki/predictions_raw.csv",
+      "bytes": 24605872,
+      "sha256": "771a0a76b954cf8a28e110518e147ba8b2ec0a0189c64bc4fcfb05244cd5ff4f"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_wiki/predictions_validation_offsets.csv",
+      "bytes": 24605872,
+      "sha256": "266e58e83a92bc53df5cb43abf1bd6cdd7c504b7766861b0b80f2abedae9d9c8"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_wiki/validation_logits.npz",
+      "bytes": 2838813,
+      "sha256": "7868bfbdc5d621783a08899226abf4079e4bf9490e894f641c8c2e97134de7ec"
+    },
+    {
+      "path": "experiments/r3/calibration/weighted_wiki/validation_selection.json",
+      "bytes": 9460,
+      "sha256": "1a815536ea0a250966042edbf0e31dcd6e80e1710752886e2c42096d17c81de8"
+    },
+    {
+      "path": "experiments/r3/rare_unweighted/r3_kyrgyznews_unweighted_20261104_153617_21ec764f/metadata.json",
+      "bytes": 139072,
+      "sha256": "a2b988d59c3e72c299091d635f9639fbacc231c258941623a744dbe7c26dd025"
+    },
+    {
+      "path": "experiments/r3/rare_unweighted/r3_kyrgyznews_unweighted_20261104_153617_21ec764f/tables/predictions.csv",
+      "bytes": 14685633,
+      "sha256": "f9375a52f58786045d92b718f48a1e8c7ae9f88b6f9a2681ff33ec6f45c642c4"
+    },
+    {
+      "path": "experiments/r3/rare_unweighted/r3_wikipedia_ky_unweighted_20261104_155612_0ecb434b/metadata.json",
+      "bytes": 101495,
+      "sha256": "f45bf9c83a701e669d31d34e06428a74f5639bf3b4f6f427f3141bfe0e62cd47"
+    },
+    {
+      "path": "experiments/r3/rare_unweighted/r3_wikipedia_ky_unweighted_20261104_155612_0ecb434b/tables/predictions.csv",
+      "bytes": 24605872,
+      "sha256": "7b98a13d7169ba2edd9aafb0570b6a17ceced3be7528ad4f8c8c6756401c7ae7"
+    },
+    {
+      "path": "experiments/v2_audits/cross_news_to_wiki/cross_kyrgyznews_to_wikipedia_ky_s-c-p-q-e_20260930_124140_78f00ec0/metadata.json",
+      "bytes": 27568,
+      "sha256": "bef0145ac95c7cd5d28ba4f846a9454fa6ba967fd40b5296819683344a61a17c"
+    },
+    {
+      "path": "experiments/v2_audits/cross_news_to_wiki/cross_kyrgyznews_to_wikipedia_ky_s-c-p-q-e_20260930_124140_78f00ec0/tables/predictions.csv",
+      "bytes": 24605872,
+      "sha256": "9eb5204756dab6598fce1936d7bfd22fa7f92878b0ddfc2c9ab68d6f5983d707"
+    },
+    {
+      "path": "experiments/v2_audits/cross_wiki_to_news/cross_wikipedia_ky_to_kyrgyznews_s-c-p-q-e_20260930_124247_c20dc1d3/metadata.json",
+      "bytes": 37044,
+      "sha256": "b175d8f59d692cf4c01d4dd4bfbf5b077b3f43063bc3fdfbdd355e318f5d75ac"
+    },
+    {
+      "path": "experiments/v2_audits/cross_wiki_to_news/cross_wikipedia_ky_to_kyrgyznews_s-c-p-q-e_20260930_124247_c20dc1d3/tables/predictions.csv",
+      "bytes": 14685633,
+      "sha256": "fce07bdcd5e65bf5068754faed46c703b818c794733f7486349896a662aef4f2"
+    },
+    {
+      "path": "experiments/v2_audits/extended_news/v2_kyrgyznews_extended_20260930_114018_b149e80a/metadata.json",
+      "bytes": 139074,
+      "sha256": "b8afa89f5f019d1b68d27a55aec68ca2455a01bf24d992db80b723a522d575d7"
+    },
+    {
+      "path": "experiments/v2_audits/extended_news/v2_kyrgyznews_extended_20260930_114018_b149e80a/tables/predictions.csv",
+      "bytes": 14685633,
+      "sha256": "30416979733ec9071901a2da4607a6f214e5792f6ed05020a56481dc2757e5b8"
+    },
+    {
+      "path": "experiments/v2_audits/extended_wiki/v2_wikipedia_ky_extended_20260930_115951_138df634/metadata.json",
+      "bytes": 101519,
+      "sha256": "4e4e296a6bd3305f6b65993c0b63785b94e07b727d6c499a67f231151ced9c12"
+    },
+    {
+      "path": "experiments/v2_audits/extended_wiki/v2_wikipedia_ky_extended_20260930_115951_138df634/tables/predictions.csv",
+      "bytes": 24605872,
+      "sha256": "771a0a76b954cf8a28e110518e147ba8b2ec0a0189c64bc4fcfb05244cd5ff4f"
+    },
+    {
+      "path": "experiments/v2_audits/learning_curve/learning_curve_v2_kyrgyznews_20260930_124321_58229a72/metadata.json",
+      "bytes": 32670,
+      "sha256": "198b40391dbd746e0e851597aedc4c559cf40fc55c106d7a6f68a75cb106f349"
+    },
+    {
+      "path": "experiments/v2_main/cnn_deep_news/metadata.json",
+      "bytes": 3787,
+      "sha256": "e75e4ad2cde53878314be7fb9c167a7d2ec343ce772e115af550873a143636d6"
+    },
+    {
+      "path": "experiments/v2_main/cnn_deep_news/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "831870d409e55369b604fc1c63b9c1a90ae767f3589a76bef21fb285cf5605d7"
+    },
+    {
+      "path": "experiments/v2_main/cnn_deep_news/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "eaf3f13a0f5050ae6b54018162f62aceb9305afcdfd4b02bae1108ed6236a5db"
+    },
+    {
+      "path": "experiments/v2_main/cnn_deep_wiki/metadata.json",
+      "bytes": 3790,
+      "sha256": "4c4b7a401d0e5b12c7e077fbeb68d55260903ba26538f55f9faab094cf393b48"
+    },
+    {
+      "path": "experiments/v2_main/cnn_deep_wiki/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "1df3adf8ad434e2db6dc997a822795c7daeaab242111f4ee4bfceceff0dd1308"
+    },
+    {
+      "path": "experiments/v2_main/cnn_deep_wiki/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "28f152763b38324f24d8d7e17a2a2d49e9e4e6aaf173633d6506bebfb7c84c84"
+    },
+    {
+      "path": "experiments/v2_main/cnn_small_news/metadata.json",
+      "bytes": 2840,
+      "sha256": "c223f54940ebd269d780c511288e7f8f0a8399765843eac56c090e9db26eee5f"
+    },
+    {
+      "path": "experiments/v2_main/cnn_small_news/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "db05c57fc085ce349b2ac6140e693c14d1d25dc709328553307750b92b2a1563"
+    },
+    {
+      "path": "experiments/v2_main/cnn_small_news/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "c618893b7cb8932bfa4863392e4a22b7d219d40ba2e6eb4b1fab60ca1e91be44"
+    },
+    {
+      "path": "experiments/v2_main/cnn_small_wiki/metadata.json",
+      "bytes": 2847,
+      "sha256": "872823746bed50bc331e8c17e55a5f6bf2835d652ece66f1c0b3f40d2487bc60"
+    },
+    {
+      "path": "experiments/v2_main/cnn_small_wiki/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "7b9cdd945fe32aa56efa2b29f4fc532d277076fc75fd1d4afb51753a51d8b5f8"
+    },
+    {
+      "path": "experiments/v2_main/cnn_small_wiki/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "65ef597ca2128b72f307654315549cde79c5f276c1b72849a5647ba460b76bef"
+    },
+    {
+      "path": "experiments/v2_main/external_first/metadata.json",
+      "bytes": 810,
+      "sha256": "8e9b99236d15c02edb49e561ec39706db61c31354f2fbcd0ce201dd2d01b0da6"
+    },
+    {
+      "path": "experiments/v2_main/external_first/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "8279f16f2f6ce8a4b2b79150916e65a6076a0e9ecd7760be8d24c6fc88f3b13f"
+    },
+    {
+      "path": "experiments/v2_main/external_first/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "80da904f2a839523b6c29b5581d1a0214aba28bdce31159a9e3d4d72b097372d"
+    },
+    {
+      "path": "experiments/v2_main/external_last/metadata.json",
+      "bytes": 808,
+      "sha256": "38253f76b9560287b15d286b565f46e20eead3e1de362468d8b0920caec841f0"
+    },
+    {
+      "path": "experiments/v2_main/external_last/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "dc4d24852cfba1a9531d179ea186d659c4a81a9e9ddec8bea0f9ed0044ac333c"
+    },
+    {
+      "path": "experiments/v2_main/external_last/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "ffe7323b4419f41c641743a61a583447023043e0e4418a185d3f412f185d3cdc"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert2_news/metadata.json",
+      "bytes": 1325,
+      "sha256": "90d116cf2f4d71a39d80d04ff101cb0b176a3d50245cf97e4816599c44434256"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert2_news/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "5e5cb7a940717378e2d83386896e19649884833a053661814a985e8f53e084cb"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert2_news/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "1919113ac39f3bcffcd00edcfe17bec3d325e4831efcf33a2efa73c99b67e1c3"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert2_wiki/metadata.json",
+      "bytes": 1324,
+      "sha256": "4c78fd207441102a13092cc55d20252ffddc65897114e31509a6e2ebe4119384"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert2_wiki/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "9e358e2682d380882eec73c5fe0f39925a1a67f6ad5c8524eec4c42732844e58"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert2_wiki/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "7f61a7ff91b4f421a5b514fc135e3ce710a2236a8a810bc4fa4c26e253cafd70"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert_news/metadata.json",
+      "bytes": 1320,
+      "sha256": "6f945146ee3398f5bc5eb6b9252093eca19b65024a23e3050392ad5446dc1b6a"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert_news/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "777f0ba543db1b5a4602f67e79ebeeb589ecc2531b41583bbc96d1f45de1b775"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert_news/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "f8aebd01a1df3a73c11c1962de7910123e0e4df260c6ef7b758ec97b9e55ec5f"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert_wiki/metadata.json",
+      "bytes": 1323,
+      "sha256": "b458de90928e067cdeb989c0bd29c045b31583aa57fe6d294ad338d6f8117980"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert_wiki/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "3a5661e86d92bf07528b1444edc3e00be32ad18df98407b173a6afe93256a754"
+    },
+    {
+      "path": "experiments/v2_main/kyrgyzbert_wiki/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "bfbc9f8b6ce8f8364cef45a5e9d15d5ddfcfa8abcf20c851dee167781798fcf8"
+    },
+    {
+      "path": "experiments/v2_main/logreg_balanced_news/metadata.json",
+      "bytes": 713,
+      "sha256": "75bd75a974945b4b36bb2dbe666b5d6abc6797ce1751e9c1b7bfe6bbb094bb7b"
+    },
+    {
+      "path": "experiments/v2_main/logreg_balanced_news/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "d2cb29de8c8853469079f9a9bb63154af8e510b21dfb864e3c51285d6ac27524"
+    },
+    {
+      "path": "experiments/v2_main/logreg_balanced_news/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "6203c73f0db2898d21a6273febc4eeabc28ea5dd3bf02cfdef4ce893bfe9a379"
+    },
+    {
+      "path": "experiments/v2_main/logreg_balanced_wiki/metadata.json",
+      "bytes": 716,
+      "sha256": "4249c70041bd79b9df00543e8e0b014d1610c519effcd2ff3f5a8af971522369"
+    },
+    {
+      "path": "experiments/v2_main/logreg_balanced_wiki/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "9396a0122fcbcf4a1b4999355cad41470a656bea804b5c2090be7dda30a41cb5"
+    },
+    {
+      "path": "experiments/v2_main/logreg_balanced_wiki/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "fb83cd82dd5c217acae1f3c94586090a7dcac581bb2d37838690e7475b0adf1e"
+    },
+    {
+      "path": "experiments/v2_main/sgd_log_balanced_news/metadata.json",
+      "bytes": 713,
+      "sha256": "896c94e6aa2778bdb62990a0dc743512332bbb6aafffa703dc0c91ba02ca6514"
+    },
+    {
+      "path": "experiments/v2_main/sgd_log_balanced_news/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "5fc092c8158aaf47a3e4944c44b74ab1e74fda5478f1dce9ad6909ffee3c922c"
+    },
+    {
+      "path": "experiments/v2_main/sgd_log_balanced_news/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "87f8ab9d2b8a0f5a69708df592aa4c957a0da34816109873129be01b54849b90"
+    },
+    {
+      "path": "experiments/v2_main/sgd_log_balanced_wiki/metadata.json",
+      "bytes": 717,
+      "sha256": "992160425c973e09bbc3d9eade6e76a2e9af08dcbae6ebc5f2d34e952e0ff75a"
+    },
+    {
+      "path": "experiments/v2_main/sgd_log_balanced_wiki/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "ce8a303decf41c8931fa6ef6ad3ab1efa147fec793090c3f9a80e51ddd02d322"
+    },
+    {
+      "path": "experiments/v2_main/sgd_log_balanced_wiki/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "7d402c0f6c9176882356a01781e05f873c06b7c714f2fcf7955f62046a5221e4"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_mixed/metadata.json",
+      "bytes": 1331,
+      "sha256": "2b0fc2c49ad94eb6110a00d4ebe38c16b38c36c97ff6efdb67d1124d54e35031"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_mixed/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "7de9b100c8d15229ac3c36c4919ecb954b9af37fec8231e547d23526ebfa5825"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_mixed/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "eaeca93234e758ddbb45dcb7b3fa9edf80ce1268fc83d43f039af57e503566a0"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_mixed_matched/metadata.json",
+      "bytes": 1336,
+      "sha256": "99c0ea34328989d470ddebb9e912dcc1a43b3c616fa98a4fe74ad4814af1461b"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_mixed_matched/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "4fcc9fef5f81800a8a22f104ceb93fc8e79c19eee0d7f9bdfe9ffad8a2192965"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_mixed_matched/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "aafed7c6b08f458a5d18a8470516bceaaafd494778372163dd8527d7541c808d"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news/metadata.json",
+      "bytes": 1303,
+      "sha256": "974e836b473130ac3fcf490876f44bfb9d9686ac63d248dc7fd02d36c8955bc9"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "54c09d20388f74e9675c9edf6b4f38d7a0991ec3e603659b1128f13ed4cb232b"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "654516cfeb6e24fd55528835a36fafe731827bff38b4647c303bca55a631204b"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news_s43/metadata.json",
+      "bytes": 1306,
+      "sha256": "c29c9902681f23ac8e358d82a479ff1be01babda10290ccb0df23875ff9133e1"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news_s43/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "eed14a20dad1496ba0033e64878cf34871d426c6545f33e2517600fd59ca6d3d"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news_s43/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "549d7bdaf557278431c8ae06812609c8d98faa6d73baaffc443e8703bb0f3e65"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news_s44/metadata.json",
+      "bytes": 1307,
+      "sha256": "44a5407078aecf1f568fb103e9a145b589c8389dae41ee927b47616674552b7d"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news_s44/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "ab19fb3a5a99f8985e07eec33216f7f6cc97d815df8732c599e8b4063601d9df"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_news_s44/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "68fe29d916d4563b02d27d65beca852c81dba90054ab62ef9fe9f4ef616125e8"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki/metadata.json",
+      "bytes": 1302,
+      "sha256": "3ec8eda40c7368c48aca1f30fb527a37f031a6dd5a2d724ff94fba7b834c6b12"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "ba536391afb200ac9429f04a2dfe91ccc1c42c40db17082123a5b04abdde7a5a"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "b612d7c2278067b35f3931b82d7fe8ab96037f85f039c7df3c97a74f3235e298"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki_s43/metadata.json",
+      "bytes": 1306,
+      "sha256": "de7e49974661645b0cef73ec54aebe960b3d916c2e9dc4226605e14cc46285f2"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki_s43/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "47740f77af3a05e34632de4508c65bd8820f62812342aae7bcad7c750c202204"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki_s43/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "f981339e9aace53cf6093e06c05879de7c046abdba51b46bf8800aaa11ad28f5"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki_s44/metadata.json",
+      "bytes": 1307,
+      "sha256": "dcc667132b73aae0e6524f31a879d5c7a204afd9743c1ab4d287a09b71f3312f"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki_s44/predictions_test_kyrgyznews.csv",
+      "bytes": 14685633,
+      "sha256": "883c06a294c62b93ee4b0142dff83022ef8f63bbc94e92dde519d740408ed4fd"
+    },
+    {
+      "path": "experiments/v2_main/xlmr_wiki_s44/predictions_test_wikipedia_ky.csv",
+      "bytes": 24605872,
+      "sha256": "bddf652aae79ee0192605cddf934e91ffb76f607527c185fe99d48ff8bbefcee"
+    },
+    {
+      "path": "paper/R3/reproducibility/README.md",
+      "bytes": 8213,
+      "sha256": "75c5bdd0f5af919a270bf84f1a38dbd70f7d5ca2b19bef34d466db1e104183f3"
+    },
+    {
+      "path": "paper/R3/reproducibility/checkpoint_inventory.json",
+      "bytes": 8183,
+      "sha256": "2e6d3a6dd15d200ec87eb87e16b0478abdd06427787f0c7b400fd1b5f93135c7"
+    },
+    {
+      "path": "paper/R3/reproducibility/input_provenance.json",
+      "bytes": 1653,
+      "sha256": "d93278e7a4e23ee015882376f066fd48840f04af5e878831ed9ada4c7c06a287"
+    },
+    {
+      "path": "paper/R3/reproducibility/portable_rare_status.json",
+      "bytes": 1231,
+      "sha256": "badf0098697ab057baa6254f4c2a313619c97391649c97e1a14900ccfd093033"
+    },
+    {
+      "path": "paper/R3/reproducibility/requirements-frozen.txt",
+      "bytes": 1239,
+      "sha256": "4d669c9fc7a74d7db3f57832fb8c1e32fc42b7179c9e8401c83c1cde1bcecfc8"
+    },
+    {
+      "path": "paper/R3/reproducibility/training_configurations.json",
+      "bytes": 720264,
+      "sha256": "628af0953d2ea1c97476417c544066bc885c288482afe81e4a851204480e4617"
+    },
+    {
+      "path": "paper/R3/reproducibility/verify_snapshot.py",
+      "bytes": 1053,
+      "sha256": "5e22be2a9841204106031ee2bb9214ff487ddd41a9bde81a897bac4aebbd372b"
+    },
+    {
+      "path": "paper/R3/reproducibility/wikipedia_attribution.csv",
+      "bytes": 907903,
+      "sha256": "bcd685b0c1c49b29117e32f09d3434b9b9ccdecab26bd1dcb269584cc6e661e5"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 733,
+      "sha256": "1fa3ede7e306d2fa788db16e4155d1f6198b104ecd841370210efc5cd11582f7"
+    },
+    {
+      "path": "reports/r1/asr_pilot_common_voice.json",
+      "bytes": 5289,
+      "sha256": "c8ac9fed65014f525285601c8d8c1bf72ae2a50116d4477e6cd79963d274db6c"
+    },
+    {
+      "path": "reports/r1/asr_pilot_common_voice.md",
+      "bytes": 3190,
+      "sha256": "d39fbb3476951bf2ca542eb624663c2fc25e328f530794458e98b321074ea99b"
+    },
+    {
+      "path": "reports/r1/asr_pilot_v2.json",
+      "bytes": 6383,
+      "sha256": "2dca6727c0dc34aa57e38214cfb22162fb67d13fbda7172361ff50cfe32433ab"
+    },
+    {
+      "path": "reports/r1/asr_pilot_v2.md",
+      "bytes": 3078,
+      "sha256": "ad0b6e0f1dc76e0786334575499d0ec0318803b26ba8b28626870f9e91bebb57"
+    },
+    {
+      "path": "reports/r1/asr_pilot_v2_clips.jsonl",
+      "bytes": 94531,
+      "sha256": "238d6f0894b224e883203aa22bec6881805c19d8ad08deb6e178f5b6fc073fc2"
+    },
+    {
+      "path": "reports/r1/canonical_v2_manifest.json",
+      "bytes": 2038677,
+      "sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd"
+    },
+    {
+      "path": "reports/r1/leakage_audit.json",
+      "bytes": 4156,
+      "sha256": "0ff6fee0490b401a51514cfe01fc87a020cc68cb82762758ba23dddcc09dff20"
+    },
+    {
+      "path": "reports/r1/leakage_audit.md",
+      "bytes": 1305,
+      "sha256": "20980d52b89699d0fa8840cb2c7475b4f7c9ab5e001396e80953482648adbe80"
+    },
+    {
+      "path": "reports/r1/leakage_rescore.json",
+      "bytes": 7901,
+      "sha256": "b1cc929fed69925aa6cf4eeabfe34a164a9310886b2cc085f3f44d3c01e01df1"
+    },
+    {
+      "path": "reports/r1/qualitative_examples_v2.json",
+      "bytes": 14769,
+      "sha256": "e113db731b22383a7606d2ce6dd7f5bddc0667265e3a8f9c9ff03ac15c0255fe"
+    },
+    {
+      "path": "reports/r1/qualitative_translations_v2.json",
+      "bytes": 1577,
+      "sha256": "3786b96194159ef99d815147abdcaadd6272bccf6f9803ddb631b86b6cc063e9"
+    },
+    {
+      "path": "reports/r1/seed_stability_news.json",
+      "bytes": 2644,
+      "sha256": "0623ccb459f36a31b56fc96d2818d987b2a6c3ff92c4ff1ab48944ca1d834b47"
+    },
+    {
+      "path": "reports/r1/seed_stability_news.md",
+      "bytes": 651,
+      "sha256": "c3af8ac1430b59d5ddd161ab116cd391bb39acfb5428baa5e021183af02ba15b"
+    },
+    {
+      "path": "reports/r1/seed_stability_wiki.json",
+      "bytes": 2647,
+      "sha256": "7b4fba0c5546258e36b8d0732c1de6cf694b20d9b46993548568ec78ab83bbbb"
+    },
+    {
+      "path": "reports/r1/seed_stability_wiki.md",
+      "bytes": 653,
+      "sha256": "7bd870fd62bbeed55c22a83d0b88db82811378402f9742c361ddba080fdc0af4"
+    },
+    {
+      "path": "reports/r3/asr/README.md",
+      "bytes": 2696,
+      "sha256": "f109c2347745e0d00717b3f4eb2d74144b83e166cc21fb34961c45b71c79c33b"
+    },
+    {
+      "path": "reports/r3/asr/common_voice/clips.jsonl",
+      "bytes": 1784655,
+      "sha256": "5f65ed3a137a57b65b366becbb4a5147b2cc98a8497e2adf20f11d21ab25cc8a"
+    },
+    {
+      "path": "reports/r3/asr/common_voice/decoding.json",
+      "bytes": 226,
+      "sha256": "a3d48ec5994bdf57acf7f298b50aba0ca510b35bc5f1c9f12971a5cc43886338"
+    },
+    {
+      "path": "reports/r3/asr/common_voice/hypotheses.jsonl",
+      "bytes": 733546,
+      "sha256": "b8d4574de87637c89e73e0b5ac1838ffd710a39a65d4013b6fcc74163a5d89fd"
+    },
+    {
+      "path": "reports/r3/asr/common_voice/metrics.json",
+      "bytes": 6439,
+      "sha256": "99620963797e2108b96b969f6be3846f49748fef8eb2459143c90a4c2d23b99c"
+    },
+    {
+      "path": "reports/r3/asr/comparison.csv",
+      "bytes": 1633,
+      "sha256": "491cc5b0a021874d41cceef7e29e90619a42373c4cb81dae20a4e097a622e990"
+    },
+    {
+      "path": "reports/r3/asr/comparison.json",
+      "bytes": 21725,
+      "sha256": "631cb3578543a6b81a2a30b29556ed7f95f6e14c8bc90192781c7cffaad0e8b3"
+    },
+    {
+      "path": "reports/r3/asr/error_strata.csv",
+      "bytes": 613,
+      "sha256": "0e13715954415744959705e38ff7a09dbf251f45a95663bfd236a002b5b4766c"
+    },
+    {
+      "path": "reports/r3/asr/fleurs/clips.jsonl",
+      "bytes": 1835806,
+      "sha256": "cbfd3520b68b3df0e697a49ac57861c52fabd557e72ba5a77c5a2069a12e3eb7"
+    },
+    {
+      "path": "reports/r3/asr/fleurs/dataset_provenance.json",
+      "bytes": 354,
+      "sha256": "5dd9f28b3bcf97d595129bbc7b748d2c8b9140cf26f90c4ee5abf112de61965d"
+    },
+    {
+      "path": "reports/r3/asr/fleurs/decoding.json",
+      "bytes": 226,
+      "sha256": "a3d48ec5994bdf57acf7f298b50aba0ca510b35bc5f1c9f12971a5cc43886338"
+    },
+    {
+      "path": "reports/r3/asr/fleurs/hypotheses.jsonl",
+      "bytes": 631534,
+      "sha256": "5ce72c8a6105064f8fd068216749b7a89b6de88c368361f270bcc37e32082446"
+    },
+    {
+      "path": "reports/r3/asr/fleurs/metrics.json",
+      "bytes": 6450,
+      "sha256": "c33112ae657a5753428872c97494604a148f1ed99e1d192071bec78275224e49"
+    },
+    {
+      "path": "reports/r3/data_search/README.md",
+      "bytes": 4826,
+      "sha256": "7963e0cda94d902feb7ee7e9e28350fa7c059f808a78fc75e5ad00259d4b9ac0"
+    },
+    {
+      "path": "reports/r3/data_search/common_voice_sps5_metadata.json",
+      "bytes": 182397,
+      "sha256": "5d5c8437fd79e05211dfbbc273344627e10d1ae8ea9accece16fcbb98d9e0cbe"
+    },
+    {
+      "path": "reports/r3/data_search/common_voice_sps5_provenance.json",
+      "bytes": 309,
+      "sha256": "4184e1c832686aafe4372c27841ed80c6afe39a3bcddae6c41dd1d6826e26217"
+    },
+    {
+      "path": "reports/r3/errors/README.md",
+      "bytes": 1297,
+      "sha256": "27d22fde38fe47642fe86659beadbd7a00b308404760063eb071cbb97b6c1038"
+    },
+    {
+      "path": "reports/r3/errors/analysis.json",
+      "bytes": 2306,
+      "sha256": "23083ccdc5f2789728486147774ed40a2a7e4111247773500846942757cb1cb2"
+    },
+    {
+      "path": "reports/r3/errors/annotation_pack.csv",
+      "bytes": 124414,
+      "sha256": "8db007eeda83538605a091a9a8f306d092c5024f86b346c94f05d913eb15898e"
+    },
+    {
+      "path": "reports/r3/errors/confusion_census.csv",
+      "bytes": 547,
+      "sha256": "ad816dd72689f4ea57c30a6a46992ec54cca06ae9dd41504f57db16b0ac77b84"
+    },
+    {
+      "path": "reports/r3/overlap/main_panel_sensitivity.csv",
+      "bytes": 22993,
+      "sha256": "da0cd335f66bd2d0103b42d04089ca54cde5321d81f6cbcc8599b7df4570d3b8"
+    },
+    {
+      "path": "reports/r3/overlap/main_panel_sensitivity.json",
+      "bytes": 76195,
+      "sha256": "0aa3d9b2ef95868913f31451fdc95f0fd5935fa1f1948e49fb158a48d1c4b85b"
+    },
+    {
+      "path": "reports/r3/overlap/main_panel_sensitivity.md",
+      "bytes": 1247,
+      "sha256": "46ec843840521f8e4b1d4ac75e1fcfe86db4059f6191624c832c6e47a0a7b086"
+    },
+    {
+      "path": "reports/r3/overlap/mask_kyrgyznews.csv.gz",
+      "bytes": 620675,
+      "sha256": "5f5f17a6d20fd4b5e4b1a50a389f37f1c8f40b271107cc092a9aa9c233b072c2"
+    },
+    {
+      "path": "reports/r3/overlap/mask_wikipedia_ky.csv.gz",
+      "bytes": 1220218,
+      "sha256": "4436e23707d7ad42f16f28f9dae2d1455f82e2e84caf155a1a2ff9377c7b2248"
+    },
+    {
+      "path": "reports/r3/rare/README.md",
+      "bytes": 1399,
+      "sha256": "fea9516be9bd67bda8928dee51c197e8d95b1c9b8bc9caeb9c81e1ff799ae0a5"
+    },
+    {
+      "path": "reports/r3/rare/comparison.csv",
+      "bytes": 2575,
+      "sha256": "1b5ac428928998a00d402ec9b94705a28da89fac91a0bd5f7632f54b50add926"
+    },
+    {
+      "path": "reports/r3/rare/comparison.json",
+      "bytes": 13433,
+      "sha256": "db5a537abec9c8f58ead6708e2cfb85e850897736159d0554cdfc51e1173d2d3"
+    },
+    {
+      "path": "reports/r3/response_quote_audit.json",
+      "bytes": 231,
+      "sha256": "57c15bee8b771cf2c8e17aa143983385ebf8d0da748950458a06ef89e03c2c62"
+    },
+    {
+      "path": "reports/v2/data_stats.json",
+      "bytes": 1955,
+      "sha256": "45b8f7af3ec86ed033768e7ce3ee6bc6b76942d68d624069d90eb83e4fe7a3bf"
+    },
+    {
+      "path": "reports/v2/extended_audit.json",
+      "bytes": 6749,
+      "sha256": "268ad98eb5e4c52c79827399f5dd05100b68aca74d32727426ba114d51746b11"
+    },
+    {
+      "path": "reports/v2/extended_audit.md",
+      "bytes": 438,
+      "sha256": "04bc100de34509647f9ed84c5020b800dac6371dc858c79746a04fe8150a2b26"
+    },
+    {
+      "path": "reports/v2/extended_per_class.csv",
+      "bytes": 2317,
+      "sha256": "afadb8b40cb0c05d1c03dad590dbce7076bca213daa466189593c0ff71abbf71"
+    },
+    {
+      "path": "reports/v2/learning_curve_audit.csv",
+      "bytes": 978,
+      "sha256": "321e5a95f618fd56993f460442d5b9aa9e87e69ce21cf65413bca676249e70fb"
+    },
+    {
+      "path": "reports/v2/learning_curve_audit.json",
+      "bytes": 27760,
+      "sha256": "d8dcdf2c241ae5c7bd70266d3bf17c9a8dfdd2737fae1eff6f5e4fcfd1e5582d"
+    },
+    {
+      "path": "reports/v2/learning_curve_audit.md",
+      "bytes": 627,
+      "sha256": "f4d026f0d8bc311686bf35d2138ef904d6f9f6522e00c84e321246e0f1e99b24"
+    },
+    {
+      "path": "reports/v2/main_panel.csv",
+      "bytes": 11965,
+      "sha256": "51bd1d1443e6149bf3192d2be9aaa6658d2d48e6318b3e671f03265e9ef36c43"
+    },
+    {
+      "path": "reports/v2/main_panel.md",
+      "bytes": 4641,
+      "sha256": "e6f8bc417af247bc5cc06064c3faf77f22cfc51550d4921df4b61387b634c121"
+    },
+    {
+      "path": "reports/v2/seed_bootstrap_kyrgyznews_to_kyrgyznews.json",
+      "bytes": 3802,
+      "sha256": "e62ca7b0e0403f067e1d50e4acee89fe21911d4ecb7d90c9a47e7a2e46ccf1c4"
+    },
+    {
+      "path": "reports/v2/seed_bootstrap_kyrgyznews_to_kyrgyznews.md",
+      "bytes": 1161,
+      "sha256": "44e3252cd88654a2b85049bc82550241f968b2dcb5a90b30deb44e20fd76bcac"
+    },
+    {
+      "path": "reports/v2/seed_bootstrap_kyrgyznews_to_wikipedia_ky.json",
+      "bytes": 3804,
+      "sha256": "33d4e174e9dc9f0c5509ff08486ba34c685a84904fc5c16ee37646d254ccdd52"
+    },
+    {
+      "path": "reports/v2/seed_bootstrap_kyrgyznews_to_wikipedia_ky.md",
+      "bytes": 1163,
+      "sha256": "ec039363decfa2cffae7851b0f7d3b9393b25eea30cba1c573dd465f8ee907e7"
+    },
+    {
+      "path": "reports/v2/seed_bootstrap_wikipedia_ky_to_kyrgyznews.json",
+      "bytes": 3806,
+      "sha256": "b34098500e0f0b193a70408a47b48d330621ad4b9c719e72f83c0f063b610eda"
+    },
+    {
+      "path": "reports/v2/seed_bootstrap_wikipedia_ky_to_kyrgyznews.md",
+      "bytes": 1163,
+      "sha256": "abacf2844a0523d9f719ea16dc8d73cfc7897cc79028c8f7ffdf8c6c9b9082aa"
+    },
+    {
+      "path": "reports/v2/seed_bootstrap_wikipedia_ky_to_wikipedia_ky.json",
+      "bytes": 3811,
+      "sha256": "688c4b5832575bbf14a6fc7143d05acecb6fdf4802569206998be2d859e79bad"
+    },
+    {
+      "path": "reports/v2/seed_bootstrap_wikipedia_ky_to_wikipedia_ky.md",
+      "bytes": 1162,
+      "sha256": "3df74d8f764fc82e4b7dc57c46970fa867f845b19ca870a68b66aae5839bfa7b"
+    },
+    {
+      "path": "reports/v2/seeds_xlmr.json",
+      "bytes": 551,
+      "sha256": "ccbcb947be1e8c9c9c7d0266f78fe053ab54e45a3bfc1b262f74e1bb85342145"
+    },
+    {
+      "path": "scripts/analyze_r3_errors.py",
+      "bytes": 7421,
+      "sha256": "b2bc06c8777a5bdad24b58273a2e858c84345b7691d81b17bd67c5cde7fd7b8a"
+    },
+    {
+      "path": "scripts/analyze_v2_seeds.py",
+      "bytes": 898,
+      "sha256": "e79a02295c71539fd6bf1e48aed9391d143809ddd5177c12ac8002417e28ec7e"
+    },
+    {
+      "path": "scripts/leakage_audit.py",
+      "bytes": 5900,
+      "sha256": "74b07272b68a5803434f47c79dbd04c7a81ff47655fae6d7f806a6edb4ff5fcf"
+    },
+    {
+      "path": "scripts/leakage_rescore.py",
+      "bytes": 6847,
+      "sha256": "63376c691984b0afed8324e2db20efdd48edd01eb687bfb4d5671a3b60e7b51d"
+    },
+    {
+      "path": "scripts/package_r3_reproduction.py",
+      "bytes": 9699,
+      "sha256": "955e7014deaf0adbd276567790f1eda6e07833925b5394d53f245b85d565f6f4"
+    },
+    {
+      "path": "scripts/report_r3_asr.py",
+      "bytes": 9480,
+      "sha256": "2b3b14d693112599757b7dde7e88c4cf3f9f4c516a5d15f49fa61f8a2bca0ec1"
+    },
+    {
+      "path": "scripts/report_r3_rare.py",
+      "bytes": 9583,
+      "sha256": "406bc4463c2b1bf41dc5bd3f11658172bcdde8779a9ce1425bacf60545741336"
+    },
+    {
+      "path": "scripts/report_v2_extended.py",
+      "bytes": 6318,
+      "sha256": "f1c7070f93eab385b1f2aaa651baff9178726aa23ce26c3ad53a6279b9d1b40e"
+    },
+    {
+      "path": "scripts/report_v2_learning_curve.py",
+      "bytes": 10745,
+      "sha256": "530ee3d47f1244827ae3eab88be7f1320fdea71a7b7d586e0dc1844cb389a14f"
+    },
+    {
+      "path": "scripts/run_asr_pilot.py",
+      "bytes": 16389,
+      "sha256": "6109a8785c77cbc157da6a7ded8995c3c0649f1a24b0b7f3bf29f04652bf92c2"
+    },
+    {
+      "path": "scripts/run_r3_asr.py",
+      "bytes": 10640,
+      "sha256": "303a5a47231ff6726c8f31476469a1b09f22622513727f3d2c4eab44ae324667"
+    },
+    {
+      "path": "scripts/run_v2_audits.py",
+      "bytes": 3872,
+      "sha256": "1d130f8fabad206879fbbc46b960c6ff87773432021b57d629626a70e86593ce"
+    },
+    {
+      "path": "scripts/run_v2_queue.py",
+      "bytes": 4758,
+      "sha256": "9485648b712cffa085ca83179830ff77dd11fdd61306967433d9e8cc1c1339c6"
+    },
+    {
+      "path": "scripts/select_examples_v2.py",
+      "bytes": 9206,
+      "sha256": "c807135ecccc673bf1522dec2f074c2c58dbe3c691c973c03f17c6b55c494ff5"
+    },
+    {
+      "path": "scripts/train_r3_unweighted.py",
+      "bytes": 3708,
+      "sha256": "a65d2f7c1a05c24a6d28dce09071b89dce351039a79c540b84288d4f8c264631"
+    },
+    {
+      "path": "scripts/v2_data_stats.py",
+      "bytes": 2371,
+      "sha256": "75a2c98bf44f21a49687f4fdd3c1a462d950c54d1b8a5e07bb1294193b818c1e"
+    },
+    {
+      "path": "src/kg_punctuation/__init__.py",
+      "bytes": 125,
+      "sha256": "07e36e90f62016579cea1815d5f5fa388b695f9bafe4f97d8569daccd6561294"
+    },
+    {
+      "path": "src/kg_punctuation/asr_evaluation.py",
+      "bytes": 3595,
+      "sha256": "52022835146f7989b6577b7c66a3aa95c9124fdf306d81961e4a5746cb6f2834"
+    },
+    {
+      "path": "src/kg_punctuation/benchmark_v2.py",
+      "bytes": 22597,
+      "sha256": "d4b01474596721c0576b734b618a0bf832c1e6529523b5d8835779ec9718578e"
+    },
+    {
+      "path": "src/kg_punctuation/cli.py",
+      "bytes": 1654,
+      "sha256": "4821abcd567453b5364968c5f23da31cc9715c536f30917359626a9df80ec986"
+    },
+    {
+      "path": "src/kg_punctuation/data/__init__.py",
+      "bytes": 33,
+      "sha256": "135fed480c31621a9c6186477a4207305052e54ec2fce56cc12eb55c60b6f6f4"
+    },
+    {
+      "path": "src/kg_punctuation/data/build_sources.py",
+      "bytes": 7068,
+      "sha256": "9dbddbe6dcbce3b8ed635599df99991260029a72e7861576a83abebf9370d35d"
+    },
+    {
+      "path": "src/kg_punctuation/data/labeling.py",
+      "bytes": 3743,
+      "sha256": "165aca781deaca6131c81104155d8feeb9cce1e22dc7532b78a2ea1961dc69e7"
+    },
+    {
+      "path": "src/kg_punctuation/data/prepare.py",
+      "bytes": 2272,
+      "sha256": "72e2c5199bc98608229ae9fd9324462cd8900792071f97180584d3f811187fb2"
+    },
+    {
+      "path": "src/kg_punctuation/data/report.py",
+      "bytes": 4955,
+      "sha256": "54219e576cad37d55aec4483d90d12958df52cc80ef33b850d4014a35d6d2f02"
+    },
+    {
+      "path": "src/kg_punctuation/data/split.py",
+      "bytes": 921,
+      "sha256": "9ee61d4f83e35de1dea92c6bcdcf07a08ef6851d41fc75cf347498c020d52981"
+    },
+    {
+      "path": "src/kg_punctuation/deep_experiment.py",
+      "bytes": 18031,
+      "sha256": "2359ca25bfeff3f9e4d9969eb530a63eb2b65de7ef3c377ce9a68ebe1dea11d7"
+    },
+    {
+      "path": "src/kg_punctuation/eval_hf_punctuation.py",
+      "bytes": 10500,
+      "sha256": "9d7b7718a2492f5e92cd4e34700c5689688a96e013eb6553700654c4034d7565"
+    },
+    {
+      "path": "src/kg_punctuation/experiment.py",
+      "bytes": 14943,
+      "sha256": "03460a8d8895bf8fb6d548c342eb30f529d8a604231fd2d02999cdcd6cb1334d"
+    },
+    {
+      "path": "src/kg_punctuation/hf_cross_eval.py",
+      "bytes": 6943,
+      "sha256": "80033b9f71e18868cc9b12fdbf23bc00f00806352d8dd2f7bf0ba6227f04eccc"
+    },
+    {
+      "path": "src/kg_punctuation/hf_generic_cross_eval.py",
+      "bytes": 10516,
+      "sha256": "e507240694455699ce7589774b96348212bae79f92e9ce51d8e35f36c143deec"
+    },
+    {
+      "path": "src/kg_punctuation/hf_generic_experiment.py",
+      "bytes": 27287,
+      "sha256": "047db91f5729d0f3acae26bb66361ff22b1d09aedd5263dc775e5b89c8b32a71"
+    },
+    {
+      "path": "src/kg_punctuation/hf_mixed_experiment.py",
+      "bytes": 13377,
+      "sha256": "a045d45846cbd2fd5a6c545e5edcd9c7ef8455d654d7fdfaf4f8d909f2ff47fb"
+    },
+    {
+      "path": "src/kg_punctuation/hf_token_experiment.py",
+      "bytes": 15122,
+      "sha256": "bfb6a07bb6af0f89664c90ecf1d44d5f1128a3c9b1af8707effc8f004e01cec5"
+    },
+    {
+      "path": "src/kg_punctuation/learning_curve.py",
+      "bytes": 18355,
+      "sha256": "b068544fd6b9d11685cebde0cf9c9ca2ac63740fefe66c342bc7c7cbcec8fe81"
+    },
+    {
+      "path": "src/kg_punctuation/main_panel_v2.py",
+      "bytes": 17624,
+      "sha256": "e418e027e58cbb43a90b2a6810fde11f76178f5ada5922ce071391b03904afbb"
+    },
+    {
+      "path": "src/kg_punctuation/models/__init__.py",
+      "bytes": 38,
+      "sha256": "f23bc1bdf63d68203409e98d50b7f018762bfce04d77234a6c54c871102fa139"
+    },
+    {
+      "path": "src/kg_punctuation/overlap_sensitivity.py",
+      "bytes": 10337,
+      "sha256": "e25b1bca8d30b491f8cce6d01646ed66f65d01c4a62bd20c3c603abe665026e5"
+    },
+    {
+      "path": "src/kg_punctuation/paper_figures.py",
+      "bytes": 8536,
+      "sha256": "dfdf862dc16f918f060d26cdee51cc396afe2458ad8656ef6e909c26f877322a"
+    },
+    {
+      "path": "src/kg_punctuation/per_class_report.py",
+      "bytes": 8949,
+      "sha256": "e5fb5af4255574414e75a023191ade857135b6324e9e30ce2e29452ff3faf9fa"
+    },
+    {
+      "path": "src/kg_punctuation/rare_calibration.py",
+      "bytes": 7580,
+      "sha256": "b3278cd3aa48c22715591b030a73134acd4a13e4876a118c2a436a6d5824ca41"
+    },
+    {
+      "path": "src/kg_punctuation/references/openalex_refs.py",
+      "bytes": 7745,
+      "sha256": "9be9255ec147682ad7de47efe4f7bb1c4766699d1db30ab177a1f29564f459bd"
+    },
+    {
+      "path": "src/kg_punctuation/seed_analysis.py",
+      "bytes": 14404,
+      "sha256": "f4d2df5ab8a4d2921f439e7916a87f891567001857a05f77577763fdf4549261"
+    },
+    {
+      "path": "src/kg_punctuation/training/__init__.py",
+      "bytes": 57,
+      "sha256": "53edf0321cd9befae25c5a3a9e439d64158503df95ea8191ceb2380f1822291f"
+    },
+    {
+      "path": "src/kg_punctuation/translit.py",
+      "bytes": 1194,
+      "sha256": "374bbb319f89e1bf6336aa3da68d915e2d0e2d073941bc7dedbaeb1112de409c"
+    },
+    {
+      "path": "src/kg_punctuation/utils/__init__.py",
+      "bytes": 31,
+      "sha256": "9276b5594bfbc30f0e559d27997d3a3100c4833328d41b0cca9c0b2189debbe3"
+    },
+    {
+      "path": "src/kg_punctuation/v2_report.py",
+      "bytes": 8095,
+      "sha256": "53c8e9ef5d761ca1bd6c1997ce8611df3fa57cf74e5d414603a131867c47bf80"
+    },
+    {
+      "path": "tests/test_asr_evaluation.py",
+      "bytes": 1555,
+      "sha256": "b7bafb631f0a982344742d84c2d3d3dcbf42948cf22938db1f2909ad0c409b67"
+    },
+    {
+      "path": "tests/test_benchmark_v2.py",
+      "bytes": 8335,
+      "sha256": "d5069f36f434c09fdd5c658ec0c18a3b61ec86d8edec7751b1ddd7c7f09e5fea"
+    },
+    {
+      "path": "tests/test_hf_v2_integration.py",
+      "bytes": 9282,
+      "sha256": "de35f411d6e2d08390124b6c67da3a0e23d5ddb83786b1cedbe5205e530e7a31"
+    },
+    {
+      "path": "tests/test_labeling.py",
+      "bytes": 1020,
+      "sha256": "a82c67c06456c2c2533060c02f4d59c409facd46e1684dd3c3b0a0230185a44f"
+    },
+    {
+      "path": "tests/test_overlap_sensitivity.py",
+      "bytes": 2056,
+      "sha256": "8b6ac8db06843682deaa6bbec9b75a443fb0b26db651ccbcb1fcca8994dd9716"
+    },
+    {
+      "path": "tests/test_rare_calibration.py",
+      "bytes": 1230,
+      "sha256": "2fa07401140540e85ff24f983f5696c20bc66dc5a6063d8bdaf35d0a5be8f549"
+    },
+    {
+      "path": "tests/test_seed_analysis.py",
+      "bytes": 9122,
+      "sha256": "37ebfc67b9f11ad87d3550818a37f715462eb10fbd1a5b0c6c6ec08ae96ece30"
+    },
+    {
+      "path": "tests/test_translit.py",
+      "bytes": 592,
+      "sha256": "8b16456e8fb93c5c8a51d510ecb07efc683376b57d0a92499574d010e93aa665"
+    }
+  ]
+}

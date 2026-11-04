@@ -1,0 +1,353 @@
+{
+  "manifest_sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd",
+  "reporter_sha256": "406bc4463c2b1bf41dc5bd3f11658172bcdde8779a9ce1425bacf60545741336",
+  "interpretation": "Single-seed exploratory comparisons. All runs use the same canonical documents, schedule and base-model revision; best epoch selected by five-label validation macro-F1. Offsets selected exclusively on validation, never by test performance. Offsets adjust decisions, not probability calibration. No inference of reliable exclamation restoration or causal effect across all random seeds.",
+  "sources": {
+    "kyrgyznews": {
+      "weighted_metadata": "experiments/v2_audits/extended_news/v2_kyrgyznews_extended_20260930_114018_b149e80a/metadata.json",
+      "weighted_metadata_sha256": "b8afa89f5f019d1b68d27a55aec68ca2455a01bf24d992db80b723a522d575d7",
+      "unweighted_metadata": "experiments/r3/rare_unweighted/r3_kyrgyznews_unweighted_20261104_153617_21ec764f/metadata.json",
+      "unweighted_metadata_sha256": "a2b988d59c3e72c299091d635f9639fbacc231c258941623a744dbe7c26dd025",
+      "weighted_best_epoch": 3,
+      "unweighted_best_epoch": 3,
+      "weighted_class_weights": {
+        "S": 0.229398,
+        "C": 3.847933,
+        "P": 2.684264,
+        "Q": 151.03923,
+        "E": 583.488403
+      },
+      "weighted_environment": {
+        "python": "3.12.14",
+        "platform": "macOS-27.0-arm64-arm-64bit",
+        "processor": "arm",
+        "torch": "2.12.1",
+        "transformers": "5.13.0",
+        "numpy": "2.5.0",
+        "scikit-learn": "1.9.0",
+        "deterministic_algorithms": false
+      },
+      "unweighted_environment": {
+        "python": "3.12.14",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "processor": "arm",
+        "torch": "2.12.1",
+        "transformers": "5.13.0",
+        "numpy": "2.5.0",
+        "scikit-learn": "1.9.0",
+        "deterministic_algorithms": false
+      },
+      "environment_note": "Library versions and arm64 processor match. Historical weighted runs used macOS 27.0; new unweighted runs used 27.0.1. MPS deterministic algorithms were disabled in both. The OS patch difference and single-seed design limit a strict loss-only causal interpretation.",
+      "validation_selection": {
+        "q_penalty": 3.0,
+        "e_penalty": 3.0,
+        "validation_macro_f1": 0.6096959938988555
+      },
+      "validation_selection_sha256": "a8b046d699a38e718514306ed67982545c37b8f896b6b887030e3d183082a054",
+      "conditions": {
+        "weighted_CE": {
+          "prediction_path": "experiments/r3/calibration/weighted_news/predictions_raw.csv",
+          "prediction_sha256": "30416979733ec9071901a2da4607a6f214e5792f6ed05020a56481dc2757e5b8",
+          "macro_f1": 0.5504066682404647,
+          "words": 220839,
+          "per_class": {
+            "S": {
+              "precision": 0.9940846056308128,
+              "recall": 0.9002483658772303,
+              "f1": 0.9448423853916439,
+              "support": 192458,
+              "predicted": 174291
+            },
+            "C": {
+              "precision": 0.4243955250811981,
+              "recall": 0.8386521661615262,
+              "f1": 0.5635895285448991,
+              "support": 11218,
+              "predicted": 22168
+            },
+            "P": {
+              "precision": 0.6960636218233517,
+              "recall": 0.9365734098517455,
+              "f1": 0.7986033234784382,
+              "support": 16728,
+              "predicted": 22508
+            },
+            "Q": {
+              "precision": 0.24032738095238096,
+              "recall": 0.8873626373626373,
+              "f1": 0.37822014051522246,
+              "support": 364,
+              "predicted": 1344
+            },
+            "E": {
+              "precision": 0.03787878787878788,
+              "recall": 0.28169014084507044,
+              "f1": 0.0667779632721202,
+              "support": 71,
+              "predicted": 528
+            }
+          }
+        },
+        "weighted_CE_validation_offsets": {
+          "prediction_path": "experiments/r3/calibration/weighted_news/predictions_validation_offsets.csv",
+          "prediction_sha256": "2871473f27140d38759376dc1b767cbe5e18449687c8362b7570f639156f68d6",
+          "macro_f1": 0.5829687070376622,
+          "words": 220839,
+          "per_class": {
+            "S": {
+              "precision": 0.9940402241929113,
+              "recall": 0.9021708632532812,
+              "f1": 0.9458800585080449,
+              "support": 192458,
+              "predicted": 174671
+            },
+            "C": {
+              "precision": 0.4149019267488283,
+              "recall": 0.8522909609556071,
+              "f1": 0.5581110267935322,
+              "support": 11218,
+              "predicted": 23044
+            },
+            "P": {
+              "precision": 0.692189421894219,
+              "recall": 0.9419536107125777,
+              "f1": 0.7979844019041831,
+              "support": 16728,
+              "predicted": 22764
+            },
+            "Q": {
+              "precision": 0.6254295532646048,
+              "recall": 0.5,
+              "f1": 0.5557251908396946,
+              "support": 364,
+              "predicted": 291
+            },
+            "E": {
+              "precision": 0.057971014492753624,
+              "recall": 0.056338028169014086,
+              "f1": 0.05714285714285714,
+              "support": 71,
+              "predicted": 69
+            }
+          }
+        },
+        "unweighted_CE": {
+          "prediction_path": "experiments/r3/rare_unweighted/r3_kyrgyznews_unweighted_20261104_153617_21ec764f/tables/predictions.csv",
+          "prediction_sha256": "f9375a52f58786045d92b718f48a1e8c7ae9f88b6f9a2681ff33ec6f45c642c4",
+          "macro_f1": 0.714457578627543,
+          "words": 220839,
+          "per_class": {
+            "S": {
+              "precision": 0.9895779540866626,
+              "recall": 0.9857267559675358,
+              "f1": 0.9876486007387413,
+              "support": 192458,
+              "predicted": 191709
+            },
+            "C": {
+              "precision": 0.8128867855842737,
+              "recall": 0.7962203601354966,
+              "f1": 0.8044672611006034,
+              "support": 11218,
+              "predicted": 10988
+            },
+            "P": {
+              "precision": 0.8973264434958437,
+              "recall": 0.9550454328072693,
+              "f1": 0.9252866906058149,
+              "support": 16728,
+              "predicted": 17804
+            },
+            "Q": {
+              "precision": 0.865625,
+              "recall": 0.760989010989011,
+              "f1": 0.8099415204678363,
+              "support": 364,
+              "predicted": 320
+            },
+            "E": {
+              "precision": 0.1111111111111111,
+              "recall": 0.028169014084507043,
+              "f1": 0.0449438202247191,
+              "support": 71,
+              "predicted": 18
+            }
+          }
+        }
+      }
+    },
+    "wikipedia_ky": {
+      "weighted_metadata": "experiments/v2_audits/extended_wiki/v2_wikipedia_ky_extended_20260930_115951_138df634/metadata.json",
+      "weighted_metadata_sha256": "4e4e296a6bd3305f6b65993c0b63785b94e07b727d6c499a67f231151ced9c12",
+      "unweighted_metadata": "experiments/r3/rare_unweighted/r3_wikipedia_ky_unweighted_20261104_155612_0ecb434b/metadata.json",
+      "unweighted_metadata_sha256": "f45bf9c83a701e669d31d34e06428a74f5639bf3b4f6f427f3141bfe0e62cd47",
+      "weighted_best_epoch": 3,
+      "unweighted_best_epoch": 3,
+      "weighted_class_weights": {
+        "S": 0.251628,
+        "C": 2.393659,
+        "P": 1.655603,
+        "Q": 352.676941,
+        "E": 791.673401
+      },
+      "weighted_environment": {
+        "python": "3.12.14",
+        "platform": "macOS-27.0-arm64-arm-64bit",
+        "processor": "arm",
+        "torch": "2.12.1",
+        "transformers": "5.13.0",
+        "numpy": "2.5.0",
+        "scikit-learn": "1.9.0",
+        "deterministic_algorithms": false
+      },
+      "unweighted_environment": {
+        "python": "3.12.14",
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "processor": "arm",
+        "torch": "2.12.1",
+        "transformers": "5.13.0",
+        "numpy": "2.5.0",
+        "scikit-learn": "1.9.0",
+        "deterministic_algorithms": false
+      },
+      "environment_note": "Library versions and arm64 processor match. Historical weighted runs used macOS 27.0; new unweighted runs used 27.0.1. MPS deterministic algorithms were disabled in both. The OS patch difference and single-seed design limit a strict loss-only causal interpretation.",
+      "validation_selection": {
+        "q_penalty": 4.0,
+        "e_penalty": 1.5,
+        "validation_macro_f1": 0.5507503361949007
+      },
+      "validation_selection_sha256": "1a815536ea0a250966042edbf0e31dcd6e80e1710752886e2c42096d17c81de8",
+      "conditions": {
+        "weighted_CE": {
+          "prediction_path": "experiments/r3/calibration/weighted_wiki/predictions_raw.csv",
+          "prediction_sha256": "771a0a76b954cf8a28e110518e147ba8b2ec0a0189c64bc4fcfb05244cd5ff4f",
+          "macro_f1": 0.4973204771163792,
+          "words": 443185,
+          "per_class": {
+            "S": {
+              "precision": 0.9833860986504194,
+              "recall": 0.8685889041894415,
+              "f1": 0.9224295711465996,
+              "support": 355107,
+              "predicted": 313653
+            },
+            "C": {
+              "precision": 0.4982874434690077,
+              "recall": 0.8134907709011944,
+              "f1": 0.6180194671285986,
+              "support": 36840,
+              "predicted": 60144
+            },
+            "P": {
+              "precision": 0.7070137137937397,
+              "recall": 0.9028743079279067,
+              "f1": 0.7930297125316871,
+              "support": 50934,
+              "predicted": 65044
+            },
+            "Q": {
+              "precision": 0.05619546247818499,
+              "recall": 0.8609625668449198,
+              "f1": 0.10550458715596331,
+              "support": 187,
+              "predicted": 2865
+            },
+            "E": {
+              "precision": 0.025693035835023664,
+              "recall": 0.3247863247863248,
+              "f1": 0.047619047619047616,
+              "support": 117,
+              "predicted": 1479
+            }
+          }
+        },
+        "weighted_CE_validation_offsets": {
+          "prediction_path": "experiments/r3/calibration/weighted_wiki/predictions_validation_offsets.csv",
+          "prediction_sha256": "266e58e83a92bc53df5cb43abf1bd6cdd7c504b7766861b0b80f2abedae9d9c8",
+          "macro_f1": 0.5421415392944351,
+          "words": 443185,
+          "per_class": {
+            "S": {
+              "precision": 0.9832877486904342,
+              "recall": 0.8716752978679666,
+              "f1": 0.9241236830241855,
+              "support": 355107,
+              "predicted": 314799
+            },
+            "C": {
+              "precision": 0.49536998963798745,
+              "recall": 0.8175352877307275,
+              "f1": 0.6169256137404111,
+              "support": 36840,
+              "predicted": 60799
+            },
+            "P": {
+              "precision": 0.6973052675924951,
+              "recall": 0.909903011740684,
+              "f1": 0.7895431740163718,
+              "support": 50934,
+              "predicted": 66463
+            },
+            "Q": {
+              "precision": 0.2087912087912088,
+              "recall": 0.6096256684491979,
+              "f1": 0.31105047748976805,
+              "support": 187,
+              "predicted": 546
+            },
+            "E": {
+              "precision": 0.04152249134948097,
+              "recall": 0.20512820512820512,
+              "f1": 0.06906474820143885,
+              "support": 117,
+              "predicted": 578
+            }
+          }
+        },
+        "unweighted_CE": {
+          "prediction_path": "experiments/r3/rare_unweighted/r3_wikipedia_ky_unweighted_20261104_155612_0ecb434b/tables/predictions.csv",
+          "prediction_sha256": "7b98a13d7169ba2edd9aafb0570b6a17ceced3be7528ad4f8c8c6756401c7ae7",
+          "macro_f1": 0.6405266316008058,
+          "words": 443185,
+          "per_class": {
+            "S": {
+              "precision": 0.9648633855365162,
+              "recall": 0.9729630787340153,
+              "f1": 0.9688963046572115,
+              "support": 355107,
+              "predicted": 358088
+            },
+            "C": {
+              "precision": 0.7991400491400491,
+              "recall": 0.7062975027144408,
+              "f1": 0.7498559077809799,
+              "support": 36840,
+              "predicted": 32560
+            },
+            "P": {
+              "precision": 0.8737123745819398,
+              "recall": 0.8975733301920132,
+              "f1": 0.8854821371502726,
+              "support": 50934,
+              "predicted": 52325
+            },
+            "Q": {
+              "precision": 0.5242718446601942,
+              "recall": 0.5775401069518716,
+              "f1": 0.549618320610687,
+              "support": 187,
+              "predicted": 206
+            },
+            "E": {
+              "precision": 0.5,
+              "recall": 0.02564102564102564,
+              "f1": 0.04878048780487805,
+              "support": 117,
+              "predicted": 6
+            }
+          }
+        }
+      }
+    }
+  }
+}

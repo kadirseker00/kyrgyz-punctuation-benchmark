@@ -1,0 +1,75 @@
+{
+  "labels": [
+    "S",
+    "C",
+    "P"
+  ],
+  "run_dirs": [
+    "experiments/r1_seed_stability_news/r1_seed_news_42_20260928_165358_59dc4285",
+    "experiments/r1_seed_stability_news/r1_seed_news_43_20260928_165500_f55f0149",
+    "experiments/r1_seed_stability_news/r1_seed_news_44_20260928_165601_ea8a4b70"
+  ],
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 123,
+  "per_run": [
+    {
+      "run_dir": "experiments/r1_seed_stability_news/r1_seed_news_42_20260928_165358_59dc4285",
+      "run_id": "r1_seed_news_42_20260928_165358_59dc4285",
+      "seed": 42,
+      "macro_f1": 0.851409104463129,
+      "macro_f1_ci_low": 0.8417205347268488,
+      "macro_f1_ci_high": 0.860689343025775,
+      "accuracy": 0.9454024901791065
+    },
+    {
+      "run_dir": "experiments/r1_seed_stability_news/r1_seed_news_43_20260928_165500_f55f0149",
+      "run_id": "r1_seed_news_43_20260928_165500_f55f0149",
+      "seed": 43,
+      "macro_f1": 0.8437157856117002,
+      "macro_f1_ci_low": 0.8339915304003274,
+      "macro_f1_ci_high": 0.8533942812913332,
+      "accuracy": 0.9399427391970171
+    },
+    {
+      "run_dir": "experiments/r1_seed_stability_news/r1_seed_news_44_20260928_165601_ea8a4b70",
+      "run_id": "r1_seed_news_44_20260928_165601_ea8a4b70",
+      "seed": 44,
+      "macro_f1": 0.8221934290463345,
+      "macro_f1_ci_low": 0.8118511572588142,
+      "macro_f1_ci_high": 0.8312982531797044,
+      "accuracy": 0.9272255143484919
+    }
+  ],
+  "pairwise_against_first_seed": [
+    {
+      "reference_run_id": "r1_seed_news_42_20260928_165358_59dc4285",
+      "comparison_run_id": "r1_seed_news_43_20260928_165500_f55f0149",
+      "reference_seed": 42,
+      "comparison_seed": 43,
+      "macro_f1_delta_reference_minus_comparison": 0.007693318851428765,
+      "bootstrap_delta_ci_low": 0.00036015213669672586,
+      "bootstrap_delta_ci_high": 0.015205115312423476,
+      "mcnemar_b": 324,
+      "mcnemar_c": 242,
+      "mcnemar_exact_p": 0.0006495506303377075
+    },
+    {
+      "reference_run_id": "r1_seed_news_42_20260928_165358_59dc4285",
+      "comparison_run_id": "r1_seed_news_44_20260928_165601_ea8a4b70",
+      "reference_seed": 42,
+      "comparison_seed": 44,
+      "macro_f1_delta_reference_minus_comparison": 0.029215675416794484,
+      "bootstrap_delta_ci_low": 0.021236198007538176,
+      "bootstrap_delta_ci_high": 0.03683595926542189,
+      "mcnemar_b": 500,
+      "mcnemar_c": 227,
+      "mcnemar_exact_p": 1.7745715343276283e-24
+    }
+  ],
+  "summary": {
+    "mean_macro_f1": 0.8391061063737212,
+    "std_macro_f1": 0.015143506183267576,
+    "min_macro_f1": 0.8221934290463345,
+    "max_macro_f1": 0.851409104463129
+  }
+}

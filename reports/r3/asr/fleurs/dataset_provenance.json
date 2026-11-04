@@ -1,0 +1,11 @@
+{
+  "dataset": "google/fleurs",
+  "config": "ky_kg",
+  "split": "test",
+  "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+  "license": "CC-BY-4.0",
+  "speech_type": "read speech",
+  "source_url": "https://huggingface.co/datasets/google/fleurs",
+  "audio_source_file": "data/ky_kg/audio/test.tar.gz",
+  "text_source_file": "data/ky_kg/test.tsv"
+}

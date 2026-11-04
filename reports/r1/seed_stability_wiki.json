@@ -1,0 +1,75 @@
+{
+  "labels": [
+    "S",
+    "C",
+    "P"
+  ],
+  "run_dirs": [
+    "experiments/r1_seed_stability_wiki/r1_seed_wiki_42_20260928_165732_81591e05",
+    "experiments/r1_seed_stability_wiki/r1_seed_wiki_43_20260928_165834_13c0243f",
+    "experiments/r1_seed_stability_wiki/r1_seed_wiki_44_20260928_165938_37ffdf06"
+  ],
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 123,
+  "per_run": [
+    {
+      "run_dir": "experiments/r1_seed_stability_wiki/r1_seed_wiki_42_20260928_165732_81591e05",
+      "run_id": "r1_seed_wiki_42_20260928_165732_81591e05",
+      "seed": 42,
+      "macro_f1": 0.7967816985405656,
+      "macro_f1_ci_low": 0.7880053167957669,
+      "macro_f1_ci_high": 0.8055683893189346,
+      "accuracy": 0.8953844307064401
+    },
+    {
+      "run_dir": "experiments/r1_seed_stability_wiki/r1_seed_wiki_43_20260928_165834_13c0243f",
+      "run_id": "r1_seed_wiki_43_20260928_165834_13c0243f",
+      "seed": 43,
+      "macro_f1": 0.8023266687194325,
+      "macro_f1_ci_low": 0.7932914376419635,
+      "macro_f1_ci_high": 0.8111637520068141,
+      "accuracy": 0.9021067162835364
+    },
+    {
+      "run_dir": "experiments/r1_seed_stability_wiki/r1_seed_wiki_44_20260928_165938_37ffdf06",
+      "run_id": "r1_seed_wiki_44_20260928_165938_37ffdf06",
+      "seed": 44,
+      "macro_f1": 0.7614270910809641,
+      "macro_f1_ci_low": 0.7526566626450698,
+      "macro_f1_ci_high": 0.7701356144038365,
+      "accuracy": 0.864593961947062
+    }
+  ],
+  "pairwise_against_first_seed": [
+    {
+      "reference_run_id": "r1_seed_wiki_42_20260928_165732_81591e05",
+      "comparison_run_id": "r1_seed_wiki_43_20260928_165834_13c0243f",
+      "reference_seed": 42,
+      "comparison_seed": 43,
+      "macro_f1_delta_reference_minus_comparison": -0.005544970178866904,
+      "bootstrap_delta_ci_low": -0.012250890477022259,
+      "bootstrap_delta_ci_high": 0.0012033541483989377,
+      "mcnemar_b": 396,
+      "mcnemar_c": 508,
+      "mcnemar_exact_p": 0.00021891379678812107
+    },
+    {
+      "reference_run_id": "r1_seed_wiki_42_20260928_165732_81591e05",
+      "comparison_run_id": "r1_seed_wiki_44_20260928_165938_37ffdf06",
+      "reference_seed": 42,
+      "comparison_seed": 44,
+      "macro_f1_delta_reference_minus_comparison": 0.035354607459601506,
+      "bootstrap_delta_ci_low": 0.028597533148685128,
+      "bootstrap_delta_ci_high": 0.04250239248701286,
+      "mcnemar_b": 876,
+      "mcnemar_c": 363,
+      "mcnemar_exact_p": 2.4425542587030446e-49
+    }
+  ],
+  "summary": {
+    "mean_macro_f1": 0.7868451527803207,
+    "std_macro_f1": 0.02218659660663069,
+    "min_macro_f1": 0.7614270910809641,
+    "max_macro_f1": 0.8023266687194325
+  }
+}

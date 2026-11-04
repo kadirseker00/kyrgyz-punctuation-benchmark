@@ -1,0 +1,89 @@
+{
+  "analysis_version": 2,
+  "labels": [
+    "S",
+    "C",
+    "P"
+  ],
+  "run_dirs": [
+    "experiments/v2_main/xlmr_wiki",
+    "experiments/v2_main/xlmr_wiki_s43",
+    "experiments/v2_main/xlmr_wiki_s44"
+  ],
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 123,
+  "bootstrap_unit": "group",
+  "bootstrap_method": "paired cluster percentile, 95%, uniform clusters with replacement",
+  "bootstrap_cluster_count": 1152,
+  "test_tokens": 220839,
+  "test_documents": 1250,
+  "ordered_test_sha256": "98e93a60e635e74c64758114dfbea06fa8b6b5bd52cca35311e641c6698c3dc6",
+  "interpretation": "Intervals quantify test-cluster sampling uncertainty conditional on each trained model. Across-seed standard deviation separately measures training variability. Pairwise intervals are unadjusted descriptive comparisons. Matching prediction IDs does not independently establish manifest coverage or identical training settings; these must be audited in the runner.",
+  "per_run": [
+    {
+      "run_dir": "experiments/v2_main/xlmr_wiki",
+      "run_id": "xlmr_wiki",
+      "seed": 42,
+      "prediction_sha256": "ba536391afb200ac9429f04a2dfe91ccc1c42c40db17082123a5b04abdde7a5a",
+      "metadata_sha256": "3ec8eda40c7368c48aca1f30fb527a37f031a6dd5a2d724ff94fba7b834c6b12",
+      "macro_f1": 0.791990342057407,
+      "macro_f1_ci_low": 0.7864164670877799,
+      "macro_f1_ci_high": 0.7975350400950996,
+      "accuracy": 0.9212050407763122
+    },
+    {
+      "run_dir": "experiments/v2_main/xlmr_wiki_s43",
+      "run_id": "xlmr_wiki_s43",
+      "seed": 43,
+      "prediction_sha256": "47740f77af3a05e34632de4508c65bd8820f62812342aae7bcad7c750c202204",
+      "metadata_sha256": "de7e49974661645b0cef73ec54aebe960b3d916c2e9dc4226605e14cc46285f2",
+      "macro_f1": 0.7971575512702692,
+      "macro_f1_ci_low": 0.7918134501923086,
+      "macro_f1_ci_high": 0.8024584104280107,
+      "accuracy": 0.9256879446112326
+    },
+    {
+      "run_dir": "experiments/v2_main/xlmr_wiki_s44",
+      "run_id": "xlmr_wiki_s44",
+      "seed": 44,
+      "prediction_sha256": "883c06a294c62b93ee4b0142dff83022ef8f63bbc94e92dde519d740408ed4fd",
+      "metadata_sha256": "dcc667132b73aae0e6524f31a879d5c7a204afd9743c1ab4d287a09b71f3312f",
+      "macro_f1": 0.7885813962742637,
+      "macro_f1_ci_low": 0.7832900431345123,
+      "macro_f1_ci_high": 0.7939123652152881,
+      "accuracy": 0.9203899673517811
+    }
+  ],
+  "pairwise_against_first_seed": [
+    {
+      "reference_run_id": "xlmr_wiki",
+      "comparison_run_id": "xlmr_wiki_s43",
+      "reference_seed": 42,
+      "comparison_seed": 43,
+      "macro_f1_delta_reference_minus_comparison": -0.005167209212862178,
+      "bootstrap_delta_ci_low": -0.007371922435841777,
+      "bootstrap_delta_ci_high": -0.002660301447287729
+    },
+    {
+      "reference_run_id": "xlmr_wiki",
+      "comparison_run_id": "xlmr_wiki_s44",
+      "reference_seed": 42,
+      "comparison_seed": 44,
+      "macro_f1_delta_reference_minus_comparison": 0.0034089457831433245,
+      "bootstrap_delta_ci_low": 0.0010697701799294856,
+      "bootstrap_delta_ci_high": 0.005834076605997882
+    }
+  ],
+  "summary": {
+    "mean_macro_f1": 0.7925764298673134,
+    "std_macro_f1": 0.0043180126006726865,
+    "min_macro_f1": 0.7885813962742637,
+    "max_macro_f1": 0.7971575512702692
+  },
+  "canonical_validation": {
+    "manifest_sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd",
+    "prediction_source": "kyrgyznews",
+    "exact_test_positions_gold_groups_verified": true,
+    "training_provenance_limit": "Original main-panel metadata records source-file hashes and training document counts, not a split-manifest digest or actual training IDs. Training IDs used for configuration comparison are inferred from the current manifest and runner policy; they are not historical attestations."
+  }
+}

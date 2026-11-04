@@ -1,0 +1,89 @@
+{
+  "manifest_sha256": "27b2148f4800f79dff7a758f8290e0384096b8a153d9522802eac8d8869dcabd",
+  "code_sha256": "b2bc06c8777a5bdad24b58273a2e858c84345b7691d81b17bd67c5cde7fd7b8a",
+  "sampling": {
+    "seed": "20261104",
+    "per_stratum": 12,
+    "rule": "Lowest SHA-256(seed/source/document_id/word_index) within each of six off-diagonal confusion strata and one correct stratum, per source; all eligible full-test positions included in the sampling frame. This post-hoc audit pack is not human annotated."
+  },
+  "sources": {
+    "kyrgyznews": {
+      "prediction_path": "experiments/v2_main/xlmr_news/predictions_test_kyrgyznews.csv",
+      "prediction_sha256": "54c09d20388f74e9675c9edf6b4f38d7a0991ec3e603659b1128f13ed4cb232b",
+      "words": 220839,
+      "errors": 10087,
+      "confusion_labels": [
+        "S",
+        "C",
+        "P"
+      ],
+      "confusion_gold_rows_predicted_columns": [
+        [
+          184578,
+          5598,
+          2282
+        ],
+        [
+          650,
+          9816,
+          752
+        ],
+        [
+          221,
+          584,
+          16358
+        ]
+      ],
+      "stratum_population": {
+        "correct": 210752,
+        "S->P": 2282,
+        "S->C": 5598,
+        "P->C": 584,
+        "C->S": 650,
+        "P->S": 221,
+        "C->P": 752
+      },
+      "sampled_positions": 84
+    },
+    "wikipedia_ky": {
+      "prediction_path": "experiments/v2_main/xlmr_wiki/predictions_test_wikipedia_ky.csv",
+      "prediction_sha256": "b612d7c2278067b35f3931b82d7fe8ab96037f85f039c7df3c97a74f3235e298",
+      "words": 443185,
+      "errors": 40632,
+      "confusion_labels": [
+        "S",
+        "C",
+        "P"
+      ],
+      "confusion_gold_rows_predicted_columns": [
+        [
+          323750,
+          22115,
+          9242
+        ],
+        [
+          2752,
+          31748,
+          2340
+        ],
+        [
+          1481,
+          2702,
+          47055
+        ]
+      ],
+      "stratum_population": {
+        "correct": 402553,
+        "S->C": 22115,
+        "P->C": 2702,
+        "S->P": 9242,
+        "C->P": 2340,
+        "C->S": 2752,
+        "P->S": 1481
+      },
+      "sampled_positions": 84
+    }
+  },
+  "annotation_pack_sha256": "8db007eeda83538605a091a9a8f306d092c5024f86b346c94f05d913eb15898e",
+  "human_judgments_collected": 0
+}

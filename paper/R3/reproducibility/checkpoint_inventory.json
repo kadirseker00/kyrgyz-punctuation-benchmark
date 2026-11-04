@@ -1,0 +1,226 @@
+[
+  {
+    "local_path": "experiments/v2_main/xlmr_news/hf_model",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 877,
+        "sha256": "610e7ef2af2eedf57cc9da2666de20824f8d76d3dfb8f0e86be7a9acec2ff3f8"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 1109845500,
+        "sha256": "eee66310abf14615a02a5642582d6e9c715fe0a19e087f545ade7dcd8eb8f5a4"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 17098241,
+        "sha256": "1039eb383a85ef2884538e9926eabc97db50f2f56c914e9ca39b2cf927a0f790"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 343,
+        "sha256": "5d84c938d902dbd684af806ccc920e4c99812d897b0f271eebf856361a4337f6"
+      }
+    ],
+    "base_model": "FacebookAI/xlm-roberta-base",
+    "base_license": "MIT",
+    "release_status": "Local only; weights are not included in the code/data archive. Author must confirm downstream data obligations and publication before redistribution."
+  },
+  {
+    "local_path": "experiments/v2_main/xlmr_wiki/hf_model",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 877,
+        "sha256": "610e7ef2af2eedf57cc9da2666de20824f8d76d3dfb8f0e86be7a9acec2ff3f8"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 1109845500,
+        "sha256": "d9e97051af07dee77d8d3fe419080a33f927b5e7f220f46f0a23ca1575f08f2f"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 17098241,
+        "sha256": "1039eb383a85ef2884538e9926eabc97db50f2f56c914e9ca39b2cf927a0f790"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 343,
+        "sha256": "5d84c938d902dbd684af806ccc920e4c99812d897b0f271eebf856361a4337f6"
+      }
+    ],
+    "base_model": "FacebookAI/xlm-roberta-base",
+    "base_license": "MIT",
+    "release_status": "Local only; weights are not included in the code/data archive. Author must confirm downstream data obligations and publication before redistribution."
+  },
+  {
+    "local_path": "experiments/v2_main/xlmr_mixed/hf_model",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 877,
+        "sha256": "610e7ef2af2eedf57cc9da2666de20824f8d76d3dfb8f0e86be7a9acec2ff3f8"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 1109845500,
+        "sha256": "4ff7f176aa2fa980d2d703046e803ba719590f7e27f07e10cf8510853c2b22fe"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 17098241,
+        "sha256": "1039eb383a85ef2884538e9926eabc97db50f2f56c914e9ca39b2cf927a0f790"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 343,
+        "sha256": "5d84c938d902dbd684af806ccc920e4c99812d897b0f271eebf856361a4337f6"
+      }
+    ],
+    "base_model": "FacebookAI/xlm-roberta-base",
+    "base_license": "MIT",
+    "release_status": "Local only; weights are not included in the code/data archive. Author must confirm downstream data obligations and publication before redistribution."
+  },
+  {
+    "local_path": "experiments/v2_main/xlmr_mixed_matched/hf_model",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 877,
+        "sha256": "610e7ef2af2eedf57cc9da2666de20824f8d76d3dfb8f0e86be7a9acec2ff3f8"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 1109845500,
+        "sha256": "a6bd3ba4c318ba29b49311b1cd3b1e8b3d7d7cbd51797fbba6ab4807bbc4d751"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 17098241,
+        "sha256": "1039eb383a85ef2884538e9926eabc97db50f2f56c914e9ca39b2cf927a0f790"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 343,
+        "sha256": "5d84c938d902dbd684af806ccc920e4c99812d897b0f271eebf856361a4337f6"
+      }
+    ],
+    "base_model": "FacebookAI/xlm-roberta-base",
+    "base_license": "MIT",
+    "release_status": "Local only; weights are not included in the code/data archive. Author must confirm downstream data obligations and publication before redistribution."
+  },
+  {
+    "local_path": "experiments/v2_audits/extended_news/v2_kyrgyznews_extended_20260930_114018_b149e80a/models/hf_model",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 929,
+        "sha256": "f2e6fd8b87a9822f324fbb7436ca81d836b02dd6ec283043e5fe8a0b47d34e6a"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 1109851652,
+        "sha256": "eb7ca41f87e5d7aa4238ceebb6800d74031ce570ddeddbcf308b298abfaca3f8"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 17098241,
+        "sha256": "1039eb383a85ef2884538e9926eabc97db50f2f56c914e9ca39b2cf927a0f790"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 343,
+        "sha256": "5d84c938d902dbd684af806ccc920e4c99812d897b0f271eebf856361a4337f6"
+      }
+    ],
+    "base_model": "FacebookAI/xlm-roberta-base",
+    "base_license": "MIT",
+    "release_status": "Local only; weights are not included in the code/data archive. Author must confirm downstream data obligations and publication before redistribution."
+  },
+  {
+    "local_path": "experiments/v2_audits/extended_wiki/v2_wikipedia_ky_extended_20260930_115951_138df634/models/hf_model",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 929,
+        "sha256": "f2e6fd8b87a9822f324fbb7436ca81d836b02dd6ec283043e5fe8a0b47d34e6a"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 1109851652,
+        "sha256": "763f21e31e8fb180c819392cde5c105e6d019e8c618836bd9a8cad84f25230e0"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 17098241,
+        "sha256": "1039eb383a85ef2884538e9926eabc97db50f2f56c914e9ca39b2cf927a0f790"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 343,
+        "sha256": "5d84c938d902dbd684af806ccc920e4c99812d897b0f271eebf856361a4337f6"
+      }
+    ],
+    "base_model": "FacebookAI/xlm-roberta-base",
+    "base_license": "MIT",
+    "release_status": "Local only; weights are not included in the code/data archive. Author must confirm downstream data obligations and publication before redistribution."
+  },
+  {
+    "local_path": "experiments/r3/rare_unweighted/r3_wikipedia_ky_unweighted_20261104_155612_0ecb434b/models/hf_model",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 929,
+        "sha256": "f2e6fd8b87a9822f324fbb7436ca81d836b02dd6ec283043e5fe8a0b47d34e6a"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 1109851652,
+        "sha256": "ea3c33a8b3bae5c4f55bd416fb55cca98664dc00509998a999c4ce959e989bb7"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 17098241,
+        "sha256": "1039eb383a85ef2884538e9926eabc97db50f2f56c914e9ca39b2cf927a0f790"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 343,
+        "sha256": "5d84c938d902dbd684af806ccc920e4c99812d897b0f271eebf856361a4337f6"
+      }
+    ],
+    "base_model": "FacebookAI/xlm-roberta-base",
+    "base_license": "MIT",
+    "release_status": "Local only; weights are not included in the code/data archive. Author must confirm downstream data obligations and publication before redistribution."
+  },
+  {
+    "local_path": "experiments/r3/rare_unweighted/r3_kyrgyznews_unweighted_20261104_153617_21ec764f/models/hf_model",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 929,
+        "sha256": "f2e6fd8b87a9822f324fbb7436ca81d836b02dd6ec283043e5fe8a0b47d34e6a"
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 1109851652,
+        "sha256": "690adb30faff631e067bea1ca9fc3ac89a5bcb06be1dcc78a8b4e8174b9ba2f9"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 17098241,
+        "sha256": "1039eb383a85ef2884538e9926eabc97db50f2f56c914e9ca39b2cf927a0f790"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 343,
+        "sha256": "5d84c938d902dbd684af806ccc920e4c99812d897b0f271eebf856361a4337f6"
+      }
+    ],
+    "base_model": "FacebookAI/xlm-roberta-base",
+    "base_license": "MIT",
+    "release_status": "Local only; weights are not included in the code/data archive. Author must confirm downstream data obligations and publication before redistribution."
+  }
+]

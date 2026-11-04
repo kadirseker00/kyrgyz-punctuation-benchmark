@@ -1,0 +1,26 @@
+{
+  "status": "English translations checked and confirmed correct, as reported by the author on 2026-10-01.",
+  "review_scope": "Meaning accuracy of the four English translations. This does not establish independent assessment of alternative punctuation.",
+  "examples": [
+    {
+      "document_id": "kyrgyznews_029460",
+      "word_span": [0, 23],
+      "translation": "The Jogorku Kenesh will tint the windows of its official vehicles and install alarm systems and flagpoles. This is stated in a tender published by the parliament's administrative office on the public procurement portal."
+    },
+    {
+      "document_id": "kyrgyznews_019708",
+      "word_span": [162, 198],
+      "translation": "Seidbek Atambayev made his statement after the former president was forcibly brought to court over the Koy-Tash events. The politician's lawyer, Zamir Jooshev, said that Atambayev had been forcibly brought into the courtroom despite refusing to attend the hearing because he felt unwell."
+    },
+    {
+      "document_id": "wiki_7259",
+      "word_span": [123, 155],
+      "translation": "Some people call this taldyrma. The wool is first lightly felted, dyed and patterned; more wool is then placed underneath, the patterned felt is laid on top, and the layers are felted together again."
+    },
+    {
+      "document_id": "wiki_7735",
+      "word_span": [32, 58],
+      "translation": "Its decorative beauty is readily apparent when it is worn in the hair. This ornament is common among people living in the Talas, Ketmen-Tobo, Ala-Buka, Chatkal and Aksy areas."
+    }
+  ]
+}

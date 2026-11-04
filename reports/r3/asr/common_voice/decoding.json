@@ -1,0 +1,6 @@
+{
+  "model": "kyrgyz-ai/Wav2vec-Kyrgyz",
+  "revision": "4d8f6b7aeb921e774dbe4b0a4eda46bc05a8dd6f",
+  "batch_size": 4,
+  "padding_policy": "Crop each CTC logit sequence to the acoustic output length of its unpadded waveform"
+}

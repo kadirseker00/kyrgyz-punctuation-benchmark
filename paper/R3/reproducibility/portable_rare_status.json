@@ -1,0 +1,24 @@
+{
+  "jobs": {
+    "kyrgyznews": {
+      "state": "complete",
+      "started_at": "2026-11-04T15:36:17+0600",
+      "baseline_metadata": "experiments/v2_audits/extended_news/v2_kyrgyznews_extended_20260930_114018_b149e80a/metadata.json",
+      "model_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+      "runner_sha256": "047db91f5729d0f3acae26bb66361ff22b1d09aedd5263dc775e5b89c8b32a71",
+      "code_commit": "ddde90bef68a63fb726121ac585e2da85422e728",
+      "run_dir": "experiments/r3/rare_unweighted/r3_kyrgyznews_unweighted_20261104_153617_21ec764f",
+      "finished_at": "2026-11-04T15:56:12+0600"
+    },
+    "wikipedia_ky": {
+      "state": "complete",
+      "started_at": "2026-11-04T15:56:12+0600",
+      "baseline_metadata": "experiments/v2_audits/extended_wiki/v2_wikipedia_ky_extended_20260930_115951_138df634/metadata.json",
+      "model_revision": "e73636d4f797dec63c3081bb6ed5c7b0bb3f2089",
+      "runner_sha256": "047db91f5729d0f3acae26bb66361ff22b1d09aedd5263dc775e5b89c8b32a71",
+      "code_commit": "ddde90bef68a63fb726121ac585e2da85422e728",
+      "run_dir": "experiments/r3/rare_unweighted/r3_wikipedia_ky_unweighted_20261104_155612_0ecb434b",
+      "finished_at": "2026-11-04T16:39:47+0600"
+    }
+  }
+}
