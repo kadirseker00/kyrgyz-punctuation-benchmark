@@ -30,6 +30,8 @@ MODELS = {
 }
 SOURCE_NAME = {"kyrgyznews": "Kyrgyz News", "wikipedia_ky": "Kyrgyz Wikipedia"}
 TITLE = "Automatic Punctuation Restoration for Kyrgyz: A Two-Source Benchmark and Evaluation Study"
+CODE_URL = "https://github.com/kadirseker00/kyrgyz-punctuation-benchmark"
+DATA_DOI = "https://doi.org/10.5281/zenodo.23959428"
 
 
 def pct(x: float) -> str:
@@ -118,7 +120,8 @@ These numbers use a different (event-level, C/P only) metric from the text bench
 directly comparable to it. Spontaneous, conversational and long-form speech were **not** evaluated.
 """
 
-    code = (f"Code, canonical split manifests and the evaluation protocol: <{code_url}>." if code_url else
+    code = (f"Code, canonical split manifest and evaluation protocol: <{code_url}> (MIT). Frozen text pools and "
+            f"archived predictions: <{DATA_DOI}>." if code_url else
             "The benchmark code, canonical split manifests and evaluation protocol accompany the paper's "
             "reproduction package.")
 
@@ -246,7 +249,7 @@ licensed. {code}
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--namespace", default="kadirseker")
-    parser.add_argument("--code-url")
+    parser.add_argument("--code-url", default=CODE_URL)
     args = parser.parse_args()
     for job, (repo, *_rest) in MODELS.items():
         target = OUT / repo

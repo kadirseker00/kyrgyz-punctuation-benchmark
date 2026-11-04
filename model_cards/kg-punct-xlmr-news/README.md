@@ -122,7 +122,7 @@ The released weights are the epoch with the best validation macro-F1 (epoch 2; p
 Labels are derived automatically from the punctuation already present in these texts. The weights are released
 under **CC-BY-NC-4.0** for research and other non-commercial use, following the most restrictive source
 license; users are responsible for compliance with the source terms. The base model `xlm-roberta-base` is MIT
-licensed. The benchmark code, canonical split manifests and evaluation protocol accompany the paper's reproduction package.
+licensed. Code, canonical split manifest and evaluation protocol: <https://github.com/kadirseker00/kyrgyz-punctuation-benchmark> (MIT). Frozen text pools and archived predictions: <https://doi.org/10.5281/zenodo.23959428>.
 
 ## Limitations
 

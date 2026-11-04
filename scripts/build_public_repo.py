@@ -113,7 +113,7 @@ python model_cards/punctuate.py --model kadirseker/kg-punct-xlmr-mixed "бүгү
 | `model_cards/` | Hugging Face model cards and the inference script |
 
 The frozen text pools (`data/processed/v2/*.jsonl`) and all archived word predictions (`experiments/`) are not in
-this repository; they are in the reproduction archive on Zenodo: **DOI to be added**. Extracting that archive at
+this repository; they are in the reproduction archive on Zenodo, <https://doi.org/10.5281/zenodo.23959428>. Extracting that archive at
 the repository root restores the full snapshot, which `paper/R3/reproducibility/verify_snapshot.py` checks file by
 file.
 
@@ -167,6 +167,7 @@ data/raw/
 data/processed/v2/
 experiments/
 models/
+.claude/
 """
 
 # The packaged README predates the release; its two status paragraphs are replaced, nothing else changes.
