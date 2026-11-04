@@ -218,8 +218,9 @@ in either source's main training subset gives one fixed mask per test source for
 - **Kyrgyz Wikipedia** — kywiki pages-articles dump, CC-BY-SA-4.0 with page-specific notices.
 
 Labels are derived automatically from the punctuation already present in these texts. The weights are released
-under **CC-BY-NC-4.0** for research and other non-commercial use, following the most restrictive source
-license; users are responsible for compliance with the source terms. The base model `xlm-roberta-base` is MIT
+under the declared **CC-BY-NC-4.0** weight license for research and other non-commercial use. The source-data
+terms above are separate (see `DATA_LICENSES.md` in the code repository); users are responsible for complying
+with them. The base model `xlm-roberta-base` is MIT
 licensed. {code}
 
 ## Limitations

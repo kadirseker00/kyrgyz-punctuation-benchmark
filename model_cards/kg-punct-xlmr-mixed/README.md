@@ -134,8 +134,9 @@ The released weights are the epoch with the best validation macro-F1 (epoch 1; p
 - **Kyrgyz Wikipedia** — kywiki pages-articles dump, CC-BY-SA-4.0 with page-specific notices.
 
 Labels are derived automatically from the punctuation already present in these texts. The weights are released
-under **CC-BY-NC-4.0** for research and other non-commercial use, following the most restrictive source
-license; users are responsible for compliance with the source terms. The base model `xlm-roberta-base` is MIT
+under the declared **CC-BY-NC-4.0** weight license for research and other non-commercial use. The source-data
+terms above are separate (see `DATA_LICENSES.md` in the code repository); users are responsible for complying
+with them. The base model `xlm-roberta-base` is MIT
 licensed. Code, canonical split manifest and evaluation protocol: <https://github.com/kadirseker00/kyrgyz-punctuation-benchmark> (MIT). Frozen text pools and archived predictions: <https://doi.org/10.5281/zenodo.23959428>.
 
 ## Limitations
